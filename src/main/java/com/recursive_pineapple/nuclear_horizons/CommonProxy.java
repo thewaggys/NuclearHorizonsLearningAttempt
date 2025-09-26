@@ -8,9 +8,13 @@ import com.recursive_pineapple.nuclear_horizons.reactors.items.ItemList;
 import com.recursive_pineapple.nuclear_horizons.reactors.items.material.MaterialsChemical;
 import com.recursive_pineapple.nuclear_horizons.reactors.items.material.MaterialsNuclear;
 import com.recursive_pineapple.nuclear_horizons.reactors.tile.simulator.SimulationItems;
-import com.recursive_pineapple.nuclear_horizons.recipes.*;
-
+import com.recursive_pineapple.nuclear_horizons.recipes.ComponentRecipes;
+import com.recursive_pineapple.nuclear_horizons.recipes.CoolantRecipes;
+import com.recursive_pineapple.nuclear_horizons.recipes.FuelProcessingRecipes;
+import com.recursive_pineapple.nuclear_horizons.recipes.FuelRodRecipes;
+import com.recursive_pineapple.nuclear_horizons.recipes.ReprocessingRecipes;
 import com.recursive_pineapple.nuclear_horizons.utils.NHStructureChannels;
+
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;

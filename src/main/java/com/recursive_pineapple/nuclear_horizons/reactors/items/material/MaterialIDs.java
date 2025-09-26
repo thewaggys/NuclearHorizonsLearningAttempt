@@ -1,6 +1,7 @@
 package com.recursive_pineapple.nuclear_horizons.reactors.items.material;
 
 public enum MaterialIDs {
+
     NATURAL_URANIUM(0),
     NATURAL_URANIUM_TETRAFLUORIDE(1),
     NATURAL_URANIUM_HEXAFLUORIDE(2),
@@ -60,12 +61,13 @@ public enum MaterialIDs {
     THORIUM_NITRATE(56),
     LOW_URANIUM_SLUDGE(57),
     URANIUM_POOR_MIXTURE(58),
-    REFINED_THORIUM(59)
-    ;
+    REFINED_THORIUM(59);
 
     private static final int OFFSET_ID = 14_000;
 
     public final int id;
 
-    MaterialIDs(int id) {this.id = OFFSET_ID + id;}
+    MaterialIDs(int id) {
+        this.id = OFFSET_ID + id;
+    }
 }

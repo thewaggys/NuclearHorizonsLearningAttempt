@@ -135,9 +135,7 @@ public class ReprocessingRecipes {
                 KEROSENE.getFluid(1000))
             .itemOutputs(URANIUM_FISSION_PRODUCT_MIXTURE.getDust(1))
             .outputChances(1250)
-            .fluidOutputs(
-                PU_SOLUTION_AQ_PHASE.getFluid(2000),
-                U_SOLUTION_ORG_PHASE.getFluid(2000))
+            .fluidOutputs(PU_SOLUTION_AQ_PHASE.getFluid(2000), U_SOLUTION_ORG_PHASE.getFluid(2000))
             .duration(10 * SECONDS)
             .eut(TierEU.RECIPE_HV)
             .addTo(mixerNonCellRecipes);
@@ -323,10 +321,7 @@ public class ReprocessingRecipes {
 
         GTValues.RA.stdBuilder()
             .itemInputs(TRANSURANIC_WASTE_MIXTURE.getDust(1))
-            .itemOutputs(
-                AMERICIUM_IV_OXIDE.getDust(1),
-                CURIUM_IV_OXIDE.getDust(1),
-                CALIFORNIUM_IV_OXIDE.getDust(1))
+            .itemOutputs(AMERICIUM_IV_OXIDE.getDust(1), CURIUM_IV_OXIDE.getDust(1), CALIFORNIUM_IV_OXIDE.getDust(1))
             .outputChances(1500, 2750, 1000)
             .duration(2 * MINUTES)
             .eut(TierEU.RECIPE_LuV)

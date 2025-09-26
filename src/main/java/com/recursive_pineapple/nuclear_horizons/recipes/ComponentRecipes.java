@@ -103,8 +103,7 @@ public class ComponentRecipes {
                 GTUtility.getIntegratedCircuit(21),
                 Ic2Items.industrialDiamond,
                 new ItemStack(ItemList.BASIC_HEAT_VENT, 1),
-                new ItemStack(Item.getItemById(101), 2)
-            )
+                new ItemStack(Item.getItemById(101), 2))
             .itemOutputs(new ItemStack(ItemList.ADVANCED_HEAT_VENT, 1))
             .duration(15 * SECONDS)
             .eut(256)

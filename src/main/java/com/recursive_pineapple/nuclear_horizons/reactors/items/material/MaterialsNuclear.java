@@ -5,10 +5,13 @@ import gregtech.api.enums.TextureSet;
 
 public class MaterialsNuclear {
 
-    public static final Werkstoff.GenerationFeatures DUST = new Werkstoff.GenerationFeatures().disable().onlyDust();
-    public static final Werkstoff.GenerationFeatures FLUID = new Werkstoff.GenerationFeatures().disable().addCells();
+    public static final Werkstoff.GenerationFeatures DUST = new Werkstoff.GenerationFeatures().disable()
+        .onlyDust();
+    public static final Werkstoff.GenerationFeatures FLUID = new Werkstoff.GenerationFeatures().disable()
+        .addCells();
     public static final Werkstoff.Stats DEFAULT_STATS = new Werkstoff.Stats().setElektrolysis(false);
-    public static final Werkstoff.Stats RADIO_STATS = new Werkstoff.Stats().setElektrolysis(false).setRadioactive(true);
+    public static final Werkstoff.Stats RADIO_STATS = new Werkstoff.Stats().setElektrolysis(false)
+        .setRadioactive(true);
 
     public static final Werkstoff NATURAL_URANIUM = new Werkstoff(
         new short[] { 49, 138, 34 },
@@ -340,7 +343,6 @@ public class MaterialsNuclear {
         MaterialIDs.URANIUM_238_DIOXIDE.id,
         TextureSet.SET_DULL);
 
-
     public static final Werkstoff THORIANITE_AQ_SOLUTION = new Werkstoff(
         rgb(0x393b32),
         "Thorianite solution (Aqueos State)",
@@ -381,7 +383,6 @@ public class MaterialsNuclear {
         MaterialIDs.URANIUM_POOR_MIXTURE.id,
         TextureSet.SET_FLUID);
 
-
     public static final Werkstoff REFINED_THORIUM = new Werkstoff(
         rgb(0x081a11),
         "Refined Thorium",
@@ -391,7 +392,6 @@ public class MaterialsNuclear {
         DUST,
         MaterialIDs.REFINED_THORIUM.id,
         TextureSet.SET_DULL);
-
 
     public static void init() {
 

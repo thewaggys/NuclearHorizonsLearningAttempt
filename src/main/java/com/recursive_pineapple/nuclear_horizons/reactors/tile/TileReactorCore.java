@@ -65,9 +65,9 @@ import com.recursive_pineapple.nuclear_horizons.reactors.fluids.CoolantRegistry;
 import com.recursive_pineapple.nuclear_horizons.reactors.fluids.CoolantRegistry.Coolant;
 import com.recursive_pineapple.nuclear_horizons.reactors.tile.IReactorBlock.ReactorEnableState;
 import com.recursive_pineapple.nuclear_horizons.utils.DirectionUtil;
+import com.recursive_pineapple.nuclear_horizons.utils.NHStructureChannels;
 
 import cofh.api.energy.IEnergyReceiver;
-import com.recursive_pineapple.nuclear_horizons.utils.NHStructureChannels;
 import gregtech.api.GregTechAPI;
 import gregtech.api.enums.GTValues;
 import gregtech.api.interfaces.tileentity.IDebugableTileEntity;
@@ -76,8 +76,8 @@ import gregtech.api.util.GTStructureUtility;
 import gregtech.api.util.GTUtility;
 import ic2.api.energy.tile.IEnergySink;
 
-public class TileReactorCore extends TileEntity
-    implements IInventory, IReactorGrid, ITileWithModularUI, IEnergyConnected, IDebugableTileEntity, IConstructable, ISurvivalConstructable {
+public class TileReactorCore extends TileEntity implements IInventory, IReactorGrid, ITileWithModularUI,
+    IEnergyConnected, IDebugableTileEntity, IConstructable, ISurvivalConstructable {
 
     public static final int ROW_COUNT = 6;
     public static final int COL_COUNT = 9;
@@ -282,11 +282,15 @@ public class TileReactorCore extends TileEntity
                 this.coolantTank.readFromNBT(compound.getCompoundTag("coolantTank"));
                 this.hotCoolantTank.readFromNBT(compound.getCompoundTag("hotCoolantTank"));
 
-                if (this.coolantTank.getFluid() != null && !CoolantRegistry.isColdCoolant(this.coolantTank.getFluid().getFluid())) {
+                if (this.coolantTank.getFluid() != null && !CoolantRegistry.isColdCoolant(
+                    this.coolantTank.getFluid()
+                        .getFluid())) {
                     this.coolantTank.setFluid(null);
                 }
 
-                if (this.hotCoolantTank.getFluid() != null && !CoolantRegistry.isHotCoolant(this.hotCoolantTank.getFluid().getFluid())) {
+                if (this.hotCoolantTank.getFluid() != null && !CoolantRegistry.isHotCoolant(
+                    this.hotCoolantTank.getFluid()
+                        .getFluid())) {
                     this.hotCoolantTank.setFluid(null);
                 }
 
@@ -335,11 +339,15 @@ public class TileReactorCore extends TileEntity
                     this.isActive = worldObj.isBlockIndirectlyGettingPowered(xCoord, yCoord, zCoord);
 
                     for (var dir : DirectionUtil.values()) {
-                        Block block = worldObj.getBlock(dir.offsetX + xCoord, dir.offsetY + yCoord, dir.offsetZ + zCoord);
+                        Block block = worldObj
+                            .getBlock(dir.offsetX + xCoord, dir.offsetY + yCoord, dir.offsetZ + zCoord);
 
                         if (block != BlockList.REACTOR_CHAMBER) continue;
 
-                        this.isActive |= worldObj.isBlockIndirectlyGettingPowered(dir.offsetX + xCoord, dir.offsetY + yCoord, dir.offsetZ + zCoord);
+                        this.isActive |= worldObj.isBlockIndirectlyGettingPowered(
+                            dir.offsetX + xCoord,
+                            dir.offsetY + yCoord,
+                            dir.offsetZ + zCoord);
                     }
                 }
 
@@ -384,7 +392,8 @@ public class TileReactorCore extends TileEntity
     }
 
     private void spawnSmoke(int x, int y, int z) {
-        if (worldObj.getBlock(x, y + 1, z).isBlockNormalCube()) {
+        if (worldObj.getBlock(x, y + 1, z)
+            .isBlockNormalCube()) {
             return;
         }
 
@@ -492,13 +501,19 @@ public class TileReactorCore extends TileEntity
             if (usedAmperes > amperage) break;
 
             ForgeDirection oppositeSide = Objects.requireNonNull(side.getOpposite());
-            TileEntity tTileEntity = emitter.getWorldObj().getTileEntity(emitter.xCoord + side.offsetX, emitter.yCoord + side.offsetY, emitter.zCoord + side.offsetZ);
+            TileEntity tTileEntity = emitter.getWorldObj()
+                .getTileEntity(
+                    emitter.xCoord + side.offsetX,
+                    emitter.yCoord + side.offsetY,
+                    emitter.zCoord + side.offsetZ);
 
             if (tTileEntity instanceof IEnergyConnected energyConnected) {
-                usedAmperes += GTUtility.safeInt(energyConnected.injectEnergyUnits(oppositeSide, voltage, amperage - usedAmperes));
+                usedAmperes += GTUtility
+                    .safeInt(energyConnected.injectEnergyUnits(oppositeSide, voltage, amperage - usedAmperes));
             } else if (tTileEntity instanceof IEnergySink sink) {
                 if (sink.acceptsEnergyFrom(emitter, oppositeSide)) {
-                    while (amperage > usedAmperes && sink.getDemandedEnergy() > 0 && sink.injectEnergy(oppositeSide, voltage, voltage) < voltage) {
+                    while (amperage > usedAmperes && sink.getDemandedEnergy() > 0
+                        && sink.injectEnergy(oppositeSide, voltage, voltage) < voltage) {
                         usedAmperes++;
                     }
                 }
@@ -822,7 +837,9 @@ public class TileReactorCore extends TileEntity
 
         info.add(String.format("§rStored Heat: %s%,d HU§r / §e%,d HU§r", heatColour, storedHeat, getMaxHullHeat()));
         info.add(String.format("§rHeat Generation Rate: §e%,d HU/s§r", addedHeat));
-        if (coolantTank.getFluidAmount() > 0 && coolantTank.getFluid() != null && coolantTank.getFluid().getFluid() != null) {
+        if (coolantTank.getFluidAmount() > 0 && coolantTank.getFluid() != null
+            && coolantTank.getFluid()
+                .getFluid() != null) {
             info.add(
                 String.format(
                     "§rStored Coolant: §a%,d L§r / §e%,d L§r §7%s§r",
@@ -833,7 +850,9 @@ public class TileReactorCore extends TileEntity
         } else {
             info.add(String.format("Stored Coolant: §eEmpty§r"));
         }
-        if (hotCoolantTank.getFluidAmount() > 0 && hotCoolantTank.getFluid() != null && hotCoolantTank.getFluid().getFluid() != null) {
+        if (hotCoolantTank.getFluidAmount() > 0 && hotCoolantTank.getFluid() != null
+            && hotCoolantTank.getFluid()
+                .getFluid() != null) {
             info.add(
                 String.format(
                     "§rStored Hot Coolant: §a%,d L§r / §e%,d L§r §7%s§r",
@@ -846,7 +865,8 @@ public class TileReactorCore extends TileEntity
         }
         info.add(String.format("§rStored Energy: §a%,d§r EU / §e%,d§r EU", storedEU, maxStoredEU));
         info.add(String.format("§rEnergy Generation Rate: §e%,d§r EU/t", addedEU / 20));
-        info.add(String.format("§rMax Out: §c%,d EU/t (%s)§r at §c1§r A", voltage, GTValues.VN[GTUtility.getTier(voltage)]));
+        info.add(
+            String.format("§rMax Out: §c%,d EU/t (%s)§r at §c1§r A", voltage, GTValues.VN[GTUtility.getTier(voltage)]));
 
         return info;
     }
@@ -1014,10 +1034,12 @@ public class TileReactorCore extends TileEntity
 
             // for BWRs, convert distilled water to a configured amount of steam instead of the same quantity of hot
             // coolant
-            if (this.coolantCache.cold.getName().equals("distilled_water")) {
+            if (this.coolantCache.cold.getName()
+                .equals("distilled_water")) {
                 this.coolantTank.drain(consumedCoolant, true);
                 this.hotCoolantTank.setCapacity(200_000);
-                this.hotCoolantTank.fill(new FluidStack(coolantCache.hot, consumedCoolant * Config.BWR_STEAM_PER_HU_MULTIPLIER), true);
+                this.hotCoolantTank
+                    .fill(new FluidStack(coolantCache.hot, consumedCoolant * Config.BWR_STEAM_PER_HU_MULTIPLIER), true);
             } else {
                 this.coolantTank.drain(consumedCoolant, true);
                 this.hotCoolantTank.setCapacity(10_000);
@@ -1035,13 +1057,15 @@ public class TileReactorCore extends TileEntity
 
         int consumedCoolant;
 
-        if (this.coolantCache.cold.getName().equals("distilled_water")) {
+        if (this.coolantCache.cold.getName()
+            .equals("distilled_water")) {
             // BWR
             consumedCoolant = Math.min(
                 roundedHeat / coolantCache.specificHeatCapacity,
                 Math.min(
                     this.coolantTank.getFluidAmount(),
-                    (this.hotCoolantTank.getCapacity() - this.hotCoolantTank.getFluidAmount()) / Config.BWR_STEAM_PER_HU_MULTIPLIER));
+                    (this.hotCoolantTank.getCapacity() - this.hotCoolantTank.getFluidAmount())
+                        / Config.BWR_STEAM_PER_HU_MULTIPLIER));
         } else {
             // conventional coolants
             consumedCoolant = Math.min(roundedHeat / coolantCache.specificHeatCapacity, heatableCoolant);
@@ -1182,14 +1206,8 @@ public class TileReactorCore extends TileEntity
     private void doStructureCheck() {
         resetStructure();
 
-        boolean isFluid = STRUCTURE_DEFINITION.check(
-            this,
-            "fluid",
-            worldObj,
-            ExtendedFacing.DEFAULT,
-            xCoord, yCoord, zCoord,
-            2, 2, 2,
-            false);
+        boolean isFluid = STRUCTURE_DEFINITION
+            .check(this, "fluid", worldObj, ExtendedFacing.DEFAULT, xCoord, yCoord, zCoord, 2, 2, 2, false);
 
         if (isFluid) {
             this.isFluid = true;
@@ -1202,14 +1220,8 @@ public class TileReactorCore extends TileEntity
 
         resetStructure();
 
-        STRUCTURE_DEFINITION.check(
-            this,
-            "eu",
-            worldObj,
-            ExtendedFacing.DEFAULT,
-            xCoord, yCoord, zCoord,
-            1, 1, 1,
-            false);
+        STRUCTURE_DEFINITION
+            .check(this, "eu", worldObj, ExtendedFacing.DEFAULT, xCoord, yCoord, zCoord, 1, 1, 1, false);
 
         dropExtraItems();
         worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
@@ -1219,7 +1231,8 @@ public class TileReactorCore extends TileEntity
     public void construct(ItemStack trigger, boolean hintsOnly) {
         boolean fluid = NHStructureChannels.FLUID.hasValue(trigger) && NHStructureChannels.FLUID.getValue(trigger) == 1;
 
-        remainingChambers = NHStructureChannels.CHAMBERS.hasValue(trigger) ? NHStructureChannels.FLUID.getValue(trigger) : 0;
+        remainingChambers = NHStructureChannels.CHAMBERS.hasValue(trigger) ? NHStructureChannels.FLUID.getValue(trigger)
+            : 0;
 
         if (fluid) {
             STRUCTURE_DEFINITION.buildOrHints(
@@ -1228,8 +1241,12 @@ public class TileReactorCore extends TileEntity
                 "fluid",
                 worldObj,
                 ExtendedFacing.DEFAULT,
-                xCoord, yCoord, zCoord,
-                2, 2, 2,
+                xCoord,
+                yCoord,
+                zCoord,
+                2,
+                2,
+                2,
                 hintsOnly);
         } else {
             STRUCTURE_DEFINITION.buildOrHints(
@@ -1238,8 +1255,12 @@ public class TileReactorCore extends TileEntity
                 "eu",
                 worldObj,
                 ExtendedFacing.DEFAULT,
-                xCoord, yCoord, zCoord,
-                1, 1, 1,
+                xCoord,
+                yCoord,
+                zCoord,
+                1,
+                1,
+                1,
                 hintsOnly);
         }
     }
@@ -1257,8 +1278,12 @@ public class TileReactorCore extends TileEntity
                 "fluid",
                 worldObj,
                 ExtendedFacing.DEFAULT,
-                xCoord, yCoord, zCoord,
-                2, 2, 2,
+                xCoord,
+                yCoord,
+                zCoord,
+                2,
+                2,
+                2,
                 elementBudget,
                 env,
                 true);
@@ -1269,8 +1294,12 @@ public class TileReactorCore extends TileEntity
                 "eu",
                 worldObj,
                 ExtendedFacing.DEFAULT,
-                xCoord, yCoord, zCoord,
-                1, 1, 1,
+                xCoord,
+                yCoord,
+                zCoord,
+                1,
+                1,
+                1,
                 elementBudget,
                 env,
                 true);

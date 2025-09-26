@@ -17,7 +17,7 @@ public class FuelProcessingRecipes {
         registerEnrichmentRecipes();
         registerFuelRecipes();
 
-        //Not sure where to put this one:
+        // Not sure where to put this one:
         registerThoriumLineRecipes();
     }
 
@@ -82,20 +82,15 @@ public class FuelProcessingRecipes {
 
         GTValues.RA.stdBuilder()
             .fluidInputs(THORIANITE_AQ_SOLUTION.getFluid(2000))
-            .fluidOutputs(THORIUM_NITRATE_SOLUTION.getFluid(1900),LOW_URANIUM_SLUDGE.getFluid(100))
+            .fluidOutputs(THORIUM_NITRATE_SOLUTION.getFluid(1900), LOW_URANIUM_SLUDGE.getFluid(100))
             .duration(5 * SECONDS)
             .eut(TierEU.RECIPE_MV)
             .addTo(centrifugeRecipes);
 
-        //15 Thoranite - 10 thorium ~ 1 uranium dust, sounds fair
+        // 15 Thoranite - 10 thorium ~ 1 uranium dust, sounds fair
         GTValues.RA.stdBuilder()
             .fluidInputs(LOW_URANIUM_SLUDGE.getFluid(1000))
-            .itemOutputs(
-                URANIUM232.getDust(1),
-                URANIUM233.getDust(1),
-                URANIUM235.getDust(1),
-                URANIUM238.getDust(1)
-            )
+            .itemOutputs(URANIUM232.getDust(1), URANIUM233.getDust(1), URANIUM235.getDust(1), URANIUM238.getDust(1))
             .fluidOutputs(NITRICACID.getFluid(1000))
             .outputChances(4000, 2000, 100, 1250)
             .duration(20 * SECONDS)
@@ -118,7 +113,6 @@ public class FuelProcessingRecipes {
             .duration(10 * SECONDS)
             .eut(TierEU.RECIPE_HV)
             .addTo(multiblockChemicalReactorRecipes);
-
 
     }
 

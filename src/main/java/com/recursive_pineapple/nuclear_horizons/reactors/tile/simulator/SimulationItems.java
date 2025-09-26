@@ -8,7 +8,6 @@ import net.minecraft.item.Item;
 
 import com.recursive_pineapple.nuclear_horizons.reactors.items.ItemList;
 
-
 public class SimulationItems {
 
     private static final HashMap<Integer, Item> reactorItemsById = new HashMap<>();

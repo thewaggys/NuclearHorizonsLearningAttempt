@@ -7,8 +7,9 @@ import static com.recursive_pineapple.nuclear_horizons.reactors.items.material.M
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import bartworks.system.material.Werkstoff;
 import com.recursive_pineapple.nuclear_horizons.recipes.GTMats;
+
+import bartworks.system.material.Werkstoff;
 import gregtech.api.enums.TextureSet;
 
 public class MaterialsChemical {
@@ -84,7 +85,8 @@ public class MaterialsChemical {
         new short[] { 225, 245, 225 },
         "Hot Lithium Tetrafluoroberyllate",
         process("Li↓2BeF↓4"),
-        new Werkstoff.Stats().setElektrolysis(false).setBoilingPoint(1700),
+        new Werkstoff.Stats().setElektrolysis(false)
+            .setBoilingPoint(1700),
         Werkstoff.Types.COMPOUND,
         FLUID,
         MaterialIDs.HOT_LITHIUM_TETRAFLUOROBERYLLATE.id,

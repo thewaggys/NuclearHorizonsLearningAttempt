@@ -1,22 +1,18 @@
 package com.recursive_pineapple.nuclear_horizons.recipes;
 
 import static com.recursive_pineapple.nuclear_horizons.recipes.GTMats.*;
-import static gregtech.api.recipe.RecipeMaps.autoclaveRecipes;
-import static gregtech.api.recipe.RecipeMaps.blastFurnaceRecipes;
 import static gregtech.api.recipe.RecipeMaps.distillationTowerRecipes;
 import static gregtech.api.recipe.RecipeMaps.distilleryRecipes;
-import static gregtech.api.recipe.RecipeMaps.fluidHeaterRecipes;
 import static gregtech.api.recipe.RecipeMaps.mixerRecipes;
 import static gregtech.api.recipe.RecipeMaps.vacuumFreezerRecipes;
 import static gregtech.api.util.GTRecipeBuilder.SECONDS;
-import static gregtech.api.util.GTRecipeConstants.UniversalChemical;
 
 import net.minecraftforge.fluids.FluidStack;
 
 import com.recursive_pineapple.nuclear_horizons.reactors.fluids.CoolantRegistry;
 import com.recursive_pineapple.nuclear_horizons.reactors.fluids.FluidList;
+
 import gregtech.api.enums.GTValues;
-import gregtech.api.enums.ItemList;
 import gregtech.api.enums.TierEU;
 import gregtech.api.registries.LHECoolantRegistry;
 import gregtech.api.util.GTUtility;
@@ -54,10 +50,19 @@ public class CoolantRecipes {
             .eut(TierEU.RECIPE_IV)
             .addTo(vacuumFreezerRecipes);
 
-        CoolantRegistry.registerCoolant(LI2BEF4.getFluid(1).getFluid(), HOT_LITHIUM_TETRAFLUOROBERYLLATE.getFluid(1).getFluid(), 16);
+        CoolantRegistry.registerCoolant(
+            LI2BEF4.getFluid(1)
+                .getFluid(),
+            HOT_LITHIUM_TETRAFLUOROBERYLLATE.getFluid(1)
+                .getFluid(),
+            16);
         LHECoolantRegistry.registerCoolant(
-            LI2BEF4.getFluid(1).getFluid().getName(),
-            HOT_LITHIUM_TETRAFLUOROBERYLLATE.getFluid(1).getFluid().getName(),
+            LI2BEF4.getFluid(1)
+                .getFluid()
+                .getName(),
+            HOT_LITHIUM_TETRAFLUOROBERYLLATE.getFluid(1)
+                .getFluid()
+                .getName(),
             1.0 / 2.0 * 16.0,
             1.0 / 5.0 / 16.0);
 

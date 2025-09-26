@@ -308,16 +308,52 @@ public class ItemList {
     }
 
     public static void setupMaterials() {
-        THORIUM_1X_ROD.setSpargeGas(GTMats.NEON.getFluid(1).getFluid(), 2, 8);
-        THORIUM_2X_ROD.setSpargeGas(GTMats.NEON.getFluid(1).getFluid(), 4, 16);
-        THORIUM_4X_ROD.setSpargeGas(GTMats.NEON.getFluid(1).getFluid(), 8, 32);
+        THORIUM_1X_ROD.setSpargeGas(
+            GTMats.NEON.getFluid(1)
+                .getFluid(),
+            2,
+            8);
+        THORIUM_2X_ROD.setSpargeGas(
+            GTMats.NEON.getFluid(1)
+                .getFluid(),
+            4,
+            16);
+        THORIUM_4X_ROD.setSpargeGas(
+            GTMats.NEON.getFluid(1)
+                .getFluid(),
+            8,
+            32);
 
-        URANIUM_1X_ROD.setSpargeGas(GTMats.RADON.getFluid(1).getFluid(), 2, 8);
-        URANIUM_2X_ROD.setSpargeGas(GTMats.RADON.getFluid(1).getFluid(), 4, 16);
-        URANIUM_4X_ROD.setSpargeGas(GTMats.RADON.getFluid(1).getFluid(), 8, 32);
+        URANIUM_1X_ROD.setSpargeGas(
+            GTMats.RADON.getFluid(1)
+                .getFluid(),
+            2,
+            8);
+        URANIUM_2X_ROD.setSpargeGas(
+            GTMats.RADON.getFluid(1)
+                .getFluid(),
+            4,
+            16);
+        URANIUM_4X_ROD.setSpargeGas(
+            GTMats.RADON.getFluid(1)
+                .getFluid(),
+            8,
+            32);
 
-        MOX_1X_ROD.setSpargeGas(GTMats.KRYPTON.getFluid(1).getFluid(), 2, 8);
-        MOX_2X_ROD.setSpargeGas(GTMats.KRYPTON.getFluid(1).getFluid(), 4, 16);
-        MOX_4X_ROD.setSpargeGas(GTMats.KRYPTON.getFluid(1).getFluid(), 8, 32);
+        MOX_1X_ROD.setSpargeGas(
+            GTMats.KRYPTON.getFluid(1)
+                .getFluid(),
+            2,
+            8);
+        MOX_2X_ROD.setSpargeGas(
+            GTMats.KRYPTON.getFluid(1)
+                .getFluid(),
+            4,
+            16);
+        MOX_4X_ROD.setSpargeGas(
+            GTMats.KRYPTON.getFluid(1)
+                .getFluid(),
+            8,
+            32);
     }
 }

@@ -1,8 +1,9 @@
 package com.recursive_pineapple.nuclear_horizons.recipes;
 
-import bartworks.system.material.WerkstoffLoader;
-import com.recursive_pineapple.nuclear_horizons.reactors.items.material.MaterialsNuclear;
 import com.recursive_pineapple.nuclear_horizons.reactors.items.material.MaterialsChemical;
+import com.recursive_pineapple.nuclear_horizons.reactors.items.material.MaterialsNuclear;
+
+import bartworks.system.material.WerkstoffLoader;
 import goodgenerator.items.GGMaterial;
 import gregtech.api.enums.Materials;
 import gregtech.api.enums.MaterialsKevlar;
@@ -17,9 +18,10 @@ import gtnhlanth.common.register.WerkstoffMaterialPool;
 
 @SuppressWarnings("unused")
 public class GTMats {
-    private GTMats() { }
 
-    //#region src/main/java/gregtech/api/enums/Materials.java
+    private GTMats() {}
+
+    // #region src/main/java/gregtech/api/enums/Materials.java
     public static final MaterialWrapper ALUMINIUM = MaterialWrapper.of(() -> Materials.Aluminium);
     public static final MaterialWrapper AMERICIUM = MaterialWrapper.of(() -> Materials.Americium);
     public static final MaterialWrapper ANTIMONY = MaterialWrapper.of(() -> Materials.Antimony);
@@ -111,7 +113,8 @@ public class GTMats {
     public static final MaterialWrapper GRADE6PURIFIEDWATER = MaterialWrapper.of(() -> Materials.Grade6PurifiedWater);
     public static final MaterialWrapper GRADE7PURIFIEDWATER = MaterialWrapper.of(() -> Materials.Grade7PurifiedWater);
     public static final MaterialWrapper GRADE8PURIFIEDWATER = MaterialWrapper.of(() -> Materials.Grade8PurifiedWater);
-    public static final MaterialWrapper FLOCCULATIONWASTELIQUID = MaterialWrapper.of(() -> Materials.FlocculationWasteLiquid);
+    public static final MaterialWrapper FLOCCULATIONWASTELIQUID = MaterialWrapper
+        .of(() -> Materials.FlocculationWasteLiquid);
     public static final MaterialWrapper FLEROVIUM = MaterialWrapper.of(() -> Materials.Flerovium);
     public static final MaterialWrapper ORGANIC = MaterialWrapper.of(() -> Materials.Organic);
     public static final MaterialWrapper ANYCOPPER = MaterialWrapper.of(() -> Materials.AnyCopper);
@@ -196,7 +199,8 @@ public class GTMats {
     public static final MaterialWrapper EMERY = MaterialWrapper.of(() -> Materials.Emery);
     public static final MaterialWrapper ENDERIUMBASE = MaterialWrapper.of(() -> Materials.EnderiumBase);
     public static final MaterialWrapper ENERGIZED = MaterialWrapper.of(() -> Materials.Energized);
-//    public static final MaterialWrapper EPIDOTE = MaterialWrapper.of(() -> Materials.Epidote); I think this is depricated, but not sure what its replaced by
+    // public static final MaterialWrapper EPIDOTE = MaterialWrapper.of(() -> Materials.Epidote); I think this is
+    // depricated, but not sure what its replaced by
     public static final MaterialWrapper EXIMITE = MaterialWrapper.of(() -> Materials.Eximite);
     public static final MaterialWrapper FIERYSTEEL = MaterialWrapper.of(() -> Materials.FierySteel);
     public static final MaterialWrapper FIRESTONE = MaterialWrapper.of(() -> Materials.Firestone);
@@ -389,7 +393,8 @@ public class GTMats {
     public static final MaterialWrapper ILMENITE = MaterialWrapper.of(() -> Materials.Ilmenite);
     public static final MaterialWrapper RUTILE = MaterialWrapper.of(() -> Materials.Rutile);
     public static final MaterialWrapper BAUXITE = MaterialWrapper.of(() -> Materials.Bauxite);
-    public static final MaterialWrapper TITANIUMTETRACHLORIDE = MaterialWrapper.of(() -> Materials.Titaniumtetrachloride);
+    public static final MaterialWrapper TITANIUMTETRACHLORIDE = MaterialWrapper
+        .of(() -> Materials.Titaniumtetrachloride);
     public static final MaterialWrapper MAGNESIUMCHLORIDE = MaterialWrapper.of(() -> Materials.Magnesiumchloride);
     public static final MaterialWrapper INVAR = MaterialWrapper.of(() -> Materials.Invar);
     public static final MaterialWrapper KANTHAL = MaterialWrapper.of(() -> Materials.Kanthal);
@@ -411,7 +416,8 @@ public class GTMats {
     public static final MaterialWrapper POLYDIMETHYLSILOXANE = MaterialWrapper.of(() -> Materials.Polydimethylsiloxane);
     public static final MaterialWrapper SILICONE = MaterialWrapper.of(() -> Materials.Silicone);
     public static final MaterialWrapper POLYCAPROLACTAM = MaterialWrapper.of(() -> Materials.Polycaprolactam);
-    public static final MaterialWrapper POLYTETRAFLUOROETHYLENE = MaterialWrapper.of(() -> Materials.Polytetrafluoroethylene);
+    public static final MaterialWrapper POLYTETRAFLUOROETHYLENE = MaterialWrapper
+        .of(() -> Materials.Polytetrafluoroethylene);
     public static final MaterialWrapper POWELLITE = MaterialWrapper.of(() -> Materials.Powellite);
     public static final MaterialWrapper PUMICE = MaterialWrapper.of(() -> Materials.Pumice);
     public static final MaterialWrapper PYRITE = MaterialWrapper.of(() -> Materials.Pyrite);
@@ -448,10 +454,12 @@ public class GTMats {
     public static final MaterialWrapper BIOMEDIUMRAW = MaterialWrapper.of(() -> Materials.BioMediumRaw);
     public static final MaterialWrapper BIOMEDIUMSTERILIZED = MaterialWrapper.of(() -> Materials.BioMediumSterilized);
     public static final MaterialWrapper CHLOROBENZENE = MaterialWrapper.of(() -> Materials.Chlorobenzene);
-    public static final MaterialWrapper DILUTEDHYDROCHLORICACID = MaterialWrapper.of(() -> Materials.DilutedHydrochloricAcid);
+    public static final MaterialWrapper DILUTEDHYDROCHLORICACID = MaterialWrapper
+        .of(() -> Materials.DilutedHydrochloricAcid);
     public static final MaterialWrapper PYROCHLORE = MaterialWrapper.of(() -> Materials.Pyrochlore);
     public static final MaterialWrapper GROWTHMEDIUMRAW = MaterialWrapper.of(() -> Materials.GrowthMediumRaw);
-    public static final MaterialWrapper GROWTHMEDIUMSTERILIZED = MaterialWrapper.of(() -> Materials.GrowthMediumSterilized);
+    public static final MaterialWrapper GROWTHMEDIUMSTERILIZED = MaterialWrapper
+        .of(() -> Materials.GrowthMediumSterilized);
     public static final MaterialWrapper FERRITEMIXTURE = MaterialWrapper.of(() -> Materials.FerriteMixture);
     public static final MaterialWrapper NICKELZINCFERRITE = MaterialWrapper.of(() -> Materials.NickelZincFerrite);
     public static final MaterialWrapper MASSICOT = MaterialWrapper.of(() -> Materials.Massicot);
@@ -481,8 +489,10 @@ public class GTMats {
     public static final MaterialWrapper BUTANE = MaterialWrapper.of(() -> Materials.Butane);
     public static final MaterialWrapper BUTENE = MaterialWrapper.of(() -> Materials.Butene);
     public static final MaterialWrapper BUTADIENE = MaterialWrapper.of(() -> Materials.Butadiene);
-    public static final MaterialWrapper RAWSTYRENEBUTADIENERUBBER = MaterialWrapper.of(() -> Materials.RawStyreneButadieneRubber);
-    public static final MaterialWrapper STYRENEBUTADIENERUBBER = MaterialWrapper.of(() -> Materials.StyreneButadieneRubber);
+    public static final MaterialWrapper RAWSTYRENEBUTADIENERUBBER = MaterialWrapper
+        .of(() -> Materials.RawStyreneButadieneRubber);
+    public static final MaterialWrapper STYRENEBUTADIENERUBBER = MaterialWrapper
+        .of(() -> Materials.StyreneButadieneRubber);
     public static final MaterialWrapper TOLUENE = MaterialWrapper.of(() -> Materials.Toluene);
     public static final MaterialWrapper EPICHLOROHYDRIN = MaterialWrapper.of(() -> Materials.Epichlorohydrin);
     public static final MaterialWrapper POLYVINYLCHLORIDE = MaterialWrapper.of(() -> Materials.PolyvinylChloride);
@@ -496,7 +506,8 @@ public class GTMats {
     public static final MaterialWrapper DINITROGENTETROXIDE = MaterialWrapper.of(() -> Materials.DinitrogenTetroxide);
     public static final MaterialWrapper NITRICOXIDE = MaterialWrapper.of(() -> Materials.NitricOxide);
     public static final MaterialWrapper AMMONIA = MaterialWrapper.of(() -> Materials.Ammonia);
-    public static final MaterialWrapper DIMETHYLDICHLOROSILANE = MaterialWrapper.of(() -> Materials.Dimethyldichlorosilane);
+    public static final MaterialWrapper DIMETHYLDICHLOROSILANE = MaterialWrapper
+        .of(() -> Materials.Dimethyldichlorosilane);
     public static final MaterialWrapper CHLOROMETHANE = MaterialWrapper.of(() -> Materials.Chloromethane);
     public static final MaterialWrapper PHOSPHOROUSPENTOXIDE = MaterialWrapper.of(() -> Materials.PhosphorousPentoxide);
     public static final MaterialWrapper TETRAFLUOROETHYLENE = MaterialWrapper.of(() -> Materials.Tetrafluoroethylene);
@@ -504,7 +515,8 @@ public class GTMats {
     public static final MaterialWrapper CHLOROFORM = MaterialWrapper.of(() -> Materials.Chloroform);
     public static final MaterialWrapper BISPHENOLA = MaterialWrapper.of(() -> Materials.BisphenolA);
     public static final MaterialWrapper ACETICACID = MaterialWrapper.of(() -> Materials.AceticAcid);
-    public static final MaterialWrapper CALCIUMACETATESOLUTION = MaterialWrapper.of(() -> Materials.CalciumAcetateSolution);
+    public static final MaterialWrapper CALCIUMACETATESOLUTION = MaterialWrapper
+        .of(() -> Materials.CalciumAcetateSolution);
     public static final MaterialWrapper ACETONE = MaterialWrapper.of(() -> Materials.Acetone);
     public static final MaterialWrapper METHANOL = MaterialWrapper.of(() -> Materials.Methanol);
     public static final MaterialWrapper CARBONMONOXIDE = MaterialWrapper.of(() -> Materials.CarbonMonoxide);
@@ -546,7 +558,8 @@ public class GTMats {
     public static final MaterialWrapper ALUMINIUMFLUORIDE = MaterialWrapper.of(() -> Materials.AluminiumFluoride);
     public static final MaterialWrapper SOLDERINGALLOY = MaterialWrapper.of(() -> Materials.SolderingAlloy);
     public static final MaterialWrapper GALLIUMARSENIDE = MaterialWrapper.of(() -> Materials.GalliumArsenide);
-    public static final MaterialWrapper INDIUMGALLIUMPHOSPHIDE = MaterialWrapper.of(() -> Materials.IndiumGalliumPhosphide);
+    public static final MaterialWrapper INDIUMGALLIUMPHOSPHIDE = MaterialWrapper
+        .of(() -> Materials.IndiumGalliumPhosphide);
     public static final MaterialWrapper SPESSARTINE = MaterialWrapper.of(() -> Materials.Spessartine);
     public static final MaterialWrapper SPHALERITE = MaterialWrapper.of(() -> Materials.Sphalerite);
     public static final MaterialWrapper STAINLESSSTEEL = MaterialWrapper.of(() -> Materials.StainlessSteel);
@@ -668,7 +681,8 @@ public class GTMats {
     public static final MaterialWrapper HSSS = MaterialWrapper.of(() -> Materials.HSSS);
     public static final MaterialWrapper TPV = MaterialWrapper.of(() -> Materials.TPV);
     public static final MaterialWrapper DILUTEDSULFURICACID = MaterialWrapper.of(() -> Materials.DilutedSulfuricAcid);
-    public static final MaterialWrapper EPOXIDFIBERREINFORCED = MaterialWrapper.of(() -> Materials.EpoxidFiberReinforced);
+    public static final MaterialWrapper EPOXIDFIBERREINFORCED = MaterialWrapper
+        .of(() -> Materials.EpoxidFiberReinforced);
     public static final MaterialWrapper SODIUMCARBONATE = MaterialWrapper.of(() -> Materials.SodiumCarbonate);
     public static final MaterialWrapper SODIUMALUMINATE = MaterialWrapper.of(() -> Materials.SodiumAluminate);
     public static final MaterialWrapper ALUMINIUMOXIDE = MaterialWrapper.of(() -> Materials.Aluminiumoxide);
@@ -736,17 +750,26 @@ public class GTMats {
     public static final MaterialWrapper TRINIUM = MaterialWrapper.of(() -> Materials.Trinium);
     public static final MaterialWrapper ICHORIUM = MaterialWrapper.of(() -> Materials.Ichorium);
     public static final MaterialWrapper COSMICNEUTRONIUM = MaterialWrapper.of(() -> Materials.CosmicNeutronium);
-    public static final MaterialWrapper PENTACADMIUMMAGNESIUMHEXAOXID = MaterialWrapper.of(() -> Materials.Pentacadmiummagnesiumhexaoxid);
-    public static final MaterialWrapper TITANIUMONABARIUMDECACOPPEREIKOSAOXID = MaterialWrapper.of(() -> Materials.Titaniumonabariumdecacoppereikosaoxid);
+    public static final MaterialWrapper PENTACADMIUMMAGNESIUMHEXAOXID = MaterialWrapper
+        .of(() -> Materials.Pentacadmiummagnesiumhexaoxid);
+    public static final MaterialWrapper TITANIUMONABARIUMDECACOPPEREIKOSAOXID = MaterialWrapper
+        .of(() -> Materials.Titaniumonabariumdecacoppereikosaoxid);
     public static final MaterialWrapper URANIUMTRIPLATINID = MaterialWrapper.of(() -> Materials.Uraniumtriplatinid);
     public static final MaterialWrapper VANADIUMTRIINDINID = MaterialWrapper.of(() -> Materials.Vanadiumtriindinid);
-    public static final MaterialWrapper TETRAINDIUMDITINDIBARIUMTITANIUMHEPTACOPPERTETRAKAIDEKAOXID = MaterialWrapper.of(() -> Materials.Tetraindiumditindibariumtitaniumheptacoppertetrakaidekaoxid);
-    public static final MaterialWrapper TETRANAQUADAHDIINDIUMHEXAPLATIUMOSMINID = MaterialWrapper.of(() -> Materials.Tetranaquadahdiindiumhexaplatiumosminid);
-    public static final MaterialWrapper LONGASSSUPERCONDUCTORNAMEFORUVWIRE = MaterialWrapper.of(() -> Materials.Longasssuperconductornameforuvwire);
-    public static final MaterialWrapper LONGASSSUPERCONDUCTORNAMEFORUHVWIRE = MaterialWrapper.of(() -> Materials.Longasssuperconductornameforuhvwire);
-    public static final MaterialWrapper SUPERCONDUCTORUEVBASE = MaterialWrapper.of(() -> Materials.SuperconductorUEVBase);
-    public static final MaterialWrapper SUPERCONDUCTORUIVBASE = MaterialWrapper.of(() -> Materials.SuperconductorUIVBase);
-    public static final MaterialWrapper SUPERCONDUCTORUMVBASE = MaterialWrapper.of(() -> Materials.SuperconductorUMVBase);
+    public static final MaterialWrapper TETRAINDIUMDITINDIBARIUMTITANIUMHEPTACOPPERTETRAKAIDEKAOXID = MaterialWrapper
+        .of(() -> Materials.Tetraindiumditindibariumtitaniumheptacoppertetrakaidekaoxid);
+    public static final MaterialWrapper TETRANAQUADAHDIINDIUMHEXAPLATIUMOSMINID = MaterialWrapper
+        .of(() -> Materials.Tetranaquadahdiindiumhexaplatiumosminid);
+    public static final MaterialWrapper LONGASSSUPERCONDUCTORNAMEFORUVWIRE = MaterialWrapper
+        .of(() -> Materials.Longasssuperconductornameforuvwire);
+    public static final MaterialWrapper LONGASSSUPERCONDUCTORNAMEFORUHVWIRE = MaterialWrapper
+        .of(() -> Materials.Longasssuperconductornameforuhvwire);
+    public static final MaterialWrapper SUPERCONDUCTORUEVBASE = MaterialWrapper
+        .of(() -> Materials.SuperconductorUEVBase);
+    public static final MaterialWrapper SUPERCONDUCTORUIVBASE = MaterialWrapper
+        .of(() -> Materials.SuperconductorUIVBase);
+    public static final MaterialWrapper SUPERCONDUCTORUMVBASE = MaterialWrapper
+        .of(() -> Materials.SuperconductorUMVBase);
     public static final MaterialWrapper SUPERCONDUCTORMV = MaterialWrapper.of(() -> Materials.SuperconductorMV);
     public static final MaterialWrapper SUPERCONDUCTORHV = MaterialWrapper.of(() -> Materials.SuperconductorHV);
     public static final MaterialWrapper SUPERCONDUCTOREV = MaterialWrapper.of(() -> Materials.SuperconductorEV);
@@ -766,7 +789,8 @@ public class GTMats {
     public static final MaterialWrapper ACTIVATEDCARBON = MaterialWrapper.of(() -> Materials.ActivatedCarbon);
     public static final MaterialWrapper PREACTIVATEDCARBON = MaterialWrapper.of(() -> Materials.PreActivatedCarbon);
     public static final MaterialWrapper DIRTYACTIVATEDCARBON = MaterialWrapper.of(() -> Materials.DirtyActivatedCarbon);
-    public static final MaterialWrapper POLYALUMINIUMCHLORIDE = MaterialWrapper.of(() -> Materials.PolyAluminiumChloride);
+    public static final MaterialWrapper POLYALUMINIUMCHLORIDE = MaterialWrapper
+        .of(() -> Materials.PolyAluminiumChloride);
     public static final MaterialWrapper OZONE = MaterialWrapper.of(() -> Materials.Ozone);
     public static final MaterialWrapper STABLEBARYONICMATTER = MaterialWrapper.of(() -> Materials.StableBaryonicMatter);
     public static final MaterialWrapper RAWRADOX = MaterialWrapper.of(() -> Materials.RawRadox);
@@ -788,15 +812,19 @@ public class GTMats {
     public static final MaterialWrapper HELLISHMETAL = MaterialWrapper.of(() -> Materials.HellishMetal);
     public static final MaterialWrapper NETHERITE = MaterialWrapper.of(() -> Materials.Netherite);
     public static final MaterialWrapper ACTIVATEDNETHERITE = MaterialWrapper.of(() -> Materials.ActivatedNetherite);
-    //#endregion
+    // #endregion
 
-    //#region src/main/java/gregtech/api/enums/MaterialsKevlar.java
-    public static final MaterialWrapper DIPHENYLMETHANEDIISOCYANATE = MaterialWrapper.of(() -> MaterialsKevlar.DiphenylmethaneDiisocyanate);
-    public static final MaterialWrapper DIAMINODIPHENYLMETHANMIXTURE = MaterialWrapper.of(() -> MaterialsKevlar.DiaminodiphenylmethanMixture);
-    public static final MaterialWrapper DIPHENYLMETHANEDIISOCYANATEMIXTURE = MaterialWrapper.of(() -> MaterialsKevlar.DiphenylmethaneDiisocyanateMixture);
+    // #region src/main/java/gregtech/api/enums/MaterialsKevlar.java
+    public static final MaterialWrapper DIPHENYLMETHANEDIISOCYANATE = MaterialWrapper
+        .of(() -> MaterialsKevlar.DiphenylmethaneDiisocyanate);
+    public static final MaterialWrapper DIAMINODIPHENYLMETHANMIXTURE = MaterialWrapper
+        .of(() -> MaterialsKevlar.DiaminodiphenylmethanMixture);
+    public static final MaterialWrapper DIPHENYLMETHANEDIISOCYANATEMIXTURE = MaterialWrapper
+        .of(() -> MaterialsKevlar.DiphenylmethaneDiisocyanateMixture);
     public static final MaterialWrapper BUTYRALDEHYDE = MaterialWrapper.of(() -> MaterialsKevlar.Butyraldehyde);
     public static final MaterialWrapper ISOBUTYRALDEHYDE = MaterialWrapper.of(() -> MaterialsKevlar.Isobutyraldehyde);
-    public static final MaterialWrapper NICKELTETRACARBONYL = MaterialWrapper.of(() -> MaterialsKevlar.NickelTetracarbonyl);
+    public static final MaterialWrapper NICKELTETRACARBONYL = MaterialWrapper
+        .of(() -> MaterialsKevlar.NickelTetracarbonyl);
     public static final MaterialWrapper KEVLARCATALYST = MaterialWrapper.of(() -> MaterialsKevlar.KevlarCatalyst);
     public static final MaterialWrapper ETHYLENEOXIDE = MaterialWrapper.of(() -> MaterialsKevlar.EthyleneOxide);
     public static final MaterialWrapper SILICONOIL = MaterialWrapper.of(() -> MaterialsKevlar.SiliconOil);
@@ -804,57 +832,77 @@ public class GTMats {
     public static final MaterialWrapper ACETALDEHYDE = MaterialWrapper.of(() -> MaterialsKevlar.Acetaldehyde);
     public static final MaterialWrapper PENTAERYTHRITOL = MaterialWrapper.of(() -> MaterialsKevlar.Pentaerythritol);
     public static final MaterialWrapper POLYURETHANERESIN = MaterialWrapper.of(() -> MaterialsKevlar.PolyurethaneResin);
-    public static final MaterialWrapper NMETHYLIIPYRROLIDONE = MaterialWrapper.of(() -> MaterialsKevlar.NMethylIIPyrrolidone);
-    public static final MaterialWrapper TEREPHTHALOYLCHLORIDE = MaterialWrapper.of(() -> MaterialsKevlar.TerephthaloylChloride);
+    public static final MaterialWrapper NMETHYLIIPYRROLIDONE = MaterialWrapper
+        .of(() -> MaterialsKevlar.NMethylIIPyrrolidone);
+    public static final MaterialWrapper TEREPHTHALOYLCHLORIDE = MaterialWrapper
+        .of(() -> MaterialsKevlar.TerephthaloylChloride);
     public static final MaterialWrapper ACETYLENE = MaterialWrapper.of(() -> MaterialsKevlar.Acetylene);
     public static final MaterialWrapper IVNITROANILINE = MaterialWrapper.of(() -> MaterialsKevlar.IVNitroaniline);
-    public static final MaterialWrapper PARAPHENYLENEDIAMINE = MaterialWrapper.of(() -> MaterialsKevlar.ParaPhenylenediamine);
+    public static final MaterialWrapper PARAPHENYLENEDIAMINE = MaterialWrapper
+        .of(() -> MaterialsKevlar.ParaPhenylenediamine);
     public static final MaterialWrapper METHYLAMINE = MaterialWrapper.of(() -> MaterialsKevlar.Methylamine);
     public static final MaterialWrapper TRIMETHYLAMINE = MaterialWrapper.of(() -> MaterialsKevlar.Trimethylamine);
-    public static final MaterialWrapper GAMMABUTYROLACTONE = MaterialWrapper.of(() -> MaterialsKevlar.GammaButyrolactone);
+    public static final MaterialWrapper GAMMABUTYROLACTONE = MaterialWrapper
+        .of(() -> MaterialsKevlar.GammaButyrolactone);
     public static final MaterialWrapper CALCIUMCARBIDE = MaterialWrapper.of(() -> MaterialsKevlar.CalciumCarbide);
-    public static final MaterialWrapper LIQUIDCRYSTALKEVLAR = MaterialWrapper.of(() -> MaterialsKevlar.LiquidCrystalKevlar);
+    public static final MaterialWrapper LIQUIDCRYSTALKEVLAR = MaterialWrapper
+        .of(() -> MaterialsKevlar.LiquidCrystalKevlar);
     public static final MaterialWrapper IIBUTINIIVDIOL = MaterialWrapper.of(() -> MaterialsKevlar.IIButinIIVdiol);
     public static final MaterialWrapper NICKELALUMINIDE = MaterialWrapper.of(() -> MaterialsKevlar.NickelAluminide);
-    public static final MaterialWrapper RANEYNICKELACTIVATED = MaterialWrapper.of(() -> MaterialsKevlar.RaneyNickelActivated);
+    public static final MaterialWrapper RANEYNICKELACTIVATED = MaterialWrapper
+        .of(() -> MaterialsKevlar.RaneyNickelActivated);
     public static final MaterialWrapper BISMUTHIIIOXIDE = MaterialWrapper.of(() -> MaterialsKevlar.BismuthIIIOxide);
     public static final MaterialWrapper THIONYLCHLORIDE = MaterialWrapper.of(() -> MaterialsKevlar.ThionylChloride);
     public static final MaterialWrapper SULFURDICHLORIDE = MaterialWrapper.of(() -> MaterialsKevlar.SulfurDichloride);
-    public static final MaterialWrapper DIMETHYLTEREPHTHALATE = MaterialWrapper.of(() -> MaterialsKevlar.DimethylTerephthalate);
+    public static final MaterialWrapper DIMETHYLTEREPHTHALATE = MaterialWrapper
+        .of(() -> MaterialsKevlar.DimethylTerephthalate);
     public static final MaterialWrapper KEVLAR = MaterialWrapper.of(() -> MaterialsKevlar.Kevlar);
     public static final MaterialWrapper TEREPHTHALICACID = MaterialWrapper.of(() -> MaterialsKevlar.TerephthalicAcid);
-    public static final MaterialWrapper IIIDIMETHYLBENZENE = MaterialWrapper.of(() -> MaterialsKevlar.IIIDimethylbenzene);
+    public static final MaterialWrapper IIIDIMETHYLBENZENE = MaterialWrapper
+        .of(() -> MaterialsKevlar.IIIDimethylbenzene);
     public static final MaterialWrapper IVDIMETHYLBENZENE = MaterialWrapper.of(() -> MaterialsKevlar.IVDimethylbenzene);
-    public static final MaterialWrapper COBALTIINAPHTHENATE = MaterialWrapper.of(() -> MaterialsKevlar.CobaltIINaphthenate);
+    public static final MaterialWrapper COBALTIINAPHTHENATE = MaterialWrapper
+        .of(() -> MaterialsKevlar.CobaltIINaphthenate);
     public static final MaterialWrapper NAPHTHENICACID = MaterialWrapper.of(() -> MaterialsKevlar.NaphthenicAcid);
     public static final MaterialWrapper COBALTIIHYDROXIDE = MaterialWrapper.of(() -> MaterialsKevlar.CobaltIIHydroxide);
     public static final MaterialWrapper COBALTIIACETATE = MaterialWrapper.of(() -> MaterialsKevlar.CobaltIIAcetate);
     public static final MaterialWrapper COBALTIINITRATE = MaterialWrapper.of(() -> MaterialsKevlar.CobaltIINitrate);
-    public static final MaterialWrapper ORGANORHODIUMCATALYST = MaterialWrapper.of(() -> MaterialsKevlar.OrganorhodiumCatalyst);
+    public static final MaterialWrapper ORGANORHODIUMCATALYST = MaterialWrapper
+        .of(() -> MaterialsKevlar.OrganorhodiumCatalyst);
     public static final MaterialWrapper SODIUMBOROHYDRIDE = MaterialWrapper.of(() -> MaterialsKevlar.SodiumBorohydride);
     public static final MaterialWrapper RHODIUMCHLORIDE = MaterialWrapper.of(() -> MaterialsKevlar.RhodiumChloride);
-    public static final MaterialWrapper TRIPHENYLPHOSPHENE = MaterialWrapper.of(() -> MaterialsKevlar.Triphenylphosphene);
-    public static final MaterialWrapper PHOSPHORUSTRICHLORIDE = MaterialWrapper.of(() -> MaterialsKevlar.PhosphorusTrichloride);
+    public static final MaterialWrapper TRIPHENYLPHOSPHENE = MaterialWrapper
+        .of(() -> MaterialsKevlar.Triphenylphosphene);
+    public static final MaterialWrapper PHOSPHORUSTRICHLORIDE = MaterialWrapper
+        .of(() -> MaterialsKevlar.PhosphorusTrichloride);
     public static final MaterialWrapper SODIUMHYDRIDE = MaterialWrapper.of(() -> MaterialsKevlar.SodiumHydride);
     public static final MaterialWrapper TRIMETHYLBORATE = MaterialWrapper.of(() -> MaterialsKevlar.TrimethylBorate);
     public static final MaterialWrapper SODIUMMETHOXIDE = MaterialWrapper.of(() -> MaterialsKevlar.SodiumMethoxide);
-    //#endregion
+    // #endregion
 
-    //#region src/main/java/gregtech/api/enums/MaterialsUEVplus.java
-    public static final MaterialWrapper DIMENSIONALLYTRANSCENDENTCRUDECATALYST = MaterialWrapper.of(() -> MaterialsUEVplus.DimensionallyTranscendentCrudeCatalyst);
-    public static final MaterialWrapper DIMENSIONALLYTRANSCENDENTPROSAICCATALYST = MaterialWrapper.of(() -> MaterialsUEVplus.DimensionallyTranscendentProsaicCatalyst);
-    public static final MaterialWrapper DIMENSIONALLYTRANSCENDENTRESPLENDENTCATALYST = MaterialWrapper.of(() -> MaterialsUEVplus.DimensionallyTranscendentResplendentCatalyst);
-    public static final MaterialWrapper DIMENSIONALLYTRANSCENDENTEXOTICCATALYST = MaterialWrapper.of(() -> MaterialsUEVplus.DimensionallyTranscendentExoticCatalyst);
-    public static final MaterialWrapper DIMENSIONALLYTRANSCENDENTSTELLARCATALYST = MaterialWrapper.of(() -> MaterialsUEVplus.DimensionallyTranscendentStellarCatalyst);
+    // #region src/main/java/gregtech/api/enums/MaterialsUEVplus.java
+    public static final MaterialWrapper DIMENSIONALLYTRANSCENDENTCRUDECATALYST = MaterialWrapper
+        .of(() -> MaterialsUEVplus.DimensionallyTranscendentCrudeCatalyst);
+    public static final MaterialWrapper DIMENSIONALLYTRANSCENDENTPROSAICCATALYST = MaterialWrapper
+        .of(() -> MaterialsUEVplus.DimensionallyTranscendentProsaicCatalyst);
+    public static final MaterialWrapper DIMENSIONALLYTRANSCENDENTRESPLENDENTCATALYST = MaterialWrapper
+        .of(() -> MaterialsUEVplus.DimensionallyTranscendentResplendentCatalyst);
+    public static final MaterialWrapper DIMENSIONALLYTRANSCENDENTEXOTICCATALYST = MaterialWrapper
+        .of(() -> MaterialsUEVplus.DimensionallyTranscendentExoticCatalyst);
+    public static final MaterialWrapper DIMENSIONALLYTRANSCENDENTSTELLARCATALYST = MaterialWrapper
+        .of(() -> MaterialsUEVplus.DimensionallyTranscendentStellarCatalyst);
     public static final MaterialWrapper EXCITEDDTCC = MaterialWrapper.of(() -> MaterialsUEVplus.ExcitedDTCC);
     public static final MaterialWrapper EXCITEDDTPC = MaterialWrapper.of(() -> MaterialsUEVplus.ExcitedDTPC);
     public static final MaterialWrapper EXCITEDDTRC = MaterialWrapper.of(() -> MaterialsUEVplus.ExcitedDTRC);
     public static final MaterialWrapper EXCITEDDTEC = MaterialWrapper.of(() -> MaterialsUEVplus.ExcitedDTEC);
     public static final MaterialWrapper EXCITEDDTSC = MaterialWrapper.of(() -> MaterialsUEVplus.ExcitedDTSC);
-    public static final MaterialWrapper DIMENSIONALLYTRANSCENDENTRESIDUE = MaterialWrapper.of(() -> MaterialsUEVplus.DimensionallyTranscendentResidue);
+    public static final MaterialWrapper DIMENSIONALLYTRANSCENDENTRESIDUE = MaterialWrapper
+        .of(() -> MaterialsUEVplus.DimensionallyTranscendentResidue);
     public static final MaterialWrapper SPACETIME = MaterialWrapper.of(() -> MaterialsUEVplus.SpaceTime);
-    public static final MaterialWrapper TRANSCENDENTMETAL = MaterialWrapper.of(() -> MaterialsUEVplus.TranscendentMetal);
-    public static final MaterialWrapper MAGNETOHYDRODYNAMICALLYCONSTRAINEDSTARMATTER = MaterialWrapper.of(() -> MaterialsUEVplus.MagnetohydrodynamicallyConstrainedStarMatter);
+    public static final MaterialWrapper TRANSCENDENTMETAL = MaterialWrapper
+        .of(() -> MaterialsUEVplus.TranscendentMetal);
+    public static final MaterialWrapper MAGNETOHYDRODYNAMICALLYCONSTRAINEDSTARMATTER = MaterialWrapper
+        .of(() -> MaterialsUEVplus.MagnetohydrodynamicallyConstrainedStarMatter);
     public static final MaterialWrapper RAWSTARMATTER = MaterialWrapper.of(() -> MaterialsUEVplus.RawStarMatter);
     public static final MaterialWrapper WHITEDWARFMATTER = MaterialWrapper.of(() -> MaterialsUEVplus.WhiteDwarfMatter);
     public static final MaterialWrapper BLACKDWARFMATTER = MaterialWrapper.of(() -> MaterialsUEVplus.BlackDwarfMatter);
@@ -866,29 +914,36 @@ public class GTMats {
     public static final MaterialWrapper MAGMATTER = MaterialWrapper.of(() -> MaterialsUEVplus.MagMatter);
     public static final MaterialWrapper QUARKGLUONPLASMA = MaterialWrapper.of(() -> MaterialsUEVplus.QuarkGluonPlasma);
     public static final MaterialWrapper PHONONMEDIUM = MaterialWrapper.of(() -> MaterialsUEVplus.PhononMedium);
-    public static final MaterialWrapper PHONONCRYSTALSOLUTION = MaterialWrapper.of(() -> MaterialsUEVplus.PhononCrystalSolution);
+    public static final MaterialWrapper PHONONCRYSTALSOLUTION = MaterialWrapper
+        .of(() -> MaterialsUEVplus.PhononCrystalSolution);
     public static final MaterialWrapper SIXPHASEDCOPPER = MaterialWrapper.of(() -> MaterialsUEVplus.SixPhasedCopper);
     public static final MaterialWrapper MELLION = MaterialWrapper.of(() -> MaterialsUEVplus.Mellion);
     public static final MaterialWrapper CREON = MaterialWrapper.of(() -> MaterialsUEVplus.Creon);
     public static final MaterialWrapper GRAVITONSHARD = MaterialWrapper.of(() -> MaterialsUEVplus.GravitonShard);
-    public static final MaterialWrapper DIMENSIONALLYSHIFTEDSUPERFLUID = MaterialWrapper.of(() -> MaterialsUEVplus.DimensionallyShiftedSuperfluid);
-    public static final MaterialWrapper MOLTENPROTOHALKONITEBASE = MaterialWrapper.of(() -> MaterialsUEVplus.MoltenProtoHalkoniteBase);
-    public static final MaterialWrapper HOTPROTOHALKONITE = MaterialWrapper.of(() -> MaterialsUEVplus.HotProtoHalkonite);
+    public static final MaterialWrapper DIMENSIONALLYSHIFTEDSUPERFLUID = MaterialWrapper
+        .of(() -> MaterialsUEVplus.DimensionallyShiftedSuperfluid);
+    public static final MaterialWrapper MOLTENPROTOHALKONITEBASE = MaterialWrapper
+        .of(() -> MaterialsUEVplus.MoltenProtoHalkoniteBase);
+    public static final MaterialWrapper HOTPROTOHALKONITE = MaterialWrapper
+        .of(() -> MaterialsUEVplus.HotProtoHalkonite);
     public static final MaterialWrapper PROTOHALKONITE = MaterialWrapper.of(() -> MaterialsUEVplus.ProtoHalkonite);
-    public static final MaterialWrapper MOLTENEXOHALKONITEBASE = MaterialWrapper.of(() -> MaterialsUEVplus.MoltenExoHalkoniteBase);
+    public static final MaterialWrapper MOLTENEXOHALKONITEBASE = MaterialWrapper
+        .of(() -> MaterialsUEVplus.MoltenExoHalkoniteBase);
     public static final MaterialWrapper HOTEXOHALKONITE = MaterialWrapper.of(() -> MaterialsUEVplus.HotExoHalkonite);
     public static final MaterialWrapper EXOHALKONITE = MaterialWrapper.of(() -> MaterialsUEVplus.ExoHalkonite);
-    public static final MaterialWrapper STARGATECRYSTALSLURRY = MaterialWrapper.of(() -> MaterialsUEVplus.StargateCrystalSlurry);
-    //#endregion
+    public static final MaterialWrapper STARGATECRYSTALSLURRY = MaterialWrapper
+        .of(() -> MaterialsUEVplus.StargateCrystalSlurry);
+    // #endregion
 
-    //#region src/main/java/bartworks/system/material/WerkstoffLoader.java
+    // #region src/main/java/bartworks/system/material/WerkstoffLoader.java
     public static final MaterialWrapper BISMUTITE = MaterialWrapper.of(() -> WerkstoffLoader.Bismutite);
     public static final MaterialWrapper BISMUTHINIT = MaterialWrapper.of(() -> WerkstoffLoader.Bismuthinit);
     public static final MaterialWrapper ZIRCONIUM = MaterialWrapper.of(() -> WerkstoffLoader.Zirconium);
     public static final MaterialWrapper CUBICZIRCONIA = MaterialWrapper.of(() -> WerkstoffLoader.CubicZirconia);
     public static final MaterialWrapper FLUORBUERGERIT = MaterialWrapper.of(() -> WerkstoffLoader.FluorBuergerit);
     public static final MaterialWrapper YTTRIUMOXIDE = MaterialWrapper.of(() -> WerkstoffLoader.YttriumOxide);
-    public static final MaterialWrapper CHROMOALUMINOPOVONDRAIT = MaterialWrapper.of(() -> WerkstoffLoader.ChromoAluminoPovondrait);
+    public static final MaterialWrapper CHROMOALUMINOPOVONDRAIT = MaterialWrapper
+        .of(() -> WerkstoffLoader.ChromoAluminoPovondrait);
     public static final MaterialWrapper VANADIOOXYDRAVIT = MaterialWrapper.of(() -> WerkstoffLoader.VanadioOxyDravit);
     public static final MaterialWrapper OLENIT = MaterialWrapper.of(() -> WerkstoffLoader.Olenit);
     public static final MaterialWrapper ARSENOPYRITE = MaterialWrapper.of(() -> WerkstoffLoader.Arsenopyrite);
@@ -914,7 +969,8 @@ public class GTMats {
     public static final MaterialWrapper BISMUTHHYDROBORAT = MaterialWrapper.of(() -> WerkstoffLoader.BismuthHydroBorat);
     public static final MaterialWrapper ARINGAPHOBIBOTE = MaterialWrapper.of(() -> WerkstoffLoader.ArInGaPhoBiBoTe);
     public static final MaterialWrapper PRASIOLITE = MaterialWrapper.of(() -> WerkstoffLoader.Prasiolite);
-    public static final MaterialWrapper MAGNETORESONATICDUST = MaterialWrapper.of(() -> WerkstoffLoader.MagnetoResonaticDust);
+    public static final MaterialWrapper MAGNETORESONATICDUST = MaterialWrapper
+        .of(() -> WerkstoffLoader.MagnetoResonaticDust);
     public static final MaterialWrapper XENON = MaterialWrapper.of(() -> WerkstoffLoader.Xenon);
     public static final MaterialWrapper OGANESSON = MaterialWrapper.of(() -> WerkstoffLoader.Oganesson);
     public static final MaterialWrapper CALIFORNIUM = MaterialWrapper.of(() -> WerkstoffLoader.Californium);
@@ -936,23 +992,29 @@ public class GTMats {
     public static final MaterialWrapper SODIUMFORMATE = MaterialWrapper.of(() -> WerkstoffLoader.Sodiumformate);
     public static final MaterialWrapper SODIUMSULFATE = MaterialWrapper.of(() -> WerkstoffLoader.Sodiumsulfate);
     public static final MaterialWrapper FORMICACID = MaterialWrapper.of(() -> WerkstoffLoader.FormicAcid);
-    public static final MaterialWrapper POTASSIUMDISULFATE = MaterialWrapper.of(() -> WerkstoffLoader.PotassiumDisulfate);
+    public static final MaterialWrapper POTASSIUMDISULFATE = MaterialWrapper
+        .of(() -> WerkstoffLoader.PotassiumDisulfate);
     public static final MaterialWrapper LEACHRESIDUE = MaterialWrapper.of(() -> WerkstoffLoader.LeachResidue);
     public static final MaterialWrapper RHSULFATE = MaterialWrapper.of(() -> WerkstoffLoader.RHSulfate);
     public static final MaterialWrapper RHSULFATESOLUTION = MaterialWrapper.of(() -> WerkstoffLoader.RHSulfateSolution);
     public static final MaterialWrapper CALCIUMCHLORIDE = MaterialWrapper.of(() -> WerkstoffLoader.CalciumChloride);
     public static final MaterialWrapper RUTHENIUM = MaterialWrapper.of(() -> WerkstoffLoader.Ruthenium);
     public static final MaterialWrapper SODIUMRUTHENATE = MaterialWrapper.of(() -> WerkstoffLoader.SodiumRuthenate);
-    public static final MaterialWrapper RUTHENIUMTETROXIDE = MaterialWrapper.of(() -> WerkstoffLoader.RutheniumTetroxide);
-    public static final MaterialWrapper HOTRUTHENIUMTETROXIDESOLLUTION = MaterialWrapper.of(() -> WerkstoffLoader.HotRutheniumTetroxideSollution);
-    public static final MaterialWrapper RUTHENIUMTETROXIDESOLLUTION = MaterialWrapper.of(() -> WerkstoffLoader.RutheniumTetroxideSollution);
+    public static final MaterialWrapper RUTHENIUMTETROXIDE = MaterialWrapper
+        .of(() -> WerkstoffLoader.RutheniumTetroxide);
+    public static final MaterialWrapper HOTRUTHENIUMTETROXIDESOLLUTION = MaterialWrapper
+        .of(() -> WerkstoffLoader.HotRutheniumTetroxideSollution);
+    public static final MaterialWrapper RUTHENIUMTETROXIDESOLLUTION = MaterialWrapper
+        .of(() -> WerkstoffLoader.RutheniumTetroxideSollution);
     public static final MaterialWrapper IROSLEACHRESIDUE = MaterialWrapper.of(() -> WerkstoffLoader.IrOsLeachResidue);
     public static final MaterialWrapper IRLEACHRESIDUE = MaterialWrapper.of(() -> WerkstoffLoader.IrLeachResidue);
     public static final MaterialWrapper PGSDRESIDUE = MaterialWrapper.of(() -> WerkstoffLoader.PGSDResidue);
-    public static final MaterialWrapper ACIDICOSMIUMSOLUTION = MaterialWrapper.of(() -> WerkstoffLoader.AcidicOsmiumSolution);
+    public static final MaterialWrapper ACIDICOSMIUMSOLUTION = MaterialWrapper
+        .of(() -> WerkstoffLoader.AcidicOsmiumSolution);
     public static final MaterialWrapper IRIDIUMDIOXIDE = MaterialWrapper.of(() -> WerkstoffLoader.IridiumDioxide);
     public static final MaterialWrapper OSMIUMSOLUTION = MaterialWrapper.of(() -> WerkstoffLoader.OsmiumSolution);
-    public static final MaterialWrapper ACIDICIRIDIUMSOLUTION = MaterialWrapper.of(() -> WerkstoffLoader.AcidicIridiumSolution);
+    public static final MaterialWrapper ACIDICIRIDIUMSOLUTION = MaterialWrapper
+        .of(() -> WerkstoffLoader.AcidicIridiumSolution);
     public static final MaterialWrapper IRIDIUMCHLORIDE = MaterialWrapper.of(() -> WerkstoffLoader.IridiumChloride);
     public static final MaterialWrapper PGSDRESIDUE2 = MaterialWrapper.of(() -> WerkstoffLoader.PGSDResidue2);
     public static final MaterialWrapper RHODIUM = MaterialWrapper.of(() -> WerkstoffLoader.Rhodium);
@@ -963,7 +1025,8 @@ public class GTMats {
     public static final MaterialWrapper RHNITRATE = MaterialWrapper.of(() -> WerkstoffLoader.RHNitrate);
     public static final MaterialWrapper ZINCSULFATE = MaterialWrapper.of(() -> WerkstoffLoader.ZincSulfate);
     public static final MaterialWrapper RHFILTERCAKE = MaterialWrapper.of(() -> WerkstoffLoader.RhFilterCake);
-    public static final MaterialWrapper RHFILTERCAKESOLUTION = MaterialWrapper.of(() -> WerkstoffLoader.RHFilterCakeSolution);
+    public static final MaterialWrapper RHFILTERCAKESOLUTION = MaterialWrapper
+        .of(() -> WerkstoffLoader.RHFilterCakeSolution);
     public static final MaterialWrapper RERH = MaterialWrapper.of(() -> WerkstoffLoader.ReRh);
     public static final MaterialWrapper LUVTIERMATERIAL = MaterialWrapper.of(() -> WerkstoffLoader.LuVTierMaterial);
     public static final MaterialWrapper TIBERIUM = MaterialWrapper.of(() -> WerkstoffLoader.Tiberium);
@@ -975,274 +1038,471 @@ public class GTMats {
     public static final MaterialWrapper TERLINGUAITE = MaterialWrapper.of(() -> WerkstoffLoader.Terlinguaite);
     public static final MaterialWrapper ADEMICSTEEL = MaterialWrapper.of(() -> WerkstoffLoader.AdemicSteel);
     public static final MaterialWrapper RAWADEMICSTEEL = MaterialWrapper.of(() -> WerkstoffLoader.RawAdemicSteel);
-    public static final MaterialWrapper HEXAFLUOROSILICICACID = MaterialWrapper.of(() -> WerkstoffLoader.HexafluorosilicicAcid);
-    public static final MaterialWrapper POTASSIUMFLUOROSILICATE = MaterialWrapper.of(() -> WerkstoffLoader.Potassiumfluorosilicate);
+    public static final MaterialWrapper HEXAFLUOROSILICICACID = MaterialWrapper
+        .of(() -> WerkstoffLoader.HexafluorosilicicAcid);
+    public static final MaterialWrapper POTASSIUMFLUOROSILICATE = MaterialWrapper
+        .of(() -> WerkstoffLoader.Potassiumfluorosilicate);
     public static final MaterialWrapper ALUMINA = MaterialWrapper.of(() -> WerkstoffLoader.Alumina);
-    public static final MaterialWrapper POTASSIUMCARBONATE = MaterialWrapper.of(() -> WerkstoffLoader.PotassiumCarbonate);
-    public static final MaterialWrapper RAWFLUOROPHLOGOPITE = MaterialWrapper.of(() -> WerkstoffLoader.RawFluorophlogopite);
-    public static final MaterialWrapper HOTFLUOROPHLOGOPITE = MaterialWrapper.of(() -> WerkstoffLoader.HotFluorophlogopite);
+    public static final MaterialWrapper POTASSIUMCARBONATE = MaterialWrapper
+        .of(() -> WerkstoffLoader.PotassiumCarbonate);
+    public static final MaterialWrapper RAWFLUOROPHLOGOPITE = MaterialWrapper
+        .of(() -> WerkstoffLoader.RawFluorophlogopite);
+    public static final MaterialWrapper HOTFLUOROPHLOGOPITE = MaterialWrapper
+        .of(() -> WerkstoffLoader.HotFluorophlogopite);
     public static final MaterialWrapper FLUOROPHLOGOPITE = MaterialWrapper.of(() -> WerkstoffLoader.Fluorophlogopite);
     public static final MaterialWrapper LIQUIDHELIUM = MaterialWrapper.of(() -> WerkstoffLoader.LiquidHelium);
     public static final MaterialWrapper HAFNIUMCARBIDE = MaterialWrapper.of(() -> WerkstoffLoader.HafniumCarbide);
-    public static final MaterialWrapper TANTALUMCARBIDEHAFNIUMCARBIDEMIXTURE = MaterialWrapper.of(() -> WerkstoffLoader.TantalumCarbideHafniumCarbideMixture);
-    public static final MaterialWrapper TANTALUMHAFNIUMCARBIDE = MaterialWrapper.of(() -> WerkstoffLoader.TantalumHafniumCarbide);
-    //#endregion
+    public static final MaterialWrapper TANTALUMCARBIDEHAFNIUMCARBIDEMIXTURE = MaterialWrapper
+        .of(() -> WerkstoffLoader.TantalumCarbideHafniumCarbideMixture);
+    public static final MaterialWrapper TANTALUMHAFNIUMCARBIDE = MaterialWrapper
+        .of(() -> WerkstoffLoader.TantalumHafniumCarbide);
+    // #endregion
 
-    //#region src/main/java/gtnhlanth/common/register/WerkstoffMaterialPool.java
+    // #region src/main/java/gtnhlanth/common/register/WerkstoffMaterialPool.java
     public static final MaterialWrapper HAFNIUM = MaterialWrapper.of(() -> WerkstoffMaterialPool.Hafnium);
-    public static final MaterialWrapper LOWPURITYHAFNIUM = MaterialWrapper.of(() -> WerkstoffMaterialPool.LowPurityHafnium);
+    public static final MaterialWrapper LOWPURITYHAFNIUM = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.LowPurityHafnium);
     public static final MaterialWrapper HAFNIA = MaterialWrapper.of(() -> WerkstoffMaterialPool.Hafnia);
-    public static final MaterialWrapper HAFNIUMTETRACHLORIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.HafniumTetrachloride);
-    public static final MaterialWrapper HAFNIUMTETRACHLORIDESOLUTION = MaterialWrapper.of(() -> WerkstoffMaterialPool.HafniumTetrachlorideSolution);
+    public static final MaterialWrapper HAFNIUMTETRACHLORIDE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.HafniumTetrachloride);
+    public static final MaterialWrapper HAFNIUMTETRACHLORIDESOLUTION = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.HafniumTetrachlorideSolution);
     public static final MaterialWrapper HAFNIUMIODIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.HafniumIodide);
     public static final MaterialWrapper HAFNIUMRUNOFF = MaterialWrapper.of(() -> WerkstoffMaterialPool.HafniumRunoff);
     public static final MaterialWrapper ZIRCONIA = MaterialWrapper.of(() -> WerkstoffMaterialPool.Zirconia);
-    public static final MaterialWrapper ZIRCONIUMTETRACHLORIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.ZirconiumTetrachloride);
-    public static final MaterialWrapper ZIRCONIUMTETRACHLORIDESOLUTION = MaterialWrapper.of(() -> WerkstoffMaterialPool.ZirconiumTetrachlorideSolution);
-    public static final MaterialWrapper HAFNIAZIRCONIABLEND = MaterialWrapper.of(() -> WerkstoffMaterialPool.HafniaZirconiaBlend);
+    public static final MaterialWrapper ZIRCONIUMTETRACHLORIDE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.ZirconiumTetrachloride);
+    public static final MaterialWrapper ZIRCONIUMTETRACHLORIDESOLUTION = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.ZirconiumTetrachlorideSolution);
+    public static final MaterialWrapper HAFNIAZIRCONIABLEND = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.HafniaZirconiaBlend);
     public static final MaterialWrapper IODINE = MaterialWrapper.of(() -> WerkstoffMaterialPool.Iodine);
-    public static final MaterialWrapper MUDDYRAREEARTHMONAZITESOLUTION = MaterialWrapper.of(() -> WerkstoffMaterialPool.MuddyRareEarthMonaziteSolution);
-    public static final MaterialWrapper DILUTEDRAREEARTHMONAZITEMUD = MaterialWrapper.of(() -> WerkstoffMaterialPool.DilutedRareEarthMonaziteMud);
-    public static final MaterialWrapper DILUTEDMONAZITESULFATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.DilutedMonaziteSulfate);
-    public static final MaterialWrapper NITRATEDRAREEARTHMONAZITECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.NitratedRareEarthMonaziteConcentrate);
-    public static final MaterialWrapper NITRICMONAZITELEACHEDCONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.NitricMonaziteLeachedConcentrate);
-    public static final MaterialWrapper MONAZITESULFATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.MonaziteSulfate);
-    public static final MaterialWrapper ACIDICMONAZITEPOWDER = MaterialWrapper.of(() -> WerkstoffMaterialPool.AcidicMonazitePowder);
-    public static final MaterialWrapper MONAZITERAREEARTHFILTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.MonaziteRareEarthFiltrate);
-    public static final MaterialWrapper NEUTRALIZEDMONAZITERAREEARTHFILTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.NeutralizedMonaziteRareEarthFiltrate);
-    public static final MaterialWrapper MONAZITERAREEARTHHYDROXIDECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.MonaziteRareEarthHydroxideConcentrate);
-    public static final MaterialWrapper DRIEDMONAZITERAREEARTHCONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.DriedMonaziteRareEarthConcentrate);
+    public static final MaterialWrapper MUDDYRAREEARTHMONAZITESOLUTION = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.MuddyRareEarthMonaziteSolution);
+    public static final MaterialWrapper DILUTEDRAREEARTHMONAZITEMUD = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.DilutedRareEarthMonaziteMud);
+    public static final MaterialWrapper DILUTEDMONAZITESULFATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.DilutedMonaziteSulfate);
+    public static final MaterialWrapper NITRATEDRAREEARTHMONAZITECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.NitratedRareEarthMonaziteConcentrate);
+    public static final MaterialWrapper NITRICMONAZITELEACHEDCONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.NitricMonaziteLeachedConcentrate);
+    public static final MaterialWrapper MONAZITESULFATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.MonaziteSulfate);
+    public static final MaterialWrapper ACIDICMONAZITEPOWDER = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.AcidicMonazitePowder);
+    public static final MaterialWrapper MONAZITERAREEARTHFILTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.MonaziteRareEarthFiltrate);
+    public static final MaterialWrapper NEUTRALIZEDMONAZITERAREEARTHFILTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.NeutralizedMonaziteRareEarthFiltrate);
+    public static final MaterialWrapper MONAZITERAREEARTHHYDROXIDECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.MonaziteRareEarthHydroxideConcentrate);
+    public static final MaterialWrapper DRIEDMONAZITERAREEARTHCONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.DriedMonaziteRareEarthConcentrate);
     public static final MaterialWrapper CERIUMDIOXIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.CeriumDioxide);
     public static final MaterialWrapper CERIUMCHLORIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.CeriumChloride);
     public static final MaterialWrapper CERIUMOXALATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.CeriumOxalate);
     public static final MaterialWrapper CERIUMIIIOXIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.CeriumIIIOxide);
-    public static final MaterialWrapper CERIUMRICHMIXTURE = MaterialWrapper.of(() -> WerkstoffMaterialPool.CeriumRichMixture);
-    public static final MaterialWrapper COOLEDMONAZITERAREEARTHCONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.CooledMonaziteRareEarthConcentrate);
-    public static final MaterialWrapper MONAZITERAREREARTHSEDIMENT = MaterialWrapper.of(() -> WerkstoffMaterialPool.MonaziteRarerEarthSediment);
-    public static final MaterialWrapper MONAZITEHETEROGENOUSHALOGENICRAREEARTHMIXTURE = MaterialWrapper.of(() -> WerkstoffMaterialPool.MonaziteHeterogenousHalogenicRareEarthMixture);
-    public static final MaterialWrapper SATURATEDMONAZITERAREEARTHMIXTURE = MaterialWrapper.of(() -> WerkstoffMaterialPool.SaturatedMonaziteRareEarthMixture);
+    public static final MaterialWrapper CERIUMRICHMIXTURE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.CeriumRichMixture);
+    public static final MaterialWrapper COOLEDMONAZITERAREEARTHCONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.CooledMonaziteRareEarthConcentrate);
+    public static final MaterialWrapper MONAZITERAREREARTHSEDIMENT = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.MonaziteRarerEarthSediment);
+    public static final MaterialWrapper MONAZITEHETEROGENOUSHALOGENICRAREEARTHMIXTURE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.MonaziteHeterogenousHalogenicRareEarthMixture);
+    public static final MaterialWrapper SATURATEDMONAZITERAREEARTHMIXTURE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.SaturatedMonaziteRareEarthMixture);
     public static final MaterialWrapper SAMARICRESIDUE = MaterialWrapper.of(() -> WerkstoffMaterialPool.SamaricResidue);
-    public static final MaterialWrapper AMMONIUMNITRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.AmmoniumNitrate);
-    public static final MaterialWrapper THORIUMPHOSPHATECAKE = MaterialWrapper.of(() -> WerkstoffMaterialPool.ThoriumPhosphateCake);
-    public static final MaterialWrapper THORIUMPHOSPHATECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.ThoriumPhosphateConcentrate);
-    public static final MaterialWrapper URANIUMFILTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.UraniumFiltrate);
-    public static final MaterialWrapper NEUTRALIZEDURANIUMFILTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.NeutralizedUraniumFiltrate);
+    public static final MaterialWrapper AMMONIUMNITRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.AmmoniumNitrate);
+    public static final MaterialWrapper THORIUMPHOSPHATECAKE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.ThoriumPhosphateCake);
+    public static final MaterialWrapper THORIUMPHOSPHATECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.ThoriumPhosphateConcentrate);
+    public static final MaterialWrapper URANIUMFILTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.UraniumFiltrate);
+    public static final MaterialWrapper NEUTRALIZEDURANIUMFILTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.NeutralizedUraniumFiltrate);
     public static final MaterialWrapper SEAWEEDASH = MaterialWrapper.of(() -> WerkstoffMaterialPool.SeaweedAsh);
-    public static final MaterialWrapper SEAWEEDCONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.SeaweedConcentrate);
-    public static final MaterialWrapper POTASSIUMPERMANGANATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.PotassiumPermanganate);
-    public static final MaterialWrapper POTASSIUMPERMANGANATESOLUTION = MaterialWrapper.of(() -> WerkstoffMaterialPool.PotassiumPermanganateSolution);
-    public static final MaterialWrapper SEAWEEDBYPRODUCTS = MaterialWrapper.of(() -> WerkstoffMaterialPool.SeaweedByproducts);
-    public static final MaterialWrapper NITRICLEACHEDMONAZITEMIXTURE = MaterialWrapper.of(() -> WerkstoffMaterialPool.NitricLeachedMonaziteMixture);
+    public static final MaterialWrapper SEAWEEDCONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.SeaweedConcentrate);
+    public static final MaterialWrapper POTASSIUMPERMANGANATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.PotassiumPermanganate);
+    public static final MaterialWrapper POTASSIUMPERMANGANATESOLUTION = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.PotassiumPermanganateSolution);
+    public static final MaterialWrapper SEAWEEDBYPRODUCTS = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.SeaweedByproducts);
+    public static final MaterialWrapper NITRICLEACHEDMONAZITEMIXTURE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.NitricLeachedMonaziteMixture);
     public static final MaterialWrapper EUROPIUMOXIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.EuropiumOxide);
-    public static final MaterialWrapper EUROPIUMSULFIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.EuropiumSulfide);
+    public static final MaterialWrapper EUROPIUMSULFIDE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.EuropiumSulfide);
     public static final MaterialWrapper UNKNOWNBLEND = MaterialWrapper.of(() -> WerkstoffMaterialPool.UnknownBlend);
-    public static final MaterialWrapper EUROPIUMIIIOXIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.EuropiumIIIOxide);
-    public static final MaterialWrapper MUDDYRAREEARTHBASTNASITESOLUTION = MaterialWrapper.of(() -> WerkstoffMaterialPool.MuddyRareEarthBastnasiteSolution);
-    public static final MaterialWrapper SODIUMFLUOROSILICATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.SodiumFluorosilicate);
-    public static final MaterialWrapper STEAMCRACKEDBASNASITESOLUTION = MaterialWrapper.of(() -> WerkstoffMaterialPool.SteamCrackedBasnasiteSolution);
-    public static final MaterialWrapper CONDITIONEDBASTNASITEMUD = MaterialWrapper.of(() -> WerkstoffMaterialPool.ConditionedBastnasiteMud);
-    public static final MaterialWrapper DILTEDRAREEARTHBASTNASITEMUD = MaterialWrapper.of(() -> WerkstoffMaterialPool.DiltedRareEarthBastnasiteMud);
-    public static final MaterialWrapper FILTEREDBASTNASITEMUD = MaterialWrapper.of(() -> WerkstoffMaterialPool.FilteredBastnasiteMud);
-    public static final MaterialWrapper BASTNASITERAREEARTHOXIDEPOWDER = MaterialWrapper.of(() -> WerkstoffMaterialPool.BastnasiteRareEarthOxidePowder);
-    public static final MaterialWrapper LEACHEDBASTNASITERAREEARTHOXIDES = MaterialWrapper.of(() -> WerkstoffMaterialPool.LeachedBastnasiteRareEarthOxides);
+    public static final MaterialWrapper EUROPIUMIIIOXIDE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.EuropiumIIIOxide);
+    public static final MaterialWrapper MUDDYRAREEARTHBASTNASITESOLUTION = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.MuddyRareEarthBastnasiteSolution);
+    public static final MaterialWrapper SODIUMFLUOROSILICATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.SodiumFluorosilicate);
+    public static final MaterialWrapper STEAMCRACKEDBASNASITESOLUTION = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.SteamCrackedBasnasiteSolution);
+    public static final MaterialWrapper CONDITIONEDBASTNASITEMUD = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.ConditionedBastnasiteMud);
+    public static final MaterialWrapper DILTEDRAREEARTHBASTNASITEMUD = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.DiltedRareEarthBastnasiteMud);
+    public static final MaterialWrapper FILTEREDBASTNASITEMUD = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.FilteredBastnasiteMud);
+    public static final MaterialWrapper BASTNASITERAREEARTHOXIDEPOWDER = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.BastnasiteRareEarthOxidePowder);
+    public static final MaterialWrapper LEACHEDBASTNASITERAREEARTHOXIDES = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.LeachedBastnasiteRareEarthOxides);
     public static final MaterialWrapper GANGUE = MaterialWrapper.of(() -> WerkstoffMaterialPool.Gangue);
-    public static final MaterialWrapper ROASTEDRAREEARTHOXIDES = MaterialWrapper.of(() -> WerkstoffMaterialPool.RoastedRareEarthOxides);
-    public static final MaterialWrapper WETRAREEARTHOXIDES = MaterialWrapper.of(() -> WerkstoffMaterialPool.WetRareEarthOxides);
-    public static final MaterialWrapper CERIUMOXIDISEDRAREEARTHOXIDES = MaterialWrapper.of(() -> WerkstoffMaterialPool.CeriumOxidisedRareEarthOxides);
-    public static final MaterialWrapper BASTNASITERAREREARTHOXIDES = MaterialWrapper.of(() -> WerkstoffMaterialPool.BastnasiteRarerEarthOxides);
-    public static final MaterialWrapper NITRATEDBASTNASITERAREREARTHOXIDES = MaterialWrapper.of(() -> WerkstoffMaterialPool.NitratedBastnasiteRarerEarthOxides);
-    public static final MaterialWrapper SATURATEDBASTNASITERAREREARTHOXIDES = MaterialWrapper.of(() -> WerkstoffMaterialPool.SaturatedBastnasiteRarerEarthOxides);
-    public static final MaterialWrapper SAMARICRAREEARTHCONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.SamaricRareEarthConcentrate);
-    public static final MaterialWrapper NEODYMICRAREEARTHCONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.NeodymicRareEarthConcentrate);
-    public static final MaterialWrapper LANTHANIUMCHLORIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.LanthaniumChloride);
+    public static final MaterialWrapper ROASTEDRAREEARTHOXIDES = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.RoastedRareEarthOxides);
+    public static final MaterialWrapper WETRAREEARTHOXIDES = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.WetRareEarthOxides);
+    public static final MaterialWrapper CERIUMOXIDISEDRAREEARTHOXIDES = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.CeriumOxidisedRareEarthOxides);
+    public static final MaterialWrapper BASTNASITERAREREARTHOXIDES = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.BastnasiteRarerEarthOxides);
+    public static final MaterialWrapper NITRATEDBASTNASITERAREREARTHOXIDES = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.NitratedBastnasiteRarerEarthOxides);
+    public static final MaterialWrapper SATURATEDBASTNASITERAREREARTHOXIDES = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.SaturatedBastnasiteRarerEarthOxides);
+    public static final MaterialWrapper SAMARICRAREEARTHCONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.SamaricRareEarthConcentrate);
+    public static final MaterialWrapper NEODYMICRAREEARTHCONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.NeodymicRareEarthConcentrate);
+    public static final MaterialWrapper LANTHANIUMCHLORIDE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.LanthaniumChloride);
     public static final MaterialWrapper NEODYMIUMOXIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.NeodymiumOxide);
-    public static final MaterialWrapper FLUORINATEDSAMARICCONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.FluorinatedSamaricConcentrate);
-    public static final MaterialWrapper CALCIUMFLUORIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.CalciumFluoride);
-    public static final MaterialWrapper SAMARIUMTERBIUMMIXTURE = MaterialWrapper.of(() -> WerkstoffMaterialPool.SamariumTerbiumMixture);
-    public static final MaterialWrapper NITRATEDSAMARIUMTERBIUMMIXTURE = MaterialWrapper.of(() -> WerkstoffMaterialPool.NitratedSamariumTerbiumMixture);
+    public static final MaterialWrapper FLUORINATEDSAMARICCONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.FluorinatedSamaricConcentrate);
+    public static final MaterialWrapper CALCIUMFLUORIDE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.CalciumFluoride);
+    public static final MaterialWrapper SAMARIUMTERBIUMMIXTURE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.SamariumTerbiumMixture);
+    public static final MaterialWrapper NITRATEDSAMARIUMTERBIUMMIXTURE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.NitratedSamariumTerbiumMixture);
     public static final MaterialWrapper TERBIUMNITRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.TerbiumNitrate);
-    public static final MaterialWrapper SAMARIUMORECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.SamariumOreConcentrate);
-    public static final MaterialWrapper DEPHOSPHATEDSAMARIUMCONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.DephosphatedSamariumConcentrate);
-    public static final MaterialWrapper TETRAHYDROFURAN = MaterialWrapper.of(() -> WerkstoffMaterialPool.Tetrahydrofuran);
+    public static final MaterialWrapper SAMARIUMORECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.SamariumOreConcentrate);
+    public static final MaterialWrapper DEPHOSPHATEDSAMARIUMCONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.DephosphatedSamariumConcentrate);
+    public static final MaterialWrapper TETRAHYDROFURAN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.Tetrahydrofuran);
     public static final MaterialWrapper BUTANEDIOL = MaterialWrapper.of(() -> WerkstoffMaterialPool.Butanediol);
-    public static final MaterialWrapper ACIDICBUTANEDIOL = MaterialWrapper.of(() -> WerkstoffMaterialPool.AcidicButanediol);
+    public static final MaterialWrapper ACIDICBUTANEDIOL = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.AcidicButanediol);
     public static final MaterialWrapper MOTEOCATALYST = MaterialWrapper.of(() -> WerkstoffMaterialPool.MoTeOCatalyst);
-    public static final MaterialWrapper TELLURIUMIVOXIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.TelluriumIVOxide);
-    public static final MaterialWrapper MOLYBDENUMIVOXIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.MolybdenumIVOxide);
-    public static final MaterialWrapper POLYTETRAHYDROFURAN = MaterialWrapper.of(() -> WerkstoffMaterialPool.Polytetrahydrofuran);
-    public static final MaterialWrapper TUNGSTOPHOSPHORICACID = MaterialWrapper.of(() -> WerkstoffMaterialPool.TungstophosphoricAcid);
-    public static final MaterialWrapper TOLUENEDIISOCYANATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.TolueneDiisocyanate);
+    public static final MaterialWrapper TELLURIUMIVOXIDE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.TelluriumIVOxide);
+    public static final MaterialWrapper MOLYBDENUMIVOXIDE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.MolybdenumIVOxide);
+    public static final MaterialWrapper POLYTETRAHYDROFURAN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.Polytetrahydrofuran);
+    public static final MaterialWrapper TUNGSTOPHOSPHORICACID = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.TungstophosphoricAcid);
+    public static final MaterialWrapper TOLUENEDIISOCYANATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.TolueneDiisocyanate);
     public static final MaterialWrapper DINITROTOLUENE = MaterialWrapper.of(() -> WerkstoffMaterialPool.Dinitrotoluene);
     public static final MaterialWrapper DIAMINOTOLUENE = MaterialWrapper.of(() -> WerkstoffMaterialPool.Diaminotoluene);
-    public static final MaterialWrapper TOLUENETETRAMETHYLDIISOCYANATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.TolueneTetramethylDiisocyanate);
+    public static final MaterialWrapper TOLUENETETRAMETHYLDIISOCYANATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.TolueneTetramethylDiisocyanate);
     public static final MaterialWrapper PTMEGELASTOMER = MaterialWrapper.of(() -> WerkstoffMaterialPool.PTMEGElastomer);
-    public static final MaterialWrapper POTASSIUMCHLORATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.PotassiumChlorate);
+    public static final MaterialWrapper POTASSIUMCHLORATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.PotassiumChlorate);
     public static final MaterialWrapper DILUTEDACETONE = MaterialWrapper.of(() -> WerkstoffMaterialPool.DilutedAcetone);
-    public static final MaterialWrapper MOLYBDENUMTRIOXIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.MolybdenumTrioxide);
-    public static final MaterialWrapper MUDDYSAMARIUMRAREEARTHSOLUTION = MaterialWrapper.of(() -> WerkstoffMaterialPool.MuddySamariumRareEarthSolution);
-    public static final MaterialWrapper SAMARIUMRAREEARTHMUD = MaterialWrapper.of(() -> WerkstoffMaterialPool.SamariumRareEarthMud);
-    public static final MaterialWrapper DILUTEDSAMARIUMRAREEARTHSOLUTION = MaterialWrapper.of(() -> WerkstoffMaterialPool.DilutedSamariumRareEarthSolution);
-    public static final MaterialWrapper SAMARIUMOXALATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.SamariumOxalate);
-    public static final MaterialWrapper SAMARIUMCHLORIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.SamariumChloride);
-    public static final MaterialWrapper SAMARIUMCHLORIDESODIUMCHLORIDEBLEND = MaterialWrapper.of(() -> WerkstoffMaterialPool.SamariumChlorideSodiumChlorideBlend);
-    public static final MaterialWrapper IMPURELANTHANUMCHLORIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.ImpureLanthanumChloride);
+    public static final MaterialWrapper MOLYBDENUMTRIOXIDE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.MolybdenumTrioxide);
+    public static final MaterialWrapper MUDDYSAMARIUMRAREEARTHSOLUTION = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.MuddySamariumRareEarthSolution);
+    public static final MaterialWrapper SAMARIUMRAREEARTHMUD = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.SamariumRareEarthMud);
+    public static final MaterialWrapper DILUTEDSAMARIUMRAREEARTHSOLUTION = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.DilutedSamariumRareEarthSolution);
+    public static final MaterialWrapper SAMARIUMOXALATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.SamariumOxalate);
+    public static final MaterialWrapper SAMARIUMCHLORIDE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.SamariumChloride);
+    public static final MaterialWrapper SAMARIUMCHLORIDESODIUMCHLORIDEBLEND = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.SamariumChlorideSodiumChlorideBlend);
+    public static final MaterialWrapper IMPURELANTHANUMCHLORIDE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.ImpureLanthanumChloride);
     public static final MaterialWrapper SAMARIUMOXIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.SamariumOxide);
-    public static final MaterialWrapper CHLORINATEDRAREEARTHCONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.ChlorinatedRareEarthConcentrate);
-    public static final MaterialWrapper CHLORINATEDRAREEARTHENRICHEDSOLUTION = MaterialWrapper.of(() -> WerkstoffMaterialPool.ChlorinatedRareEarthEnrichedSolution);
-    public static final MaterialWrapper CHLORINATEDRAREEARTHDILUTEDSOLUTION = MaterialWrapper.of(() -> WerkstoffMaterialPool.ChlorinatedRareEarthDilutedSolution);
-    public static final MaterialWrapper RARESTEARTHRESIDUE = MaterialWrapper.of(() -> WerkstoffMaterialPool.RarestEarthResidue);
-    public static final MaterialWrapper LANTHANUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.LanthanumExtractingNanoResin);
-    public static final MaterialWrapper FILLEDLANTHANUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.FilledLanthanumExtractingNanoResin);
-    public static final MaterialWrapper PRASEODYMIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.PraseodymiumExtractingNanoResin);
-    public static final MaterialWrapper FILLEDPRASEODYMIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.FilledPraseodymiumExtractingNanoResin);
-    public static final MaterialWrapper CERIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.CeriumExtractingNanoResin);
-    public static final MaterialWrapper FILLEDCERIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.FilledCeriumExtractingNanoResin);
-    public static final MaterialWrapper NEODYMIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.NeodymiumExtractingNanoResin);
-    public static final MaterialWrapper FILLEDNEODYMIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.FilledNeodymiumExtractingNanoResin);
-    public static final MaterialWrapper PROMETHIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.PromethiumExtractingNanoResin);
-    public static final MaterialWrapper FILLEDPROMETHIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.FilledPromethiumExtractingNanoResin);
-    public static final MaterialWrapper SAMARIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.SamariumExtractingNanoResin);
-    public static final MaterialWrapper FILLEDSAMARIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.FilledSamariumExtractingNanoResin);
-    public static final MaterialWrapper EUROPIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.EuropiumExtractingNanoResin);
-    public static final MaterialWrapper FILLEDEUROPIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.FilledEuropiumExtractingNanoResin);
-    public static final MaterialWrapper GADOLINIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.GadoliniumExtractingNanoResin);
-    public static final MaterialWrapper FILLEDGADOLINIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.FilledGadoliniumExtractingNanoResin);
-    public static final MaterialWrapper TERBIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.TerbiumExtractingNanoResin);
-    public static final MaterialWrapper FILLEDTERBIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.FilledTerbiumExtractingNanoResin);
-    public static final MaterialWrapper DYSPROSIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.DysprosiumExtractingNanoResin);
-    public static final MaterialWrapper FILLEDDYSPROSIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.FilledDysprosiumExtractingNanoResin);
-    public static final MaterialWrapper HOLMIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.HolmiumExtractingNanoResin);
-    public static final MaterialWrapper FILLEDHOLMIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.FilledHolmiumExtractingNanoResin);
-    public static final MaterialWrapper ERBIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.ErbiumExtractingNanoResin);
-    public static final MaterialWrapper FILLEDERBIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.FilledErbiumExtractingNanoResin);
-    public static final MaterialWrapper THULIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.ThuliumExtractingNanoResin);
-    public static final MaterialWrapper FILLEDTHULIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.FilledThuliumExtractingNanoResin);
-    public static final MaterialWrapper YTTERBIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.YtterbiumExtractingNanoResin);
-    public static final MaterialWrapper FILLEDYTTERBIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.FilledYtterbiumExtractingNanoResin);
-    public static final MaterialWrapper LUTETIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.LutetiumExtractingNanoResin);
-    public static final MaterialWrapper FILLEDLUTETIUMEXTRACTINGNANORESIN = MaterialWrapper.of(() -> WerkstoffMaterialPool.FilledLutetiumExtractingNanoResin);
-    public static final MaterialWrapper LANTHANUMCHLORIDECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.LanthanumChlorideConcentrate);
-    public static final MaterialWrapper PRASEODYMIUMCHLORIDECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.PraseodymiumChlorideConcentrate);
-    public static final MaterialWrapper CERIUMCHLORIDECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.CeriumChlorideConcentrate);
-    public static final MaterialWrapper NEODYMIUMCHLORIDECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.NeodymiumChlorideConcentrate);
-    public static final MaterialWrapper PROMETHIUMCHLORIDECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.PromethiumChlorideConcentrate);
-    public static final MaterialWrapper SAMARIUMCHLORIDECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.SamariumChlorideConcentrate);
-    public static final MaterialWrapper EUROPIUMCHLORIDECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.EuropiumChlorideConcentrate);
-    public static final MaterialWrapper GADOLINIUMCHLORIDECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.GadoliniumChlorideConcentrate);
-    public static final MaterialWrapper TERBIUMCHLORIDECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.TerbiumChlorideConcentrate);
-    public static final MaterialWrapper DYSPROSIUMCHLORIDECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.DysprosiumChlorideConcentrate);
-    public static final MaterialWrapper HOLMIUMCHLORIDECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.HolmiumChlorideConcentrate);
-    public static final MaterialWrapper ERBIUMCHLORIDECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.ErbiumChlorideConcentrate);
-    public static final MaterialWrapper THULIUMCHLORIDECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.ThuliumChlorideConcentrate);
-    public static final MaterialWrapper YTTERBIUMCHLORIDECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.YtterbiumChlorideConcentrate);
-    public static final MaterialWrapper LUTETIUMCHLORIDECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.LutetiumChlorideConcentrate);
-    public static final MaterialWrapper LANTHANUMORECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.LanthanumOreConcentrate);
-    public static final MaterialWrapper PRASEODYMIUMORECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.PraseodymiumOreConcentrate);
-    public static final MaterialWrapper CERIUMORECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.CeriumOreConcentrate);
-    public static final MaterialWrapper NEODYMIUMORECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.NeodymiumOreConcentrate);
-    public static final MaterialWrapper PROMETHIUMORECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.PromethiumOreConcentrate);
-    public static final MaterialWrapper EUROPIUMORECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.EuropiumOreConcentrate);
-    public static final MaterialWrapper GADOLINIUMORECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.GadoliniumOreConcentrate);
-    public static final MaterialWrapper TERBIUMORECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.TerbiumOreConcentrate);
-    public static final MaterialWrapper DYSPROSIUMORECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.DysprosiumOreConcentrate);
-    public static final MaterialWrapper HOLMIUMORECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.HolmiumOreConcentrate);
-    public static final MaterialWrapper ERBIUMORECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.ErbiumOreConcentrate);
-    public static final MaterialWrapper THULIUMORECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.ThuliumOreConcentrate);
-    public static final MaterialWrapper YTTERBIUMORECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.YtterbiumOreConcentrate);
-    public static final MaterialWrapper LUTETIUMORECONCENTRATE = MaterialWrapper.of(() -> WerkstoffMaterialPool.LutetiumOreConcentrate);
-    public static final MaterialWrapper CERIUMDOPEDLUTETIUMALUMINIUMOXYGENBLEND = MaterialWrapper.of(() -> WerkstoffMaterialPool.CeriumDopedLutetiumAluminiumOxygenBlend);
-    public static final MaterialWrapper CERIUMDOPEDLUTETIUMALUMINIUMGARNET = MaterialWrapper.of(() -> WerkstoffMaterialPool.CeriumDopedLutetiumAluminiumGarnet);
+    public static final MaterialWrapper CHLORINATEDRAREEARTHCONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.ChlorinatedRareEarthConcentrate);
+    public static final MaterialWrapper CHLORINATEDRAREEARTHENRICHEDSOLUTION = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.ChlorinatedRareEarthEnrichedSolution);
+    public static final MaterialWrapper CHLORINATEDRAREEARTHDILUTEDSOLUTION = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.ChlorinatedRareEarthDilutedSolution);
+    public static final MaterialWrapper RARESTEARTHRESIDUE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.RarestEarthResidue);
+    public static final MaterialWrapper LANTHANUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.LanthanumExtractingNanoResin);
+    public static final MaterialWrapper FILLEDLANTHANUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.FilledLanthanumExtractingNanoResin);
+    public static final MaterialWrapper PRASEODYMIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.PraseodymiumExtractingNanoResin);
+    public static final MaterialWrapper FILLEDPRASEODYMIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.FilledPraseodymiumExtractingNanoResin);
+    public static final MaterialWrapper CERIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.CeriumExtractingNanoResin);
+    public static final MaterialWrapper FILLEDCERIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.FilledCeriumExtractingNanoResin);
+    public static final MaterialWrapper NEODYMIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.NeodymiumExtractingNanoResin);
+    public static final MaterialWrapper FILLEDNEODYMIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.FilledNeodymiumExtractingNanoResin);
+    public static final MaterialWrapper PROMETHIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.PromethiumExtractingNanoResin);
+    public static final MaterialWrapper FILLEDPROMETHIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.FilledPromethiumExtractingNanoResin);
+    public static final MaterialWrapper SAMARIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.SamariumExtractingNanoResin);
+    public static final MaterialWrapper FILLEDSAMARIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.FilledSamariumExtractingNanoResin);
+    public static final MaterialWrapper EUROPIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.EuropiumExtractingNanoResin);
+    public static final MaterialWrapper FILLEDEUROPIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.FilledEuropiumExtractingNanoResin);
+    public static final MaterialWrapper GADOLINIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.GadoliniumExtractingNanoResin);
+    public static final MaterialWrapper FILLEDGADOLINIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.FilledGadoliniumExtractingNanoResin);
+    public static final MaterialWrapper TERBIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.TerbiumExtractingNanoResin);
+    public static final MaterialWrapper FILLEDTERBIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.FilledTerbiumExtractingNanoResin);
+    public static final MaterialWrapper DYSPROSIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.DysprosiumExtractingNanoResin);
+    public static final MaterialWrapper FILLEDDYSPROSIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.FilledDysprosiumExtractingNanoResin);
+    public static final MaterialWrapper HOLMIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.HolmiumExtractingNanoResin);
+    public static final MaterialWrapper FILLEDHOLMIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.FilledHolmiumExtractingNanoResin);
+    public static final MaterialWrapper ERBIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.ErbiumExtractingNanoResin);
+    public static final MaterialWrapper FILLEDERBIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.FilledErbiumExtractingNanoResin);
+    public static final MaterialWrapper THULIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.ThuliumExtractingNanoResin);
+    public static final MaterialWrapper FILLEDTHULIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.FilledThuliumExtractingNanoResin);
+    public static final MaterialWrapper YTTERBIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.YtterbiumExtractingNanoResin);
+    public static final MaterialWrapper FILLEDYTTERBIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.FilledYtterbiumExtractingNanoResin);
+    public static final MaterialWrapper LUTETIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.LutetiumExtractingNanoResin);
+    public static final MaterialWrapper FILLEDLUTETIUMEXTRACTINGNANORESIN = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.FilledLutetiumExtractingNanoResin);
+    public static final MaterialWrapper LANTHANUMCHLORIDECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.LanthanumChlorideConcentrate);
+    public static final MaterialWrapper PRASEODYMIUMCHLORIDECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.PraseodymiumChlorideConcentrate);
+    public static final MaterialWrapper CERIUMCHLORIDECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.CeriumChlorideConcentrate);
+    public static final MaterialWrapper NEODYMIUMCHLORIDECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.NeodymiumChlorideConcentrate);
+    public static final MaterialWrapper PROMETHIUMCHLORIDECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.PromethiumChlorideConcentrate);
+    public static final MaterialWrapper SAMARIUMCHLORIDECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.SamariumChlorideConcentrate);
+    public static final MaterialWrapper EUROPIUMCHLORIDECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.EuropiumChlorideConcentrate);
+    public static final MaterialWrapper GADOLINIUMCHLORIDECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.GadoliniumChlorideConcentrate);
+    public static final MaterialWrapper TERBIUMCHLORIDECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.TerbiumChlorideConcentrate);
+    public static final MaterialWrapper DYSPROSIUMCHLORIDECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.DysprosiumChlorideConcentrate);
+    public static final MaterialWrapper HOLMIUMCHLORIDECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.HolmiumChlorideConcentrate);
+    public static final MaterialWrapper ERBIUMCHLORIDECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.ErbiumChlorideConcentrate);
+    public static final MaterialWrapper THULIUMCHLORIDECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.ThuliumChlorideConcentrate);
+    public static final MaterialWrapper YTTERBIUMCHLORIDECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.YtterbiumChlorideConcentrate);
+    public static final MaterialWrapper LUTETIUMCHLORIDECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.LutetiumChlorideConcentrate);
+    public static final MaterialWrapper LANTHANUMORECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.LanthanumOreConcentrate);
+    public static final MaterialWrapper PRASEODYMIUMORECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.PraseodymiumOreConcentrate);
+    public static final MaterialWrapper CERIUMORECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.CeriumOreConcentrate);
+    public static final MaterialWrapper NEODYMIUMORECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.NeodymiumOreConcentrate);
+    public static final MaterialWrapper PROMETHIUMORECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.PromethiumOreConcentrate);
+    public static final MaterialWrapper EUROPIUMORECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.EuropiumOreConcentrate);
+    public static final MaterialWrapper GADOLINIUMORECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.GadoliniumOreConcentrate);
+    public static final MaterialWrapper TERBIUMORECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.TerbiumOreConcentrate);
+    public static final MaterialWrapper DYSPROSIUMORECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.DysprosiumOreConcentrate);
+    public static final MaterialWrapper HOLMIUMORECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.HolmiumOreConcentrate);
+    public static final MaterialWrapper ERBIUMORECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.ErbiumOreConcentrate);
+    public static final MaterialWrapper THULIUMORECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.ThuliumOreConcentrate);
+    public static final MaterialWrapper YTTERBIUMORECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.YtterbiumOreConcentrate);
+    public static final MaterialWrapper LUTETIUMORECONCENTRATE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.LutetiumOreConcentrate);
+    public static final MaterialWrapper CERIUMDOPEDLUTETIUMALUMINIUMOXYGENBLEND = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.CeriumDopedLutetiumAluminiumOxygenBlend);
+    public static final MaterialWrapper CERIUMDOPEDLUTETIUMALUMINIUMGARNET = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.CeriumDopedLutetiumAluminiumGarnet);
     public static final MaterialWrapper PERMALLOY = MaterialWrapper.of(() -> WerkstoffMaterialPool.Permalloy);
     public static final MaterialWrapper MUMETAL = MaterialWrapper.of(() -> WerkstoffMaterialPool.MuMetal);
     public static final MaterialWrapper THORIUM234 = MaterialWrapper.of(() -> WerkstoffMaterialPool.Thorium234);
     public static final MaterialWrapper SILICONNITRIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.SiliconNitride);
     public static final MaterialWrapper FLUOROFORM = MaterialWrapper.of(() -> WerkstoffMaterialPool.Fluoroform);
-    public static final MaterialWrapper FLUOROFORMOXYGENMIX = MaterialWrapper.of(() -> WerkstoffMaterialPool.FluoroformOxygenMix);
+    public static final MaterialWrapper FLUOROFORMOXYGENMIX = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.FluoroformOxygenMix);
     public static final MaterialWrapper BORONTRIOXIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.BoronTrioxide);
-    public static final MaterialWrapper BORONTRICHLORIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.BoronTrichloride);
-    public static final MaterialWrapper LANTHANUMHEXABORIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.LanthanumHexaboride);
+    public static final MaterialWrapper BORONTRICHLORIDE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.BoronTrichloride);
+    public static final MaterialWrapper LANTHANUMHEXABORIDE = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.LanthanumHexaboride);
     public static final MaterialWrapper LANTHANUMOXIDE = MaterialWrapper.of(() -> WerkstoffMaterialPool.LanthanumOxide);
-    public static final MaterialWrapper NITROGENPLASMASILANEMIX = MaterialWrapper.of(() -> WerkstoffMaterialPool.NitrogenPlasmaSilaneMix);
-    public static final MaterialWrapper HOTSUPERCOOLANT = MaterialWrapper.of(() -> WerkstoffMaterialPool.HotSuperCoolant);
-    //#endregion
+    public static final MaterialWrapper NITROGENPLASMASILANEMIX = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.NitrogenPlasmaSilaneMix);
+    public static final MaterialWrapper HOTSUPERCOOLANT = MaterialWrapper
+        .of(() -> WerkstoffMaterialPool.HotSuperCoolant);
+    // #endregion
 
-    //#region src/main/java/goodgenerator/items/GGMaterial.java
-    public static final MaterialWrapper GRAPHITEURANIUMMIXTURE = MaterialWrapper.of(() -> GGMaterial.graphiteUraniumMixture);
-    public static final MaterialWrapper URANIUMBASEDLIQUIDFUEL = MaterialWrapper.of(() -> GGMaterial.uraniumBasedLiquidFuel);
-    public static final MaterialWrapper URANIUMBASEDLIQUIDFUELEXCITED = MaterialWrapper.of(() -> GGMaterial.uraniumBasedLiquidFuelExcited);
-    public static final MaterialWrapper URANIUMBASEDLIQUIDFUELDEPLETED = MaterialWrapper.of(() -> GGMaterial.uraniumBasedLiquidFuelDepleted);
-    public static final MaterialWrapper URANIUMCARBIDETHORIUMMIXTURE = MaterialWrapper.of(() -> GGMaterial.uraniumCarbideThoriumMixture);
-    public static final MaterialWrapper THORIUMBASEDLIQUIDFUEL = MaterialWrapper.of(() -> GGMaterial.thoriumBasedLiquidFuel);
-    public static final MaterialWrapper THORIUMBASEDLIQUIDFUELEXCITED = MaterialWrapper.of(() -> GGMaterial.thoriumBasedLiquidFuelExcited);
-    public static final MaterialWrapper THORIUMBASEDLIQUIDFUELDEPLETED = MaterialWrapper.of(() -> GGMaterial.thoriumBasedLiquidFuelDepleted);
-    public static final MaterialWrapper PLUTONIUMOXIDEURANIUMMIXTURE = MaterialWrapper.of(() -> GGMaterial.plutoniumOxideUraniumMixture);
-    public static final MaterialWrapper PLUTONIUMBASEDLIQUIDFUEL = MaterialWrapper.of(() -> GGMaterial.plutoniumBasedLiquidFuel);
-    public static final MaterialWrapper PLUTONIUMBASEDLIQUIDFUELEXCITED = MaterialWrapper.of(() -> GGMaterial.plutoniumBasedLiquidFuelExcited);
-    public static final MaterialWrapper PLUTONIUMBASEDLIQUIDFUELDEPLETED = MaterialWrapper.of(() -> GGMaterial.plutoniumBasedLiquidFuelDepleted);
+    // #region src/main/java/goodgenerator/items/GGMaterial.java
+    public static final MaterialWrapper GRAPHITEURANIUMMIXTURE = MaterialWrapper
+        .of(() -> GGMaterial.graphiteUraniumMixture);
+    public static final MaterialWrapper URANIUMBASEDLIQUIDFUEL = MaterialWrapper
+        .of(() -> GGMaterial.uraniumBasedLiquidFuel);
+    public static final MaterialWrapper URANIUMBASEDLIQUIDFUELEXCITED = MaterialWrapper
+        .of(() -> GGMaterial.uraniumBasedLiquidFuelExcited);
+    public static final MaterialWrapper URANIUMBASEDLIQUIDFUELDEPLETED = MaterialWrapper
+        .of(() -> GGMaterial.uraniumBasedLiquidFuelDepleted);
+    public static final MaterialWrapper URANIUMCARBIDETHORIUMMIXTURE = MaterialWrapper
+        .of(() -> GGMaterial.uraniumCarbideThoriumMixture);
+    public static final MaterialWrapper THORIUMBASEDLIQUIDFUEL = MaterialWrapper
+        .of(() -> GGMaterial.thoriumBasedLiquidFuel);
+    public static final MaterialWrapper THORIUMBASEDLIQUIDFUELEXCITED = MaterialWrapper
+        .of(() -> GGMaterial.thoriumBasedLiquidFuelExcited);
+    public static final MaterialWrapper THORIUMBASEDLIQUIDFUELDEPLETED = MaterialWrapper
+        .of(() -> GGMaterial.thoriumBasedLiquidFuelDepleted);
+    public static final MaterialWrapper PLUTONIUMOXIDEURANIUMMIXTURE = MaterialWrapper
+        .of(() -> GGMaterial.plutoniumOxideUraniumMixture);
+    public static final MaterialWrapper PLUTONIUMBASEDLIQUIDFUEL = MaterialWrapper
+        .of(() -> GGMaterial.plutoniumBasedLiquidFuel);
+    public static final MaterialWrapper PLUTONIUMBASEDLIQUIDFUELEXCITED = MaterialWrapper
+        .of(() -> GGMaterial.plutoniumBasedLiquidFuelExcited);
+    public static final MaterialWrapper PLUTONIUMBASEDLIQUIDFUELDEPLETED = MaterialWrapper
+        .of(() -> GGMaterial.plutoniumBasedLiquidFuelDepleted);
     public static final MaterialWrapper OXALATE = MaterialWrapper.of(() -> GGMaterial.oxalate);
     public static final MaterialWrapper VANADIUMPENTOXIDE = MaterialWrapper.of(() -> GGMaterial.vanadiumPentoxide);
     public static final MaterialWrapper THORIUMNITRATE = MaterialWrapper.of(() -> GGMaterial.thoriumNitrate);
     public static final MaterialWrapper THORIUMOXALATE = MaterialWrapper.of(() -> GGMaterial.thoriumOxalate);
     public static final MaterialWrapper THORIUMHYDROXIDE = MaterialWrapper.of(() -> GGMaterial.thoriumHydroxide);
     public static final MaterialWrapper SODIUMOXALATE = MaterialWrapper.of(() -> GGMaterial.sodiumOxalate);
-    public static final MaterialWrapper THORIUMTETRACHLORIDE = MaterialWrapper.of(() -> GGMaterial.thoriumTetrachloride);
-    public static final MaterialWrapper THORIUMTETRAFLUORIDE = MaterialWrapper.of(() -> GGMaterial.thoriumTetrafluoride);
-    public static final MaterialWrapper THORIUM232TETRAFLUORIDE = MaterialWrapper.of(() -> GGMaterial.thorium232Tetrafluoride);
+    public static final MaterialWrapper THORIUMTETRACHLORIDE = MaterialWrapper
+        .of(() -> GGMaterial.thoriumTetrachloride);
+    public static final MaterialWrapper THORIUMTETRAFLUORIDE = MaterialWrapper
+        .of(() -> GGMaterial.thoriumTetrafluoride);
+    public static final MaterialWrapper THORIUM232TETRAFLUORIDE = MaterialWrapper
+        .of(() -> GGMaterial.thorium232Tetrafluoride);
     public static final MaterialWrapper ORUNDUM = MaterialWrapper.of(() -> GGMaterial.orundum);
-    public static final MaterialWrapper ATOMICSEPARATIONCATALYST = MaterialWrapper.of(() -> GGMaterial.atomicSeparationCatalyst);
-    public static final MaterialWrapper EXTREMELYUNSTABLENAQUADAH = MaterialWrapper.of(() -> GGMaterial.extremelyUnstableNaquadah);
+    public static final MaterialWrapper ATOMICSEPARATIONCATALYST = MaterialWrapper
+        .of(() -> GGMaterial.atomicSeparationCatalyst);
+    public static final MaterialWrapper EXTREMELYUNSTABLENAQUADAH = MaterialWrapper
+        .of(() -> GGMaterial.extremelyUnstableNaquadah);
     public static final MaterialWrapper LIGHTNAQUADAHFUEL = MaterialWrapper.of(() -> GGMaterial.lightNaquadahFuel);
     public static final MaterialWrapper HEAVYNAQUADAHFUEL = MaterialWrapper.of(() -> GGMaterial.heavyNaquadahFuel);
     public static final MaterialWrapper NAQUADAHGAS = MaterialWrapper.of(() -> GGMaterial.naquadahGas);
     public static final MaterialWrapper NAQUADAHASPHALT = MaterialWrapper.of(() -> GGMaterial.naquadahAsphalt);
     public static final MaterialWrapper ETHER = MaterialWrapper.of(() -> GGMaterial.ether);
     public static final MaterialWrapper ANTIMONYTRICHLORIDE = MaterialWrapper.of(() -> GGMaterial.antimonyTrichloride);
-    public static final MaterialWrapper ANTIMONYPENTACHLORIDESOLUTION = MaterialWrapper.of(() -> GGMaterial.antimonyPentachlorideSolution);
-    public static final MaterialWrapper ANTIMONYPENTACHLORIDE = MaterialWrapper.of(() -> GGMaterial.antimonyPentachloride);
-    public static final MaterialWrapper ANTIMONYPENTAFLUORIDE = MaterialWrapper.of(() -> GGMaterial.antimonyPentafluoride);
+    public static final MaterialWrapper ANTIMONYPENTACHLORIDESOLUTION = MaterialWrapper
+        .of(() -> GGMaterial.antimonyPentachlorideSolution);
+    public static final MaterialWrapper ANTIMONYPENTACHLORIDE = MaterialWrapper
+        .of(() -> GGMaterial.antimonyPentachloride);
+    public static final MaterialWrapper ANTIMONYPENTAFLUORIDE = MaterialWrapper
+        .of(() -> GGMaterial.antimonyPentafluoride);
     public static final MaterialWrapper FLUOROANTIMONICACID = MaterialWrapper.of(() -> GGMaterial.fluoroantimonicAcid);
     public static final MaterialWrapper RADIOACTIVESLUDGE = MaterialWrapper.of(() -> GGMaterial.radioactiveSludge);
-    public static final MaterialWrapper ACIDNAQUADAHEMULSION = MaterialWrapper.of(() -> GGMaterial.acidNaquadahEmulsion);
+    public static final MaterialWrapper ACIDNAQUADAHEMULSION = MaterialWrapper
+        .of(() -> GGMaterial.acidNaquadahEmulsion);
     public static final MaterialWrapper NAQUADAHEMULSION = MaterialWrapper.of(() -> GGMaterial.naquadahEmulsion);
     public static final MaterialWrapper NAQUADAHSOLUTION = MaterialWrapper.of(() -> GGMaterial.naquadahSolution);
-    public static final MaterialWrapper NAQUADAHBASEDFUELMKI = MaterialWrapper.of(() -> GGMaterial.naquadahBasedFuelMkI);
-    public static final MaterialWrapper NAQUADAHBASEDFUELMKIDEPLETED = MaterialWrapper.of(() -> GGMaterial.naquadahBasedFuelMkIDepleted);
-    public static final MaterialWrapper NAQUADAHBASEDFUELMKII = MaterialWrapper.of(() -> GGMaterial.naquadahBasedFuelMkII);
-    public static final MaterialWrapper NAQUADAHBASEDFUELMKIIDEPLETED = MaterialWrapper.of(() -> GGMaterial.naquadahBasedFuelMkIIDepleted);
-    public static final MaterialWrapper NAQUADAHBASEDFUELMKIII = MaterialWrapper.of(() -> GGMaterial.naquadahBasedFuelMkIII);
-    public static final MaterialWrapper NAQUADAHBASEDFUELMKIIIDEPLETED = MaterialWrapper.of(() -> GGMaterial.naquadahBasedFuelMkIIIDepleted);
-    public static final MaterialWrapper NAQUADAHBASEDFUELMKIV = MaterialWrapper.of(() -> GGMaterial.naquadahBasedFuelMkIV);
-    public static final MaterialWrapper NAQUADAHBASEDFUELMKIVDEPLETED = MaterialWrapper.of(() -> GGMaterial.naquadahBasedFuelMkIVDepleted);
-    public static final MaterialWrapper NAQUADAHBASEDFUELMKV = MaterialWrapper.of(() -> GGMaterial.naquadahBasedFuelMkV);
-    public static final MaterialWrapper NAQUADAHBASEDFUELMKVDEPLETED = MaterialWrapper.of(() -> GGMaterial.naquadahBasedFuelMkVDepleted);
-    public static final MaterialWrapper NAQUADAHBASEDFUELMKVI = MaterialWrapper.of(() -> GGMaterial.naquadahBasedFuelMkVI);
-    public static final MaterialWrapper NAQUADAHBASEDFUELMKVIDEPLETED = MaterialWrapper.of(() -> GGMaterial.naquadahBasedFuelMkVIDepleted);
+    public static final MaterialWrapper NAQUADAHBASEDFUELMKI = MaterialWrapper
+        .of(() -> GGMaterial.naquadahBasedFuelMkI);
+    public static final MaterialWrapper NAQUADAHBASEDFUELMKIDEPLETED = MaterialWrapper
+        .of(() -> GGMaterial.naquadahBasedFuelMkIDepleted);
+    public static final MaterialWrapper NAQUADAHBASEDFUELMKII = MaterialWrapper
+        .of(() -> GGMaterial.naquadahBasedFuelMkII);
+    public static final MaterialWrapper NAQUADAHBASEDFUELMKIIDEPLETED = MaterialWrapper
+        .of(() -> GGMaterial.naquadahBasedFuelMkIIDepleted);
+    public static final MaterialWrapper NAQUADAHBASEDFUELMKIII = MaterialWrapper
+        .of(() -> GGMaterial.naquadahBasedFuelMkIII);
+    public static final MaterialWrapper NAQUADAHBASEDFUELMKIIIDEPLETED = MaterialWrapper
+        .of(() -> GGMaterial.naquadahBasedFuelMkIIIDepleted);
+    public static final MaterialWrapper NAQUADAHBASEDFUELMKIV = MaterialWrapper
+        .of(() -> GGMaterial.naquadahBasedFuelMkIV);
+    public static final MaterialWrapper NAQUADAHBASEDFUELMKIVDEPLETED = MaterialWrapper
+        .of(() -> GGMaterial.naquadahBasedFuelMkIVDepleted);
+    public static final MaterialWrapper NAQUADAHBASEDFUELMKV = MaterialWrapper
+        .of(() -> GGMaterial.naquadahBasedFuelMkV);
+    public static final MaterialWrapper NAQUADAHBASEDFUELMKVDEPLETED = MaterialWrapper
+        .of(() -> GGMaterial.naquadahBasedFuelMkVDepleted);
+    public static final MaterialWrapper NAQUADAHBASEDFUELMKVI = MaterialWrapper
+        .of(() -> GGMaterial.naquadahBasedFuelMkVI);
+    public static final MaterialWrapper NAQUADAHBASEDFUELMKVIDEPLETED = MaterialWrapper
+        .of(() -> GGMaterial.naquadahBasedFuelMkVIDepleted);
     public static final MaterialWrapper ZINCCHLORIDE = MaterialWrapper.of(() -> GGMaterial.zincChloride);
     public static final MaterialWrapper ZINCTHORIUMALLOY = MaterialWrapper.of(() -> GGMaterial.zincThoriumAlloy);
     public static final MaterialWrapper NAQUADAHEARTH = MaterialWrapper.of(() -> GGMaterial.naquadahEarth);
     public static final MaterialWrapper TITANIUMTRIFLUORIDE = MaterialWrapper.of(() -> GGMaterial.titaniumTrifluoride);
-    public static final MaterialWrapper LOWQUALITYNAQUADAHEMULSION = MaterialWrapper.of(() -> GGMaterial.lowQualityNaquadahEmulsion);
+    public static final MaterialWrapper LOWQUALITYNAQUADAHEMULSION = MaterialWrapper
+        .of(() -> GGMaterial.lowQualityNaquadahEmulsion);
     public static final MaterialWrapper GALLIUMHYDROXIDE = MaterialWrapper.of(() -> GGMaterial.galliumHydroxide);
-    public static final MaterialWrapper LOWQUALITYNAQUADAHSOLUTION = MaterialWrapper.of(() -> GGMaterial.lowQualityNaquadahSolution);
+    public static final MaterialWrapper LOWQUALITYNAQUADAHSOLUTION = MaterialWrapper
+        .of(() -> GGMaterial.lowQualityNaquadahSolution);
     public static final MaterialWrapper TOWETHYL1HEXANOL = MaterialWrapper.of(() -> GGMaterial.towEthyl1Hexanol);
     public static final MaterialWrapper P507 = MaterialWrapper.of(() -> GGMaterial.P507);
-    public static final MaterialWrapper NAQUADAHADAMANTIUMSOLUTION = MaterialWrapper.of(() -> GGMaterial.naquadahAdamantiumSolution);
-    public static final MaterialWrapper NAQUADAHRICHSOLUTION = MaterialWrapper.of(() -> GGMaterial.naquadahRichSolution);
+    public static final MaterialWrapper NAQUADAHADAMANTIUMSOLUTION = MaterialWrapper
+        .of(() -> GGMaterial.naquadahAdamantiumSolution);
+    public static final MaterialWrapper NAQUADAHRICHSOLUTION = MaterialWrapper
+        .of(() -> GGMaterial.naquadahRichSolution);
     public static final MaterialWrapper NAQUADAHINE = MaterialWrapper.of(() -> GGMaterial.naquadahine);
-    public static final MaterialWrapper FLUORINERICHWASTELIQUID = MaterialWrapper.of(() -> GGMaterial.fluorineRichWasteLiquid);
+    public static final MaterialWrapper FLUORINERICHWASTELIQUID = MaterialWrapper
+        .of(() -> GGMaterial.fluorineRichWasteLiquid);
     public static final MaterialWrapper WASTELIQUID = MaterialWrapper.of(() -> GGMaterial.wasteLiquid);
     public static final MaterialWrapper ADAMANTINE = MaterialWrapper.of(() -> GGMaterial.adamantine);
-    public static final MaterialWrapper ENRICHEDNAQUADAHEARTH = MaterialWrapper.of(() -> GGMaterial.enrichedNaquadahEarth);
+    public static final MaterialWrapper ENRICHEDNAQUADAHEARTH = MaterialWrapper
+        .of(() -> GGMaterial.enrichedNaquadahEarth);
     public static final MaterialWrapper TRINIUMSULPHATE = MaterialWrapper.of(() -> GGMaterial.triniumSulphate);
-    public static final MaterialWrapper ENRICHEDNAQUADAHRICHSOLUTION = MaterialWrapper.of(() -> GGMaterial.enrichedNaquadahRichSolution);
-    public static final MaterialWrapper CONCENTRATEDENRICHEDNAQUADAHSLUDGE = MaterialWrapper.of(() -> GGMaterial.concentratedEnrichedNaquadahSludge);
-    public static final MaterialWrapper ENRICHEDNAQUADAHSULPHATE = MaterialWrapper.of(() -> GGMaterial.enrichedNaquadahSulphate);
+    public static final MaterialWrapper ENRICHEDNAQUADAHRICHSOLUTION = MaterialWrapper
+        .of(() -> GGMaterial.enrichedNaquadahRichSolution);
+    public static final MaterialWrapper CONCENTRATEDENRICHEDNAQUADAHSLUDGE = MaterialWrapper
+        .of(() -> GGMaterial.concentratedEnrichedNaquadahSludge);
+    public static final MaterialWrapper ENRICHEDNAQUADAHSULPHATE = MaterialWrapper
+        .of(() -> GGMaterial.enrichedNaquadahSulphate);
     public static final MaterialWrapper NAQUADRIAEARTH = MaterialWrapper.of(() -> GGMaterial.naquadriaEarth);
     public static final MaterialWrapper INDIUMPHOSPHATE = MaterialWrapper.of(() -> GGMaterial.indiumPhosphate);
-    public static final MaterialWrapper LOWQUALITYNAQUADRIAPHOSPHATE = MaterialWrapper.of(() -> GGMaterial.lowQualityNaquadriaPhosphate);
-    public static final MaterialWrapper NAQUADRIARICHSOLUTION = MaterialWrapper.of(() -> GGMaterial.naquadriaRichSolution);
-    public static final MaterialWrapper LOWQUALITYNAQUADRIASULPHATE = MaterialWrapper.of(() -> GGMaterial.lowQualityNaquadriaSulphate);
-    public static final MaterialWrapper LOWQUALITYNAQUADRIASOLUTION = MaterialWrapper.of(() -> GGMaterial.lowQualityNaquadriaSolution);
+    public static final MaterialWrapper LOWQUALITYNAQUADRIAPHOSPHATE = MaterialWrapper
+        .of(() -> GGMaterial.lowQualityNaquadriaPhosphate);
+    public static final MaterialWrapper NAQUADRIARICHSOLUTION = MaterialWrapper
+        .of(() -> GGMaterial.naquadriaRichSolution);
+    public static final MaterialWrapper LOWQUALITYNAQUADRIASULPHATE = MaterialWrapper
+        .of(() -> GGMaterial.lowQualityNaquadriaSulphate);
+    public static final MaterialWrapper LOWQUALITYNAQUADRIASOLUTION = MaterialWrapper
+        .of(() -> GGMaterial.lowQualityNaquadriaSolution);
     public static final MaterialWrapper NAQUADRIASULPHATE = MaterialWrapper.of(() -> GGMaterial.naquadriaSulphate);
     public static final MaterialWrapper NAQUADAHGOO = MaterialWrapper.of(() -> GGMaterial.naquadahGoo);
     public static final MaterialWrapper ENRICHEDNAQUADAHGOO = MaterialWrapper.of(() -> GGMaterial.enrichedNaquadahGoo);
@@ -1255,7 +1515,8 @@ public class GTMats {
     public static final MaterialWrapper CYCLOPENTADIENE = MaterialWrapper.of(() -> GGMaterial.cyclopentadiene);
     public static final MaterialWrapper FERROUSCHLORIDE = MaterialWrapper.of(() -> GGMaterial.ferrousChloride);
     public static final MaterialWrapper DIETHYLAMINE = MaterialWrapper.of(() -> GGMaterial.diethylamine);
-    public static final MaterialWrapper IMPUREFERROCENEMIXTURE = MaterialWrapper.of(() -> GGMaterial.impureFerroceneMixture);
+    public static final MaterialWrapper IMPUREFERROCENEMIXTURE = MaterialWrapper
+        .of(() -> GGMaterial.impureFerroceneMixture);
     public static final MaterialWrapper FERROCENESOLUTION = MaterialWrapper.of(() -> GGMaterial.ferroceneSolution);
     public static final MaterialWrapper FERROCENEWASTE = MaterialWrapper.of(() -> GGMaterial.ferroceneWaste);
     public static final MaterialWrapper FERROCENE = MaterialWrapper.of(() -> GGMaterial.ferrocene);
@@ -1272,90 +1533,145 @@ public class GTMats {
     public static final MaterialWrapper DALISENITE = MaterialWrapper.of(() -> GGMaterial.dalisenite);
     public static final MaterialWrapper HIKARIUM = MaterialWrapper.of(() -> GGMaterial.hikarium);
     public static final MaterialWrapper TAIRITSU = MaterialWrapper.of(() -> GGMaterial.tairitsu);
-    public static final MaterialWrapper ANTIMONYPENTAFLUORIDESOLUTION = MaterialWrapper.of(() -> GGMaterial.antimonyPentafluorideSolution);
+    public static final MaterialWrapper ANTIMONYPENTAFLUORIDESOLUTION = MaterialWrapper
+        .of(() -> GGMaterial.antimonyPentafluorideSolution);
     public static final MaterialWrapper MAGNESIUMSULPHATE = MaterialWrapper.of(() -> GGMaterial.magnesiumSulphate);
     public static final MaterialWrapper PRECIOUSMETALALLOY = MaterialWrapper.of(() -> GGMaterial.preciousMetalAlloy);
-    public static final MaterialWrapper ENRICHEDNAQUADAHALLOY = MaterialWrapper.of(() -> GGMaterial.enrichedNaquadahAlloy);
+    public static final MaterialWrapper ENRICHEDNAQUADAHALLOY = MaterialWrapper
+        .of(() -> GGMaterial.enrichedNaquadahAlloy);
     public static final MaterialWrapper METASTABLEOGANESSON = MaterialWrapper.of(() -> GGMaterial.metastableOganesson);
     public static final MaterialWrapper SHIRABON = MaterialWrapper.of(() -> GGMaterial.shirabon);
     public static final MaterialWrapper INERTNAQUADAH = MaterialWrapper.of(() -> GGMaterial.inertNaquadah);
-    public static final MaterialWrapper INERTENRICHEDNAQUADAH = MaterialWrapper.of(() -> GGMaterial.inertEnrichedNaquadah);
+    public static final MaterialWrapper INERTENRICHEDNAQUADAH = MaterialWrapper
+        .of(() -> GGMaterial.inertEnrichedNaquadah);
     public static final MaterialWrapper INERTNAQUADRIA = MaterialWrapper.of(() -> GGMaterial.inertNaquadria);
-    //#endregion
+    // #endregion
 
-    //#region src/main/java/gtnhlanth/common/register/BotWerkstoffMaterialPool.java
+    // #region src/main/java/gtnhlanth/common/register/BotWerkstoffMaterialPool.java
     public static final MaterialWrapper TUNGSTICACID = MaterialWrapper.of(() -> BotWerkstoffMaterialPool.TungsticAcid);
-    public static final MaterialWrapper TUNGSTENTRIOXIDE = MaterialWrapper.of(() -> BotWerkstoffMaterialPool.TungstenTrioxide);
-    public static final MaterialWrapper SODIUMTUNGSTATE = MaterialWrapper.of(() -> BotWerkstoffMaterialPool.SodiumTungstate);
+    public static final MaterialWrapper TUNGSTENTRIOXIDE = MaterialWrapper
+        .of(() -> BotWerkstoffMaterialPool.TungstenTrioxide);
+    public static final MaterialWrapper SODIUMTUNGSTATE = MaterialWrapper
+        .of(() -> BotWerkstoffMaterialPool.SodiumTungstate);
     public static final MaterialWrapper PHOSGENE = MaterialWrapper.of(() -> BotWerkstoffMaterialPool.Phosgene);
     public static final MaterialWrapper NITROMETHANE = MaterialWrapper.of(() -> BotWerkstoffMaterialPool.Nitromethane);
-    //#endregion
+    // #endregion
 
-    //#region src/main/java/com/recursive_pineapple/nuclear_horizons/reactors/items/material/MaterialsNuclear.java
+    // #region src/main/java/com/recursive_pineapple/nuclear_horizons/reactors/items/material/MaterialsNuclear.java
     public static final MaterialWrapper NATURAL_URANIUM = MaterialWrapper.of(() -> MaterialsNuclear.NATURAL_URANIUM);
-    public static final MaterialWrapper NATURAL_URANIUM_TETRAFLUORIDE = MaterialWrapper.of(() -> MaterialsNuclear.NATURAL_URANIUM_TETRAFLUORIDE);
-    public static final MaterialWrapper NATURAL_URANIUM_HEXAFLUORIDE = MaterialWrapper.of(() -> MaterialsNuclear.NATURAL_URANIUM_HEXAFLUORIDE);
-    public static final MaterialWrapper DEPLETED_URANIUM_HEXAFLUORIDE = MaterialWrapper.of(() -> MaterialsNuclear.DEPLETED_URANIUM_HEXAFLUORIDE);
-    public static final MaterialWrapper ENRICHED_URANIUM_HEXAFLUORIDE = MaterialWrapper.of(() -> MaterialsNuclear.ENRICHED_URANIUM_HEXAFLUORIDE);
-    public static final MaterialWrapper ENRICHED_URANIUM_FUEL = MaterialWrapper.of(() -> MaterialsNuclear.ENRICHED_URANIUM_FUEL);
-    public static final MaterialWrapper ENRICHED_THORIUM_FUEL = MaterialWrapper.of(() -> MaterialsNuclear.ENRICHED_THORIUM_FUEL);
-    public static final MaterialWrapper ENRICHED_MOX_FUEL = MaterialWrapper.of(() -> MaterialsNuclear.ENRICHED_MOX_FUEL);
-    public static final MaterialWrapper DEPLETED_URANIUM_FUEL = MaterialWrapper.of(() -> MaterialsNuclear.DEPLETED_URANIUM_FUEL);
-    public static final MaterialWrapper DEPLETED_THORIUM_FUEL = MaterialWrapper.of(() -> MaterialsNuclear.DEPLETED_THORIUM_FUEL);
-    public static final MaterialWrapper DEPLETED_MOX_FUEL = MaterialWrapper.of(() -> MaterialsNuclear.DEPLETED_MOX_FUEL);
-    public static final MaterialWrapper DEPLETED_URANIUM_FUEL_SOLUTION = MaterialWrapper.of(() -> MaterialsNuclear.DEPLETED_URANIUM_FUEL_SOLUTION);
-    public static final MaterialWrapper DEPLETED_THORIUM_FUEL_SOLUTION = MaterialWrapper.of(() -> MaterialsNuclear.DEPLETED_THORIUM_FUEL_SOLUTION);
-    public static final MaterialWrapper DEPLETED_MOX_FUEL_SOLUTION = MaterialWrapper.of(() -> MaterialsNuclear.DEPLETED_MOX_FUEL_SOLUTION);
-    public static final MaterialWrapper PU_SOLUTION_AQ_PHASE = MaterialWrapper.of(() -> MaterialsNuclear.PU_SOLUTION_AQ_PHASE);
-    public static final MaterialWrapper U_SOLUTION_ORG_PHASE = MaterialWrapper.of(() -> MaterialsNuclear.U_SOLUTION_ORG_PHASE);
-    public static final MaterialWrapper U238_MIBK_SOLUTION = MaterialWrapper.of(() -> MaterialsNuclear.U238_MIBK_SOLUTION);
-    public static final MaterialWrapper U238_WATER_SOLUTION = MaterialWrapper.of(() -> MaterialsNuclear.U238_WATER_SOLUTION);
+    public static final MaterialWrapper NATURAL_URANIUM_TETRAFLUORIDE = MaterialWrapper
+        .of(() -> MaterialsNuclear.NATURAL_URANIUM_TETRAFLUORIDE);
+    public static final MaterialWrapper NATURAL_URANIUM_HEXAFLUORIDE = MaterialWrapper
+        .of(() -> MaterialsNuclear.NATURAL_URANIUM_HEXAFLUORIDE);
+    public static final MaterialWrapper DEPLETED_URANIUM_HEXAFLUORIDE = MaterialWrapper
+        .of(() -> MaterialsNuclear.DEPLETED_URANIUM_HEXAFLUORIDE);
+    public static final MaterialWrapper ENRICHED_URANIUM_HEXAFLUORIDE = MaterialWrapper
+        .of(() -> MaterialsNuclear.ENRICHED_URANIUM_HEXAFLUORIDE);
+    public static final MaterialWrapper ENRICHED_URANIUM_FUEL = MaterialWrapper
+        .of(() -> MaterialsNuclear.ENRICHED_URANIUM_FUEL);
+    public static final MaterialWrapper ENRICHED_THORIUM_FUEL = MaterialWrapper
+        .of(() -> MaterialsNuclear.ENRICHED_THORIUM_FUEL);
+    public static final MaterialWrapper ENRICHED_MOX_FUEL = MaterialWrapper
+        .of(() -> MaterialsNuclear.ENRICHED_MOX_FUEL);
+    public static final MaterialWrapper DEPLETED_URANIUM_FUEL = MaterialWrapper
+        .of(() -> MaterialsNuclear.DEPLETED_URANIUM_FUEL);
+    public static final MaterialWrapper DEPLETED_THORIUM_FUEL = MaterialWrapper
+        .of(() -> MaterialsNuclear.DEPLETED_THORIUM_FUEL);
+    public static final MaterialWrapper DEPLETED_MOX_FUEL = MaterialWrapper
+        .of(() -> MaterialsNuclear.DEPLETED_MOX_FUEL);
+    public static final MaterialWrapper DEPLETED_URANIUM_FUEL_SOLUTION = MaterialWrapper
+        .of(() -> MaterialsNuclear.DEPLETED_URANIUM_FUEL_SOLUTION);
+    public static final MaterialWrapper DEPLETED_THORIUM_FUEL_SOLUTION = MaterialWrapper
+        .of(() -> MaterialsNuclear.DEPLETED_THORIUM_FUEL_SOLUTION);
+    public static final MaterialWrapper DEPLETED_MOX_FUEL_SOLUTION = MaterialWrapper
+        .of(() -> MaterialsNuclear.DEPLETED_MOX_FUEL_SOLUTION);
+    public static final MaterialWrapper PU_SOLUTION_AQ_PHASE = MaterialWrapper
+        .of(() -> MaterialsNuclear.PU_SOLUTION_AQ_PHASE);
+    public static final MaterialWrapper U_SOLUTION_ORG_PHASE = MaterialWrapper
+        .of(() -> MaterialsNuclear.U_SOLUTION_ORG_PHASE);
+    public static final MaterialWrapper U238_MIBK_SOLUTION = MaterialWrapper
+        .of(() -> MaterialsNuclear.U238_MIBK_SOLUTION);
+    public static final MaterialWrapper U238_WATER_SOLUTION = MaterialWrapper
+        .of(() -> MaterialsNuclear.U238_WATER_SOLUTION);
     public static final MaterialWrapper U235_SOLUTION = MaterialWrapper.of(() -> MaterialsNuclear.U235_SOLUTION);
     public static final MaterialWrapper MIXED_PU_SOLIDS = MaterialWrapper.of(() -> MaterialsNuclear.MIXED_PU_SOLIDS);
-    public static final MaterialWrapper PU239_MIBK_SOLUTION = MaterialWrapper.of(() -> MaterialsNuclear.PU239_MIBK_SOLUTION);
-    public static final MaterialWrapper PU239_WATER_SOLUTION = MaterialWrapper.of(() -> MaterialsNuclear.PU239_WATER_SOLUTION);
+    public static final MaterialWrapper PU239_MIBK_SOLUTION = MaterialWrapper
+        .of(() -> MaterialsNuclear.PU239_MIBK_SOLUTION);
+    public static final MaterialWrapper PU239_WATER_SOLUTION = MaterialWrapper
+        .of(() -> MaterialsNuclear.PU239_WATER_SOLUTION);
     public static final MaterialWrapper PU241_SOLUTION = MaterialWrapper.of(() -> MaterialsNuclear.PU241_SOLUTION);
-    public static final MaterialWrapper TH_SOLUTION_AQ_PHASE = MaterialWrapper.of(() -> MaterialsNuclear.TH_SOLUTION_AQ_PHASE);
-    public static final MaterialWrapper URANIUM233_SOLUTION_ORG_PHASE = MaterialWrapper.of(() -> MaterialsNuclear.URANIUM233_SOLUTION_ORG_PHASE);
-    public static final MaterialWrapper PLUTONYL_239_NITRATE = MaterialWrapper.of(() -> MaterialsNuclear.PLUTONYL_239_NITRATE);
-    public static final MaterialWrapper PLUTONYL_241_NITRATE = MaterialWrapper.of(() -> MaterialsNuclear.PLUTONYL_241_NITRATE);
-    public static final MaterialWrapper URANYL_233_NITRATE = MaterialWrapper.of(() -> MaterialsNuclear.URANYL_233_NITRATE);
-    public static final MaterialWrapper URANYL_235_NITRATE = MaterialWrapper.of(() -> MaterialsNuclear.URANYL_235_NITRATE);
-    public static final MaterialWrapper URANYL_238_NITRATE = MaterialWrapper.of(() -> MaterialsNuclear.URANYL_238_NITRATE);
-    public static final MaterialWrapper URANIUM_233_DIOXIDE = MaterialWrapper.of(() -> MaterialsNuclear.URANIUM_233_DIOXIDE);
-    public static final MaterialWrapper URANIUM_235_DIOXIDE = MaterialWrapper.of(() -> MaterialsNuclear.URANIUM_235_DIOXIDE);
-    public static final MaterialWrapper URANIUM_238_DIOXIDE = MaterialWrapper.of(() -> MaterialsNuclear.URANIUM_238_DIOXIDE);
-    public static final MaterialWrapper THORIANITE_AQ_SOLUTION = MaterialWrapper.of(() -> MaterialsNuclear.THORIANITE_AQ_SOLUTION);
-    public static final MaterialWrapper THORIUM_NITRATE_SOLUTION = MaterialWrapper.of(() -> MaterialsNuclear.THORIUM_NITRATE_SOLUTION);
-    public static final MaterialWrapper LOW_URANIUM_SLUDGE = MaterialWrapper.of(() -> MaterialsNuclear.LOW_URANIUM_SLUDGE);
-    public static final MaterialWrapper POOR_URANIUM_MIXTURE = MaterialWrapper.of(() -> MaterialsNuclear.POOR_URANIUM_MIXTURE);
+    public static final MaterialWrapper TH_SOLUTION_AQ_PHASE = MaterialWrapper
+        .of(() -> MaterialsNuclear.TH_SOLUTION_AQ_PHASE);
+    public static final MaterialWrapper URANIUM233_SOLUTION_ORG_PHASE = MaterialWrapper
+        .of(() -> MaterialsNuclear.URANIUM233_SOLUTION_ORG_PHASE);
+    public static final MaterialWrapper PLUTONYL_239_NITRATE = MaterialWrapper
+        .of(() -> MaterialsNuclear.PLUTONYL_239_NITRATE);
+    public static final MaterialWrapper PLUTONYL_241_NITRATE = MaterialWrapper
+        .of(() -> MaterialsNuclear.PLUTONYL_241_NITRATE);
+    public static final MaterialWrapper URANYL_233_NITRATE = MaterialWrapper
+        .of(() -> MaterialsNuclear.URANYL_233_NITRATE);
+    public static final MaterialWrapper URANYL_235_NITRATE = MaterialWrapper
+        .of(() -> MaterialsNuclear.URANYL_235_NITRATE);
+    public static final MaterialWrapper URANYL_238_NITRATE = MaterialWrapper
+        .of(() -> MaterialsNuclear.URANYL_238_NITRATE);
+    public static final MaterialWrapper URANIUM_233_DIOXIDE = MaterialWrapper
+        .of(() -> MaterialsNuclear.URANIUM_233_DIOXIDE);
+    public static final MaterialWrapper URANIUM_235_DIOXIDE = MaterialWrapper
+        .of(() -> MaterialsNuclear.URANIUM_235_DIOXIDE);
+    public static final MaterialWrapper URANIUM_238_DIOXIDE = MaterialWrapper
+        .of(() -> MaterialsNuclear.URANIUM_238_DIOXIDE);
+    public static final MaterialWrapper THORIANITE_AQ_SOLUTION = MaterialWrapper
+        .of(() -> MaterialsNuclear.THORIANITE_AQ_SOLUTION);
+    public static final MaterialWrapper THORIUM_NITRATE_SOLUTION = MaterialWrapper
+        .of(() -> MaterialsNuclear.THORIUM_NITRATE_SOLUTION);
+    public static final MaterialWrapper LOW_URANIUM_SLUDGE = MaterialWrapper
+        .of(() -> MaterialsNuclear.LOW_URANIUM_SLUDGE);
+    public static final MaterialWrapper POOR_URANIUM_MIXTURE = MaterialWrapper
+        .of(() -> MaterialsNuclear.POOR_URANIUM_MIXTURE);
     public static final MaterialWrapper REFINED_THORIUM = MaterialWrapper.of(() -> MaterialsNuclear.REFINED_THORIUM);
-    //#endregion
+    // #endregion
 
-    //#region src/main/java/com/recursive_pineapple/nuclear_horizons/reactors/items/material/MaterialsChemical.java
-    public static final MaterialWrapper TRIBUTYL_PHOSPHATE = MaterialWrapper.of(() -> MaterialsChemical.TRIBUTYL_PHOSPHATE);
-    public static final MaterialWrapper PHOSPHORYL_CHLORIDE = MaterialWrapper.of(() -> MaterialsChemical.PHOSPHORYL_CHLORIDE);
-    public static final MaterialWrapper DILUTED_NITRIC_ACID = MaterialWrapper.of(() -> MaterialsChemical.DILUTED_NITRIC_ACID);
-    public static final MaterialWrapper ZINC_NITRATE_SOLUTION = MaterialWrapper.of(() -> MaterialsChemical.ZINC_NITRATE_SOLUTION);
+    // #region src/main/java/com/recursive_pineapple/nuclear_horizons/reactors/items/material/MaterialsChemical.java
+    public static final MaterialWrapper TRIBUTYL_PHOSPHATE = MaterialWrapper
+        .of(() -> MaterialsChemical.TRIBUTYL_PHOSPHATE);
+    public static final MaterialWrapper PHOSPHORYL_CHLORIDE = MaterialWrapper
+        .of(() -> MaterialsChemical.PHOSPHORYL_CHLORIDE);
+    public static final MaterialWrapper DILUTED_NITRIC_ACID = MaterialWrapper
+        .of(() -> MaterialsChemical.DILUTED_NITRIC_ACID);
+    public static final MaterialWrapper ZINC_NITRATE_SOLUTION = MaterialWrapper
+        .of(() -> MaterialsChemical.ZINC_NITRATE_SOLUTION);
     public static final MaterialWrapper ZINC_NITRATE = MaterialWrapper.of(() -> MaterialsChemical.ZINC_NITRATE);
-    public static final MaterialWrapper METYHL_MAGNESIUM_BROMIDE = MaterialWrapper.of(() -> MaterialsChemical.METYHL_MAGNESIUM_BROMIDE);
-    public static final MaterialWrapper METHYL_ISOBUTYL_KETONE = MaterialWrapper.of(() -> MaterialsChemical.METHYL_ISOBUTYL_KETONE);
-    public static final MaterialWrapper HOT_LITHIUM_TETRAFLUOROBERYLLATE = MaterialWrapper.of(() -> MaterialsChemical.HOT_LITHIUM_TETRAFLUOROBERYLLATE);
-    public static final MaterialWrapper AMERICIUM_III_OXIDE = MaterialWrapper.of(() -> MaterialsChemical.AMERICIUM_III_OXIDE);
-    public static final MaterialWrapper AMERICIUM_IV_OXIDE = MaterialWrapper.of(() -> MaterialsChemical.AMERICIUM_IV_OXIDE);
+    public static final MaterialWrapper METYHL_MAGNESIUM_BROMIDE = MaterialWrapper
+        .of(() -> MaterialsChemical.METYHL_MAGNESIUM_BROMIDE);
+    public static final MaterialWrapper METHYL_ISOBUTYL_KETONE = MaterialWrapper
+        .of(() -> MaterialsChemical.METHYL_ISOBUTYL_KETONE);
+    public static final MaterialWrapper HOT_LITHIUM_TETRAFLUOROBERYLLATE = MaterialWrapper
+        .of(() -> MaterialsChemical.HOT_LITHIUM_TETRAFLUOROBERYLLATE);
+    public static final MaterialWrapper AMERICIUM_III_OXIDE = MaterialWrapper
+        .of(() -> MaterialsChemical.AMERICIUM_III_OXIDE);
+    public static final MaterialWrapper AMERICIUM_IV_OXIDE = MaterialWrapper
+        .of(() -> MaterialsChemical.AMERICIUM_IV_OXIDE);
     public static final MaterialWrapper CURIUM_III_OXIDE = MaterialWrapper.of(() -> MaterialsChemical.CURIUM_III_OXIDE);
     public static final MaterialWrapper CURIUM_IV_OXIDE = MaterialWrapper.of(() -> MaterialsChemical.CURIUM_IV_OXIDE);
-    public static final MaterialWrapper CALIFORNIUM_III_OXIDE = MaterialWrapper.of(() -> MaterialsChemical.CALIFORNIUM_III_OXIDE);
-    public static final MaterialWrapper CALIFORNIUM_IV_OXIDE = MaterialWrapper.of(() -> MaterialsChemical.CALIFORNIUM_IV_OXIDE);
-    public static final MaterialWrapper URANIUM_FISSION_PRODUCT_MIXTURE = MaterialWrapper.of(() -> MaterialsChemical.URANIUM_FISSION_PRODUCT_MIXTURE);
-    public static final MaterialWrapper PLUTONIUM_FISSION_PRODUCT_MIXTURE = MaterialWrapper.of(() -> MaterialsChemical.PLUTONIUM_FISSION_PRODUCT_MIXTURE);
-    public static final MaterialWrapper THORIUM_FISSION_PRODUCT_MIXTURE = MaterialWrapper.of(() -> MaterialsChemical.THORIUM_FISSION_PRODUCT_MIXTURE);
-    public static final MaterialWrapper TRANSURANIC_WASTE_MIXTURE = MaterialWrapper.of(() -> MaterialsChemical.TRANSURANIC_WASTE_MIXTURE);
-    public static final MaterialWrapper LANTHANUM_II_OXIDE = MaterialWrapper.of(() -> MaterialsChemical.LANTHANUM_II_OXIDE);
-    public static final MaterialWrapper LANTHANIDE_WASTE_MIXTURE = MaterialWrapper.of(() -> MaterialsChemical.LANTHANIDE_WASTE_MIXTURE);
-    //#endregion
+    public static final MaterialWrapper CALIFORNIUM_III_OXIDE = MaterialWrapper
+        .of(() -> MaterialsChemical.CALIFORNIUM_III_OXIDE);
+    public static final MaterialWrapper CALIFORNIUM_IV_OXIDE = MaterialWrapper
+        .of(() -> MaterialsChemical.CALIFORNIUM_IV_OXIDE);
+    public static final MaterialWrapper URANIUM_FISSION_PRODUCT_MIXTURE = MaterialWrapper
+        .of(() -> MaterialsChemical.URANIUM_FISSION_PRODUCT_MIXTURE);
+    public static final MaterialWrapper PLUTONIUM_FISSION_PRODUCT_MIXTURE = MaterialWrapper
+        .of(() -> MaterialsChemical.PLUTONIUM_FISSION_PRODUCT_MIXTURE);
+    public static final MaterialWrapper THORIUM_FISSION_PRODUCT_MIXTURE = MaterialWrapper
+        .of(() -> MaterialsChemical.THORIUM_FISSION_PRODUCT_MIXTURE);
+    public static final MaterialWrapper TRANSURANIC_WASTE_MIXTURE = MaterialWrapper
+        .of(() -> MaterialsChemical.TRANSURANIC_WASTE_MIXTURE);
+    public static final MaterialWrapper LANTHANUM_II_OXIDE = MaterialWrapper
+        .of(() -> MaterialsChemical.LANTHANUM_II_OXIDE);
+    public static final MaterialWrapper LANTHANIDE_WASTE_MIXTURE = MaterialWrapper
+        .of(() -> MaterialsChemical.LANTHANIDE_WASTE_MIXTURE);
+    // #endregion
 
-    //#region src/main/java/gtPlusPlus/core/material/MaterialMisc.java
+    // #region src/main/java/gtPlusPlus/core/material/MaterialMisc.java
     public static final MaterialWrapper POTASSIUM_NITRATE = MaterialWrapper.of(() -> MaterialMisc.POTASSIUM_NITRATE);
     public static final MaterialWrapper SODIUM_NITRATE = MaterialWrapper.of(() -> MaterialMisc.SODIUM_NITRATE);
     public static final MaterialWrapper SOLAR_SALT_COLD = MaterialWrapper.of(() -> MaterialMisc.SOLAR_SALT_COLD);
@@ -1372,28 +1688,37 @@ public class GTMats {
     public static final MaterialWrapper RARE_EARTH_HIGH = MaterialWrapper.of(() -> MaterialMisc.RARE_EARTH_HIGH);
     public static final MaterialWrapper HYDROXIDE = MaterialWrapper.of(() -> MaterialMisc.HYDROXIDE);
     public static final MaterialWrapper HYDROGEN_CHLORIDE = MaterialWrapper.of(() -> MaterialMisc.HYDROGEN_CHLORIDE);
-    public static final MaterialWrapper HYDROGEN_CHLORIDE_MIX = MaterialWrapper.of(() -> MaterialMisc.HYDROGEN_CHLORIDE_MIX);
+    public static final MaterialWrapper HYDROGEN_CHLORIDE_MIX = MaterialWrapper
+        .of(() -> MaterialMisc.HYDROGEN_CHLORIDE_MIX);
     public static final MaterialWrapper SODIUM_CHLORIDE = MaterialWrapper.of(() -> MaterialMisc.SODIUM_CHLORIDE);
     public static final MaterialWrapper SALT_WATER = MaterialWrapper.of(() -> MaterialMisc.SALT_WATER);
     public static final MaterialWrapper BRINE = MaterialWrapper.of(() -> MaterialMisc.BRINE);
-    public static final MaterialWrapper STRONTIUM_HYDROXIDE = MaterialWrapper.of(() -> MaterialMisc.STRONTIUM_HYDROXIDE);
+    public static final MaterialWrapper STRONTIUM_HYDROXIDE = MaterialWrapper
+        .of(() -> MaterialMisc.STRONTIUM_HYDROXIDE);
     public static final MaterialWrapper ACETIC_ANHYDRIDE = MaterialWrapper.of(() -> MaterialMisc.ACETIC_ANHYDRIDE);
     public static final MaterialWrapper CHLOROACETIC_ACID = MaterialWrapper.of(() -> MaterialMisc.CHLOROACETIC_ACID);
-    public static final MaterialWrapper DICHLOROACETIC_ACID = MaterialWrapper.of(() -> MaterialMisc.DICHLOROACETIC_ACID);
-    public static final MaterialWrapper TRICHLOROACETIC_ACID = MaterialWrapper.of(() -> MaterialMisc.TRICHLOROACETIC_ACID);
-    public static final MaterialWrapper CHLOROACETIC_MIXTURE = MaterialWrapper.of(() -> MaterialMisc.CHLOROACETIC_MIXTURE);
+    public static final MaterialWrapper DICHLOROACETIC_ACID = MaterialWrapper
+        .of(() -> MaterialMisc.DICHLOROACETIC_ACID);
+    public static final MaterialWrapper TRICHLOROACETIC_ACID = MaterialWrapper
+        .of(() -> MaterialMisc.TRICHLOROACETIC_ACID);
+    public static final MaterialWrapper CHLOROACETIC_MIXTURE = MaterialWrapper
+        .of(() -> MaterialMisc.CHLOROACETIC_MIXTURE);
     public static final MaterialWrapper SODIUM_CYANIDE = MaterialWrapper.of(() -> MaterialMisc.SODIUM_CYANIDE);
     public static final MaterialWrapper CYANOACETIC_ACID = MaterialWrapper.of(() -> MaterialMisc.CYANOACETIC_ACID);
     public static final MaterialWrapper SOLID_ACID_MIXTURE = MaterialWrapper.of(() -> MaterialMisc.SOLID_ACID_MIXTURE);
     public static final MaterialWrapper COPPER_SULFATE = MaterialWrapper.of(() -> MaterialMisc.COPPER_SULFATE);
-    public static final MaterialWrapper COPPER_SULFATE_HYDRATED = MaterialWrapper.of(() -> MaterialMisc.COPPER_SULFATE_HYDRATED);
+    public static final MaterialWrapper COPPER_SULFATE_HYDRATED = MaterialWrapper
+        .of(() -> MaterialMisc.COPPER_SULFATE_HYDRATED);
     public static final MaterialWrapper ETHYL_CYANOACETATE = MaterialWrapper.of(() -> MaterialMisc.ETHYL_CYANOACETATE);
-    public static final MaterialWrapper CYANOACRYLATE_POLYMER = MaterialWrapper.of(() -> MaterialMisc.CYANOACRYLATE_POLYMER);
-    public static final MaterialWrapper ETHYL_CYANOACRYLATE = MaterialWrapper.of(() -> MaterialMisc.ETHYL_CYANOACRYLATE);
-    public static final MaterialWrapper MUTATED_LIVING_SOLDER = MaterialWrapper.of(() -> MaterialMisc.MUTATED_LIVING_SOLDER);
-    //#endregion
+    public static final MaterialWrapper CYANOACRYLATE_POLYMER = MaterialWrapper
+        .of(() -> MaterialMisc.CYANOACRYLATE_POLYMER);
+    public static final MaterialWrapper ETHYL_CYANOACRYLATE = MaterialWrapper
+        .of(() -> MaterialMisc.ETHYL_CYANOACRYLATE);
+    public static final MaterialWrapper MUTATED_LIVING_SOLDER = MaterialWrapper
+        .of(() -> MaterialMisc.MUTATED_LIVING_SOLDER);
+    // #endregion
 
-    //#region src/main/java/gtPlusPlus/core/material/MaterialsAlloy.java
+    // #region src/main/java/gtPlusPlus/core/material/MaterialsAlloy.java
     public static final MaterialWrapper STEEL_BLACK = MaterialWrapper.of(() -> MaterialsAlloy.STEEL_BLACK);
     public static final MaterialWrapper STAINLESS_STEEL = MaterialWrapper.of(() -> MaterialsAlloy.STAINLESS_STEEL);
     public static final MaterialWrapper POLYETHYLENE = MaterialWrapper.of(() -> MaterialsAlloy.POLYETHYLENE);
@@ -1423,7 +1748,8 @@ public class GTMats {
     public static final MaterialWrapper INCOLOY_DS = MaterialWrapper.of(() -> MaterialsAlloy.INCOLOY_DS);
     public static final MaterialWrapper INCOLOY_MA956 = MaterialWrapper.of(() -> MaterialsAlloy.INCOLOY_MA956);
     public static final MaterialWrapper TUNGSTEN_CARBIDE = MaterialWrapper.of(() -> MaterialsAlloy.TUNGSTEN_CARBIDE);
-    public static final MaterialWrapper TUNGSTEN_TITANIUM_CARBIDE = MaterialWrapper.of(() -> MaterialsAlloy.TUNGSTEN_TITANIUM_CARBIDE);
+    public static final MaterialWrapper TUNGSTEN_TITANIUM_CARBIDE = MaterialWrapper
+        .of(() -> MaterialsAlloy.TUNGSTEN_TITANIUM_CARBIDE);
     public static final MaterialWrapper SILICON_CARBIDE = MaterialWrapper.of(() -> MaterialsAlloy.SILICON_CARBIDE);
     public static final MaterialWrapper TANTALUM_CARBIDE = MaterialWrapper.of(() -> MaterialsAlloy.TANTALUM_CARBIDE);
     public static final MaterialWrapper ZIRCONIUM_CARBIDE = MaterialWrapper.of(() -> MaterialsAlloy.ZIRCONIUM_CARBIDE);
@@ -1436,8 +1762,10 @@ public class GTMats {
     public static final MaterialWrapper HS188A = MaterialWrapper.of(() -> MaterialsAlloy.HS188A);
     public static final MaterialWrapper TRINIUM_TITANIUM = MaterialWrapper.of(() -> MaterialsAlloy.TRINIUM_TITANIUM);
     public static final MaterialWrapper TRINIUM_NAQUADAH = MaterialWrapper.of(() -> MaterialsAlloy.TRINIUM_NAQUADAH);
-    public static final MaterialWrapper TRINIUM_NAQUADAH_CARBON = MaterialWrapper.of(() -> MaterialsAlloy.TRINIUM_NAQUADAH_CARBON);
-    public static final MaterialWrapper TRINIUM_REINFORCED_STEEL = MaterialWrapper.of(() -> MaterialsAlloy.TRINIUM_REINFORCED_STEEL);
+    public static final MaterialWrapper TRINIUM_NAQUADAH_CARBON = MaterialWrapper
+        .of(() -> MaterialsAlloy.TRINIUM_NAQUADAH_CARBON);
+    public static final MaterialWrapper TRINIUM_REINFORCED_STEEL = MaterialWrapper
+        .of(() -> MaterialsAlloy.TRINIUM_REINFORCED_STEEL);
     public static final MaterialWrapper KOBOLDITE = MaterialWrapper.of(() -> MaterialsAlloy.KOBOLDITE);
     public static final MaterialWrapper HELICOPTER = MaterialWrapper.of(() -> MaterialsAlloy.HELICOPTER);
     public static final MaterialWrapper LAFIUM = MaterialWrapper.of(() -> MaterialsAlloy.LAFIUM);
@@ -1452,38 +1780,54 @@ public class GTMats {
     public static final MaterialWrapper BABBIT_ALLOY = MaterialWrapper.of(() -> MaterialsAlloy.BABBIT_ALLOY);
     public static final MaterialWrapper INDALLOY_140 = MaterialWrapper.of(() -> MaterialsAlloy.INDALLOY_140);
     public static final MaterialWrapper QUANTUM = MaterialWrapper.of(() -> MaterialsAlloy.QUANTUM);
-    //#endregion
+    // #endregion
 
-    //#region src/main/java/gtPlusPlus/core/material/nuclear/MaterialsFluorides.java
-    public static final MaterialWrapper THORIUM_TETRAFLUORIDE = MaterialWrapper.of(() -> MaterialsFluorides.THORIUM_TETRAFLUORIDE);
-    public static final MaterialWrapper THORIUM_HEXAFLUORIDE = MaterialWrapper.of(() -> MaterialsFluorides.THORIUM_HEXAFLUORIDE);
-    public static final MaterialWrapper URANIUM_TETRAFLUORIDE = MaterialWrapper.of(() -> MaterialsFluorides.URANIUM_TETRAFLUORIDE);
-    public static final MaterialWrapper URANIUM_HEXAFLUORIDE = MaterialWrapper.of(() -> MaterialsFluorides.URANIUM_HEXAFLUORIDE);
-    public static final MaterialWrapper ZIRCONIUM_TETRAFLUORIDE = MaterialWrapper.of(() -> MaterialsFluorides.ZIRCONIUM_TETRAFLUORIDE);
-    public static final MaterialWrapper BERYLLIUM_FLUORIDE = MaterialWrapper.of(() -> MaterialsFluorides.BERYLLIUM_FLUORIDE);
-    public static final MaterialWrapper LITHIUM_FLUORIDE = MaterialWrapper.of(() -> MaterialsFluorides.LITHIUM_FLUORIDE);
-    public static final MaterialWrapper AMMONIUM_BIFLUORIDE = MaterialWrapper.of(() -> MaterialsFluorides.AMMONIUM_BIFLUORIDE);
-    public static final MaterialWrapper BERYLLIUM_HYDROXIDE = MaterialWrapper.of(() -> MaterialsFluorides.BERYLLIUM_HYDROXIDE);
-    public static final MaterialWrapper AMMONIUM_TETRAFLUOROBERYLLATE = MaterialWrapper.of(() -> MaterialsFluorides.AMMONIUM_TETRAFLUOROBERYLLATE);
-    public static final MaterialWrapper NEPTUNIUM_HEXAFLUORIDE = MaterialWrapper.of(() -> MaterialsFluorides.NEPTUNIUM_HEXAFLUORIDE);
-    public static final MaterialWrapper TECHNETIUM_HEXAFLUORIDE = MaterialWrapper.of(() -> MaterialsFluorides.TECHNETIUM_HEXAFLUORIDE);
-    public static final MaterialWrapper SELENIUM_HEXAFLUORIDE = MaterialWrapper.of(() -> MaterialsFluorides.SELENIUM_HEXAFLUORIDE);
+    // #region src/main/java/gtPlusPlus/core/material/nuclear/MaterialsFluorides.java
+    public static final MaterialWrapper THORIUM_TETRAFLUORIDE = MaterialWrapper
+        .of(() -> MaterialsFluorides.THORIUM_TETRAFLUORIDE);
+    public static final MaterialWrapper THORIUM_HEXAFLUORIDE = MaterialWrapper
+        .of(() -> MaterialsFluorides.THORIUM_HEXAFLUORIDE);
+    public static final MaterialWrapper URANIUM_TETRAFLUORIDE = MaterialWrapper
+        .of(() -> MaterialsFluorides.URANIUM_TETRAFLUORIDE);
+    public static final MaterialWrapper URANIUM_HEXAFLUORIDE = MaterialWrapper
+        .of(() -> MaterialsFluorides.URANIUM_HEXAFLUORIDE);
+    public static final MaterialWrapper ZIRCONIUM_TETRAFLUORIDE = MaterialWrapper
+        .of(() -> MaterialsFluorides.ZIRCONIUM_TETRAFLUORIDE);
+    public static final MaterialWrapper BERYLLIUM_FLUORIDE = MaterialWrapper
+        .of(() -> MaterialsFluorides.BERYLLIUM_FLUORIDE);
+    public static final MaterialWrapper LITHIUM_FLUORIDE = MaterialWrapper
+        .of(() -> MaterialsFluorides.LITHIUM_FLUORIDE);
+    public static final MaterialWrapper AMMONIUM_BIFLUORIDE = MaterialWrapper
+        .of(() -> MaterialsFluorides.AMMONIUM_BIFLUORIDE);
+    public static final MaterialWrapper BERYLLIUM_HYDROXIDE = MaterialWrapper
+        .of(() -> MaterialsFluorides.BERYLLIUM_HYDROXIDE);
+    public static final MaterialWrapper AMMONIUM_TETRAFLUOROBERYLLATE = MaterialWrapper
+        .of(() -> MaterialsFluorides.AMMONIUM_TETRAFLUOROBERYLLATE);
+    public static final MaterialWrapper NEPTUNIUM_HEXAFLUORIDE = MaterialWrapper
+        .of(() -> MaterialsFluorides.NEPTUNIUM_HEXAFLUORIDE);
+    public static final MaterialWrapper TECHNETIUM_HEXAFLUORIDE = MaterialWrapper
+        .of(() -> MaterialsFluorides.TECHNETIUM_HEXAFLUORIDE);
+    public static final MaterialWrapper SELENIUM_HEXAFLUORIDE = MaterialWrapper
+        .of(() -> MaterialsFluorides.SELENIUM_HEXAFLUORIDE);
     public static final MaterialWrapper SODIUM_FLUORIDE = MaterialWrapper.of(() -> MaterialsFluorides.SODIUM_FLUORIDE);
-    //#endregion
+    // #endregion
 
-    //#region src/main/java/gtPlusPlus/core/material/MaterialsElements.java
+    // #region src/main/java/gtPlusPlus/core/material/MaterialsElements.java
     public static final MaterialWrapper CHROMIUM = MaterialWrapper.of(() -> MaterialsElements.getInstance().CHROMIUM);
     public static final MaterialWrapper GERMANIUM = MaterialWrapper.of(() -> MaterialsElements.getInstance().GERMANIUM);
     public static final MaterialWrapper SELENIUM = MaterialWrapper.of(() -> MaterialsElements.getInstance().SELENIUM);
     public static final MaterialWrapper BROMINE = MaterialWrapper.of(() -> MaterialsElements.getInstance().BROMINE);
-    public static final MaterialWrapper TECHNETIUM = MaterialWrapper.of(() -> MaterialsElements.getInstance().TECHNETIUM);
+    public static final MaterialWrapper TECHNETIUM = MaterialWrapper
+        .of(() -> MaterialsElements.getInstance().TECHNETIUM);
     public static final MaterialWrapper NEPTUNIUM = MaterialWrapper.of(() -> MaterialsElements.getInstance().NEPTUNIUM);
     public static final MaterialWrapper RHENIUM = MaterialWrapper.of(() -> MaterialsElements.getInstance().RHENIUM);
     public static final MaterialWrapper THALLIUM = MaterialWrapper.of(() -> MaterialsElements.getInstance().THALLIUM);
     public static final MaterialWrapper POLONIUM = MaterialWrapper.of(() -> MaterialsElements.getInstance().POLONIUM);
     public static final MaterialWrapper RADIUM = MaterialWrapper.of(() -> MaterialsElements.getInstance().RADIUM);
-    public static final MaterialWrapper PROTACTINIUM = MaterialWrapper.of(() -> MaterialsElements.getInstance().PROTACTINIUM);
-    public static final MaterialWrapper URANIUM238 = MaterialWrapper.of(() -> MaterialsElements.getInstance().URANIUM238);
+    public static final MaterialWrapper PROTACTINIUM = MaterialWrapper
+        .of(() -> MaterialsElements.getInstance().PROTACTINIUM);
+    public static final MaterialWrapper URANIUM238 = MaterialWrapper
+        .of(() -> MaterialsElements.getInstance().URANIUM238);
     public static final MaterialWrapper CURIUM = MaterialWrapper.of(() -> MaterialsElements.getInstance().CURIUM);
     public static final MaterialWrapper FERMIUM = MaterialWrapper.of(() -> MaterialsElements.getInstance().FERMIUM);
     public static final MaterialWrapper AER = MaterialWrapper.of(() -> MaterialsElements.getInstance().AER);
@@ -1492,29 +1836,37 @@ public class GTMats {
     public static final MaterialWrapper AQUA = MaterialWrapper.of(() -> MaterialsElements.getInstance().AQUA);
     public static final MaterialWrapper PERDITIO = MaterialWrapper.of(() -> MaterialsElements.getInstance().PERDITIO);
     public static final MaterialWrapper ORDO = MaterialWrapper.of(() -> MaterialsElements.getInstance().ORDO);
-    public static final MaterialWrapper NAQUADAH_ENRICHED = MaterialWrapper.of(() -> MaterialsElements.getInstance().NAQUADAH_ENRICHED);
+    public static final MaterialWrapper NAQUADAH_ENRICHED = MaterialWrapper
+        .of(() -> MaterialsElements.getInstance().NAQUADAH_ENRICHED);
     public static final MaterialWrapper LITHIUM7 = MaterialWrapper.of(() -> MaterialsElements.getInstance().LITHIUM7);
-    public static final MaterialWrapper URANIUM232 = MaterialWrapper.of(() -> MaterialsElements.getInstance().URANIUM232);
-    public static final MaterialWrapper URANIUM233 = MaterialWrapper.of(() -> MaterialsElements.getInstance().URANIUM233);
-    public static final MaterialWrapper PLUTONIUM238 = MaterialWrapper.of(() -> MaterialsElements.getInstance().PLUTONIUM238);
-    //#endregion
+    public static final MaterialWrapper URANIUM232 = MaterialWrapper
+        .of(() -> MaterialsElements.getInstance().URANIUM232);
+    public static final MaterialWrapper URANIUM233 = MaterialWrapper
+        .of(() -> MaterialsElements.getInstance().URANIUM233);
+    public static final MaterialWrapper PLUTONIUM238 = MaterialWrapper
+        .of(() -> MaterialsElements.getInstance().PLUTONIUM238);
+    // #endregion
 
-    //#region src/main/java/gtPlusPlus/core/material/nuclear/MaterialsNuclides.java
+    // #region src/main/java/gtPlusPlus/core/material/nuclear/MaterialsNuclides.java
     public static final MaterialWrapper LI2BEF4 = MaterialWrapper.of(() -> MaterialsNuclides.Li2BeF4);
     public static final MaterialWrapper LIFBEF2THF4UF4 = MaterialWrapper.of(() -> MaterialsNuclides.LiFBeF2ThF4UF4);
     public static final MaterialWrapper LIFBEF2ZRF4UF4 = MaterialWrapper.of(() -> MaterialsNuclides.LiFBeF2ZrF4UF4);
     public static final MaterialWrapper LIFBEF2ZRF4U235 = MaterialWrapper.of(() -> MaterialsNuclides.LiFBeF2ZrF4U235);
-    public static final MaterialWrapper BURNTLFTRFUEL_MK1 = MaterialWrapper.of(() -> MaterialsNuclides.BurntLftrFuel_MK1);
-    public static final MaterialWrapper BURNTLFTRFUEL_MK2 = MaterialWrapper.of(() -> MaterialsNuclides.BurntLftrFuel_MK2);
+    public static final MaterialWrapper BURNTLFTRFUEL_MK1 = MaterialWrapper
+        .of(() -> MaterialsNuclides.BurntLftrFuel_MK1);
+    public static final MaterialWrapper BURNTLFTRFUEL_MK2 = MaterialWrapper
+        .of(() -> MaterialsNuclides.BurntLftrFuel_MK2);
     public static final MaterialWrapper LIFBEF2UF4FP = MaterialWrapper.of(() -> MaterialsNuclides.LiFBeF2UF4FP);
-    public static final MaterialWrapper SPARGED_LIFBEF2UF4FP = MaterialWrapper.of(() -> MaterialsNuclides.Sparged_LiFBeF2UF4FP);
+    public static final MaterialWrapper SPARGED_LIFBEF2UF4FP = MaterialWrapper
+        .of(() -> MaterialsNuclides.Sparged_LiFBeF2UF4FP);
     public static final MaterialWrapper UF6F2FP = MaterialWrapper.of(() -> MaterialsNuclides.UF6F2FP);
     public static final MaterialWrapper LIFBEF2 = MaterialWrapper.of(() -> MaterialsNuclides.LiFBeF2);
     public static final MaterialWrapper LIFBEF2UF4 = MaterialWrapper.of(() -> MaterialsNuclides.LiFBeF2UF4);
     public static final MaterialWrapper LIFTHF4 = MaterialWrapper.of(() -> MaterialsNuclides.LiFThF4);
     public static final MaterialWrapper LIFBEF2THF4 = MaterialWrapper.of(() -> MaterialsNuclides.LiFBeF2ThF4);
     public static final MaterialWrapper SPARGED_LIFTHF4 = MaterialWrapper.of(() -> MaterialsNuclides.Sparged_LiFThF4);
-    public static final MaterialWrapper SPARGED_LIFBEF2THF4 = MaterialWrapper.of(() -> MaterialsNuclides.Sparged_LiFBeF2ThF4);
+    public static final MaterialWrapper SPARGED_LIFBEF2THF4 = MaterialWrapper
+        .of(() -> MaterialsNuclides.Sparged_LiFBeF2ThF4);
     public static final MaterialWrapper UF6F2 = MaterialWrapper.of(() -> MaterialsNuclides.UF6F2);
-    //#endregion
+    // #endregion
 }
