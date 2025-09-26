@@ -49,9 +49,19 @@ public class Simulator {
         simulation = thread_pool.submit(() -> runSimulation(config));
     }
 
-    public void cancel() {
-        simulation.cancel(true);
-        simulation = null;
+    public void cancel(EntityPlayer player) {
+        // simulation.cancel(true);
+        // simulation = null;
+        try {
+            player.playSound("note.bass", 0.5F, 1.0F);
+            TimeUnit.MILLISECONDS.sleep(100);
+            player.playSound("note.bass", 0.5F, 0.5F);
+        } catch (Exception e) {
+            for (int n = 0; n < 25; n++) {
+                System.out.println("yeah so that wasnt the correct sound name");
+            }
+        }
+
     }
 
     private SimulationResult runSimulation(SimulationConfig config) {

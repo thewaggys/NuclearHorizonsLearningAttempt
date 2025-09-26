@@ -275,7 +275,7 @@ public class TileReactorSimulator extends TileEntity implements ITileWithModular
                         new VanillaButtonWidget().setDisplayString(I18n.format("nh_gui.sim.actions.cancel"))
                             .setOnClick((d, w) -> {
                                 if (NetworkUtils.isClient()) {
-                                    simulator.cancel();
+                                    simulator.cancel(player);
                                 }
                             })
                             .setSize(48, 16)),
