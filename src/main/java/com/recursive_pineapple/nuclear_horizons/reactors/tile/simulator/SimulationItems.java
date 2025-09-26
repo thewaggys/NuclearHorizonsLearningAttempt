@@ -32,9 +32,9 @@ public class SimulationItems {
     }
 
     public static void registerSimulationItems() {
-        registerSimulationItem(1, gregtech.api.enums.ItemList.RodUranium);
-        registerSimulationItem(2, gregtech.api.enums.ItemList.RodUranium2);
-        registerSimulationItem(3, gregtech.api.enums.ItemList.RodUranium4);
+        registerSimulationItem(1, ItemList.URANIUM_1X_ROD);
+        registerSimulationItem(2, ItemList.URANIUM_2X_ROD);
+        registerSimulationItem(3, ItemList.URANIUM_4X_ROD);
         registerSimulationItem(7, ItemList.NEUTRON_REFLECTOR);
         registerSimulationItem(8, ItemList.THICK_NEUTRON_REFLECTOR);
         registerSimulationItem(9, ItemList.BASIC_HEAT_VENT);
@@ -54,9 +54,9 @@ public class SimulationItems {
         registerSimulationItem(23, ItemList.REACTOR_PLATING_EXPLOSIVE);
         registerSimulationItem(24, ItemList.RSH_CONDENSATOR);
         registerSimulationItem(25, ItemList.LZH_CONDENSATOR);
-        registerSimulationItem(26, gregtech.api.enums.ItemList.RodThorium);
-        registerSimulationItem(27, gregtech.api.enums.ItemList.RodThorium2);
-        registerSimulationItem(28, gregtech.api.enums.ItemList.RodThorium4);
+        registerSimulationItem(26, ItemList.THORIUM_1X_ROD);
+        registerSimulationItem(27, ItemList.THORIUM_2X_ROD);
+        registerSimulationItem(28, ItemList.THORIUM_4X_ROD);
         registerSimulationItem(29, gregtech.api.enums.ItemList.Reactor_Coolant_He_1);
         registerSimulationItem(30, gregtech.api.enums.ItemList.Reactor_Coolant_He_3);
         registerSimulationItem(31, gregtech.api.enums.ItemList.Reactor_Coolant_He_6);
@@ -64,33 +64,33 @@ public class SimulationItems {
         registerSimulationItem(33, gregtech.api.enums.ItemList.Reactor_Coolant_NaK_3);
         registerSimulationItem(34, gregtech.api.enums.ItemList.Reactor_Coolant_NaK_6);
         registerSimulationItem(35, gregtech.api.enums.ItemList.Neutron_Reflector);
-        registerSimulationItem(45, gregtech.api.enums.ItemList.RodNaquadah);
-        registerSimulationItem(46, gregtech.api.enums.ItemList.RodNaquadah2);
-        registerSimulationItem(47, gregtech.api.enums.ItemList.RodNaquadah4);
-        registerSimulationItem(48, gregtech.api.enums.ItemList.RodNaquadria);
-        registerSimulationItem(49, gregtech.api.enums.ItemList.RodNaquadria2);
-        registerSimulationItem(50, gregtech.api.enums.ItemList.RodNaquadria4);
-        registerSimulationItem(51, gregtech.api.enums.ItemList.RodTiberium);
-        registerSimulationItem(52, gregtech.api.enums.ItemList.RodTiberium2);
-        registerSimulationItem(53, gregtech.api.enums.ItemList.RodTiberium4);
-        registerSimulationItem(54, gregtech.api.enums.ItemList.RodNaquadah32); // the core
+        registerSimulationItem(45, ItemList.NAQUADAH_1X_ROD);
+        registerSimulationItem(46, ItemList.NAQUADAH_2X_ROD);
+        registerSimulationItem(47, ItemList.NAQUADAH_4X_ROD);
+        registerSimulationItem(48, ItemList.NAQUADRIA_1X_ROD);
+        registerSimulationItem(49, ItemList.NAQUADRIA_2X_ROD);
+        registerSimulationItem(50, ItemList.NAQUADRIA_4X_ROD);
+        registerSimulationItem(51, ItemList.TIBERIUM_1X_ROD);
+        registerSimulationItem(52, ItemList.TIBERIUM_2X_ROD);
+        registerSimulationItem(53, ItemList.TIBERIUM_4X_ROD);
+        registerSimulationItem(54, ItemList.THE_CORE_ROD); // the core
         registerSimulationItem(55, gregtech.api.enums.ItemList.Reactor_Coolant_Sp_1);
         registerSimulationItem(56, gregtech.api.enums.ItemList.Reactor_Coolant_Sp_2);
         registerSimulationItem(57, gregtech.api.enums.ItemList.Reactor_Coolant_Sp_3);
         registerSimulationItem(58, gregtech.api.enums.ItemList.Reactor_Coolant_Sp_6);
         registerSimulationItem(59, gregtech.api.enums.ItemList.neutroniumHeatCapacitor);
-        registerSimulationItem(60, gregtech.api.enums.ItemList.RodHighDensityUranium);
-        registerSimulationItem(61, gregtech.api.enums.ItemList.RodHighDensityUranium2);
-        registerSimulationItem(62, gregtech.api.enums.ItemList.RodHighDensityUranium4);
-        registerSimulationItem(63, gregtech.api.enums.ItemList.RodHighDensityPlutonium);
-        registerSimulationItem(64, gregtech.api.enums.ItemList.RodHighDensityPlutonium2);
-        registerSimulationItem(65, gregtech.api.enums.ItemList.RodHighDensityPlutonium4);
-        registerSimulationItem(66, gregtech.api.enums.ItemList.RodExcitedUranium);
-        registerSimulationItem(67, gregtech.api.enums.ItemList.RodExcitedUranium2);
-        registerSimulationItem(68, gregtech.api.enums.ItemList.RodExcitedUranium4);
-        registerSimulationItem(69, gregtech.api.enums.ItemList.RodExcitedPlutonium);
-        registerSimulationItem(70, gregtech.api.enums.ItemList.RodExcitedPlutonium2);
-        registerSimulationItem(71, gregtech.api.enums.ItemList.RodExcitedPlutonium4);
+        registerSimulationItem(60, ItemList.HIGH_DENSITY_URANIUM_1X_ROD);
+        registerSimulationItem(61, ItemList.HIGH_DENSITY_URANIUM_2X_ROD);
+        registerSimulationItem(62, ItemList.HIGH_DENSITY_URANIUM_4X_ROD);
+        registerSimulationItem(63, ItemList.HIGH_DENSITY_PLUTONIUM_1X_ROD);
+        registerSimulationItem(64, ItemList.HIGH_DENSITY_PLUTONIUM_2X_ROD);
+        registerSimulationItem(65, ItemList.HIGH_DENSITY_PLUTONIUM_4X_ROD);
+        registerSimulationItem(66, ItemList.EXCITED_URANIUM_1X_ROD);
+        registerSimulationItem(67, ItemList.EXCITED_URANIUM_2X_ROD);
+        registerSimulationItem(68, ItemList.EXCITED_URANIUM_4X_ROD);
+        registerSimulationItem(69, ItemList.EXCITED_PLUTONIUM_1X_ROD);
+        registerSimulationItem(70, ItemList.EXCITED_PLUTONIUM_2X_ROD);
+        registerSimulationItem(71, ItemList.EXCITED_PLUTONIUM_4X_ROD);
         registerSimulationItem(72, gregtech.api.enums.ItemList.RodGlowstone);
     }
 }

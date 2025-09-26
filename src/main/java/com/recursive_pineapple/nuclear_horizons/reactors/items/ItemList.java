@@ -5,6 +5,297 @@ import com.recursive_pineapple.nuclear_horizons.recipes.GTMats;
 
 public class ItemList {
 
+    // these rods need texturing
+    // general rods
+    public static final BasicFuelRodItem NAQUADAH_1X_ROD = new BasicFuelRodItem(
+        "fuelRodNaquadah",
+        "reactorNaquadahSingle",
+        4.0,
+        4.0,
+        1,
+        false,
+        100_000);// needs texturing
+
+    public static final BasicFuelRodItem NAQUADAH_2X_ROD = new BasicFuelRodItem(
+        "fuelRodNaquadah",
+        "reactorNaquadahDual",
+        4.0,
+        4.0,
+        2,
+        false,
+        100_000);// needs texturing
+
+    public static final BasicFuelRodItem NAQUADAH_4X_ROD = new BasicFuelRodItem(
+        "fuelRodNaquadah",
+        "reactorNaquadahQuad",
+        4.0,
+        4.0,
+        4,
+        false,
+        100_000);// needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_NAQUADAH_1X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodNaquadah",
+        "reactorNaquadahSingleDepleted"); // needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_NAQUADAH_2X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodNaquadahDual",
+        "reactorNaquadahDepleted");// needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_NAQUADAH_4X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodNaquadahQuad",
+        "reactorNaquadahQuadDepleted");// needs texturing
+
+    public static final BasicFuelRodItem NAQUADRIA_1X_ROD = new BasicFuelRodItem(
+        "fuelRodNaquadria",
+        "reactorNaquadriaSingle",
+        4.0,
+        4.0,
+        1,
+        false,
+        100_000);// needs texturing
+
+    public static final BasicFuelRodItem NAQUADRIA_2X_ROD = new BasicFuelRodItem(
+        "fuelRodNaquadria",
+        "reactorNaquadriaDual",
+        4.0,
+        4.0,
+        2,
+        false,
+        100_000);// needs texturing
+
+    public static final BasicFuelRodItem NAQUADRIA_4X_ROD = new BasicFuelRodItem(
+        "fuelRodNaquariaA",
+        "reactorNaquadriaQuad",
+        4.0,
+        4.0,
+        4,
+        false,
+        100_000);// needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_NAQUADRIA_1X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodNaquadria",
+        "reactorNaquadriaSingleDepleted"); // needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_NAQUADRIA_2X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodNaquadriaDual",
+        "reactorNaquadriaDepleted");// needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_NAQUADRIA_4X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodNaquadriaQuad",
+        "reactorNaquadriaQuadDepleted");// needs texturing
+
+    public static final BasicFuelRodItem TIBERIUM_1X_ROD = new BasicFuelRodItem(
+        "fuelRodTiberium",
+        "reactorTiberiumSingle",
+        2.0,
+        2.0,
+        1,
+        false,
+        50_000);// needs texturing
+
+    public static final BasicFuelRodItem TIBERIUM_2X_ROD = new BasicFuelRodItem(
+        "fuelRodTiberium",
+        "reactorTiberiumDual",
+        2.0,
+        2.0,
+        2,
+        false,
+        50_000);// needs texturing
+
+    public static final BasicFuelRodItem TIBERIUM_4X_ROD = new BasicFuelRodItem(
+        "fuelRodTiberium",
+        "reactorTiberiumQuad",
+        2.0,
+        2.0,
+        4,
+        false,
+        50_000);// needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_TIBERIUM_1X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodTiberium",
+        "reactorTiberiumSingleDepleted"); // needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_TIBERIUM_2X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodTiberiumDual",
+        "reactorTiberiumDepleted");// needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_TIBERIUM_4X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodTiberiumQuad",
+        "reactorTiberiumQuadDepleted");// needs texturing
+
+    // Excited rods
+    public static final BasicFuelRodItem EXCITED_PLUTONIUM_1X_ROD = new BasicFuelRodItem(
+        "fuelRodExcitedPlutonium",
+        "reactorExcitedPlutoniumSingle",
+        48.0,
+        64.0,
+        1,
+        false,
+        10_000);// needs texturing
+
+    public static final BasicFuelRodItem EXCITED_PLUTONIUM_2X_ROD = new BasicFuelRodItem(
+        "fuelRodExcitedPlutonium",
+        "reactorExcitedPlutoniumDual",
+        48.0,
+        64.0,
+        2,
+        false,
+        10_000);// needs texturing
+
+    public static final BasicFuelRodItem EXCITED_PLUTONIUM_4X_ROD = new BasicFuelRodItem(
+        "fuelRodExcitedPlutonium",
+        "reactorExcitedPlutoniumQuad",
+        48.0,
+        64.0,
+        4,
+        false,
+        10_000);// needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_EXCITED_PLUTONIUM_1X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodExcitedPlutonium",
+        "reactorExcitedPlutoniumSingleDepleted"); // needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_EXCITED_PLUTONIUM_2X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodExcitedPlutoniumDual",
+        "reactorExcitedPlutoniumDepleted");// needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_EXCITED_PLUTONIUM_4X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodExcitedPlutoniumQuad",
+        "reactorExcitedPlutoniumQuadDepleted");// needs texturing
+
+    public static final BasicFuelRodItem EXCITED_URANIUM_1X_ROD = new BasicFuelRodItem(
+        "fuelRodExcitedUranium",
+        "reactorExcitedUraniumSingle",
+        48.0,
+        64.0,
+        1,
+        false,
+        6_000);// needs texturing
+
+    public static final BasicFuelRodItem EXCITED_URANIUM_2X_ROD = new BasicFuelRodItem(
+        "fuelRodExcitedUranium",
+        "reactorExcitedUraniumDual",
+        48.0,
+        64.0,
+        2,
+        false,
+        6_000);// needs texturing
+
+    public static final BasicFuelRodItem EXCITED_URANIUM_4X_ROD = new BasicFuelRodItem(
+        "fuelRodExcitedUranium",
+        "reactorExcitedUraniumQuad",
+        48.0,
+        64.0,
+        4,
+        false,
+        6_000);// needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_EXCITED_URANIUM_1X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodExcitedUranium",
+        "reactorExcitedUraniumSingleDepleted"); // needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_EXCITED_URANIUM_2X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodExcitedUraniumDual",
+        "reactorExcitedUraniumDepleted");// needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_EXCITED_URANIUM_4X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodExcitedUraniumQuad",
+        "reactorExcitedUraniumQuadDepleted");// needs texturing
+
+    // High density rods
+    public static final BasicFuelRodItem HIGH_DENSITY_PLUTONIUM_1X_ROD = new BasicFuelRodItem(
+        "fuelRodHighDensityPlutonium",
+        "reactorHighDensityPlutoniumSingle",
+        2.0,
+        4.0,
+        1,
+        false,
+        30_000);// needs texturing
+
+    public static final BasicFuelRodItem HIGH_DENSITY_PLUTONIUM_2X_ROD = new BasicFuelRodItem(
+        "fuelRodHighDensityPlutonium",
+        "reactorHighDensityPlutoniumDual",
+        2.0,
+        4.0,
+        2,
+        false,
+        30_000);// needs texturing
+
+    public static final BasicFuelRodItem HIGH_DENSITY_PLUTONIUM_4X_ROD = new BasicFuelRodItem(
+        "fuelRodHighDensityPlutonium",
+        "reactorHighDensityPlutoniumQuad",
+        2.0,
+        4.0,
+        4,
+        false,
+        30_000);// needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_HIGH_DENSITY_PLUTONIUM_1X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodHighDensityPlutonium",
+        "reactorHighDensityPlutoniumSingleDepleted"); // needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_HIGH_DENSITY_PLUTONIUM_2X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodHighDensityPlutoniumDual",
+        "reactorHighDensityPlutoniumDepleted");// needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_HIGH_DENSITY_PLUTONIUM_4X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodHighDensityPlutoniumQuad",
+        "reactorHighDensityPlutoniumQuadDepleted");// needs texturing
+
+    public static final BasicFuelRodItem HIGH_DENSITY_URANIUM_1X_ROD = new BasicFuelRodItem(
+        "fuelRodHighDensityUranium",
+        "reactorHighDensityUraniumSingle",
+        4.0,
+        4.0,
+        1,
+        false,
+        20_000);// needs texturing
+
+    public static final BasicFuelRodItem HIGH_DENSITY_URANIUM_2X_ROD = new BasicFuelRodItem(
+        "fuelRodHighDensityUranium",
+        "reactorHighDensityUraniumDual",
+        4.0,
+        4.0,
+        2,
+        false,
+        20_000);// needs texturing
+
+    public static final BasicFuelRodItem HIGH_DENSITY_URANIUM_4X_ROD = new BasicFuelRodItem(
+        "fuelRodHighDensityUranium",
+        "reactorHighDensityUraniumQuad",
+        4.0,
+        4.0,
+        4,
+        false,
+        20_000);// needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_HIGH_DENSITY_URANIUM_1X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodHighDensityUranium",
+        "reactorHighDensityUraniumSingleDepleted"); // needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_HIGH_DENSITY_URANIUM_2X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodHighDensityUraniumDual",
+        "reactorHighDensityUraniumDepleted");// needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_HIGH_DENSITY_URANIUM_4X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodHighDensityUraniumQuad",
+        "reactorHighDensityUraniumQuadDepleted");// needs texturing
+
+    public static final BasicFuelRodItem THE_CORE_ROD = new BasicFuelRodItem(
+        "fuelRodTheCore",
+        "reactorTheCore",
+        8.0,
+        4.0,
+        32,
+        false,
+        100_000);// needs texturing
+
+    public static final BasicFuelRodProductItem DEPLETED_THE_CORE_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodTheCore",
+        "reactorTheCoreSingleDepleted"); // needs texturing
+
+    // these rods dont need texturing
     public static final BasicFuelRodItem THORIUM_1X_ROD = new BasicFuelRodItem(
         "fuelRodThorium",
         "reactorThoriumSingle",
@@ -13,11 +304,6 @@ public class ItemList {
         1,
         false,
         20_000);
-
-    public static final BasicFuelRodProductItem DEPLETED_THORIUM_1X_ROD = new BasicFuelRodProductItem(
-        "depletedFuelRodThorium",
-        "reactorThoriumSingleDepleted");
-
     public static final BasicFuelRodItem THORIUM_2X_ROD = new BasicFuelRodItem(
         "fuelRodThoriumDual",
         "reactorThoriumDual",
@@ -27,10 +313,6 @@ public class ItemList {
         false,
         20_000);
 
-    public static final BasicFuelRodProductItem DEPLETED_THORIUM_2X_ROD = new BasicFuelRodProductItem(
-        "depletedFuelRodThoriumDual",
-        "reactorThoriumDualDepleted");
-
     public static final BasicFuelRodItem THORIUM_4X_ROD = new BasicFuelRodItem(
         "fuelRodThoriumQuad",
         "reactorThoriumQuad",
@@ -39,6 +321,14 @@ public class ItemList {
         4,
         false,
         20_000);
+
+    public static final BasicFuelRodProductItem DEPLETED_THORIUM_1X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodThorium",
+        "reactorThoriumSingleDepleted");
+
+    public static final BasicFuelRodProductItem DEPLETED_THORIUM_2X_ROD = new BasicFuelRodProductItem(
+        "depletedFuelRodThoriumDual",
+        "reactorThoriumDualDepleted");
 
     public static final BasicFuelRodProductItem DEPLETED_THORIUM_4X_ROD = new BasicFuelRodProductItem(
         "depletedFuelRodThoriumQuad",
@@ -120,6 +410,7 @@ public class ItemList {
         "depletedFuelRodMOXQuad",
         "reactorMOXQuadDepleted");
 
+    // vents
     public static final BasicHeatVentItem BASIC_HEAT_VENT = new BasicHeatVentItem(
         "heatVent",
         "reactorVent",
@@ -156,6 +447,7 @@ public class ItemList {
         20,
         1000);
 
+    // heat exchangers
     public static final BasicHeatVentCoolantItem COOLANT_HEAT_EXCHANGER_1 = new BasicHeatVentCoolantItem(
         "reactorVentCoolant1",
         "reactorVentCoolant1",
@@ -203,6 +495,7 @@ public class ItemList {
         36,
         5000);
 
+    // coolant cells
     public static final BasicHeatAbsorberItem COOLANT_CELL_10k = new BasicHeatAbsorberItem(
         "coolantCell10k",
         "reactorCoolantSimple",
