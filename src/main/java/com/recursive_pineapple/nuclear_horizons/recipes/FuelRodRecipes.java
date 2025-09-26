@@ -129,7 +129,7 @@ public class FuelRodRecipes {
             .addTo(thermalCentrifugeRecipes);
 
         GTValues.RA.stdBuilder()
-            .itemInputs(new ItemStack(ItemList.DEPLETED_MOX_ROD, 1))
+            .itemInputs(new ItemStack(ItemList.DEPLETED_MOX_1X_ROD, 1))
             .itemOutputs(DEPLETED_MOX_FUEL.getDust(4), new ItemStack(Loaders.advancedFuelRod, 1))
             .duration(20 * SECONDS)
             .eut(TierEU.RECIPE_MV)

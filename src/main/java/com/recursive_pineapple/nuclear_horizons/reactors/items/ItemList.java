@@ -1,5 +1,7 @@
 package com.recursive_pineapple.nuclear_horizons.reactors.items;
 
+import net.minecraft.item.ItemStack;
+
 import com.recursive_pineapple.nuclear_horizons.reactors.items.basic.*;
 import com.recursive_pineapple.nuclear_horizons.recipes.GTMats;
 
@@ -17,7 +19,7 @@ public class ItemList {
         100_000);// needs texturing
 
     public static final BasicFuelRodItem NAQUADAH_2X_ROD = new BasicFuelRodItem(
-        "fuelRodNaquadah",
+        "dualFuelRodNaquadah",
         "reactorNaquadahDual",
         4.0,
         4.0,
@@ -26,7 +28,7 @@ public class ItemList {
         100_000);// needs texturing
 
     public static final BasicFuelRodItem NAQUADAH_4X_ROD = new BasicFuelRodItem(
-        "fuelRodNaquadah",
+        "quadFuelRodNaquadah",
         "reactorNaquadahQuad",
         4.0,
         4.0,
@@ -56,7 +58,7 @@ public class ItemList {
         100_000);// needs texturing
 
     public static final BasicFuelRodItem NAQUADRIA_2X_ROD = new BasicFuelRodItem(
-        "fuelRodNaquadria",
+        "dualFuelRodNaquadria",
         "reactorNaquadriaDual",
         4.0,
         4.0,
@@ -65,7 +67,7 @@ public class ItemList {
         100_000);// needs texturing
 
     public static final BasicFuelRodItem NAQUADRIA_4X_ROD = new BasicFuelRodItem(
-        "fuelRodNaquariaA",
+        "quadFuelRodNaquadria",
         "reactorNaquadriaQuad",
         4.0,
         4.0,
@@ -95,7 +97,7 @@ public class ItemList {
         50_000);// needs texturing
 
     public static final BasicFuelRodItem TIBERIUM_2X_ROD = new BasicFuelRodItem(
-        "fuelRodTiberium",
+        "dualFuelRodTiberium",
         "reactorTiberiumDual",
         2.0,
         2.0,
@@ -104,7 +106,7 @@ public class ItemList {
         50_000);// needs texturing
 
     public static final BasicFuelRodItem TIBERIUM_4X_ROD = new BasicFuelRodItem(
-        "fuelRodTiberium",
+        "quadFuelRodTiberium",
         "reactorTiberiumQuad",
         2.0,
         2.0,
@@ -135,7 +137,7 @@ public class ItemList {
         10_000);// needs texturing
 
     public static final BasicFuelRodItem EXCITED_PLUTONIUM_2X_ROD = new BasicFuelRodItem(
-        "fuelRodExcitedPlutonium",
+        "dualFuelRodExcitedPlutonium",
         "reactorExcitedPlutoniumDual",
         48.0,
         64.0,
@@ -144,7 +146,7 @@ public class ItemList {
         10_000);// needs texturing
 
     public static final BasicFuelRodItem EXCITED_PLUTONIUM_4X_ROD = new BasicFuelRodItem(
-        "fuelRodExcitedPlutonium",
+        "quadFuelRodExcitedPlutonium",
         "reactorExcitedPlutoniumQuad",
         48.0,
         64.0,
@@ -174,7 +176,7 @@ public class ItemList {
         6_000);// needs texturing
 
     public static final BasicFuelRodItem EXCITED_URANIUM_2X_ROD = new BasicFuelRodItem(
-        "fuelRodExcitedUranium",
+        "dualFuelRodExcitedUranium",
         "reactorExcitedUraniumDual",
         48.0,
         64.0,
@@ -183,7 +185,7 @@ public class ItemList {
         6_000);// needs texturing
 
     public static final BasicFuelRodItem EXCITED_URANIUM_4X_ROD = new BasicFuelRodItem(
-        "fuelRodExcitedUranium",
+        "quadFuelRodExcitedUranium",
         "reactorExcitedUraniumQuad",
         48.0,
         64.0,
@@ -214,7 +216,7 @@ public class ItemList {
         30_000);// needs texturing
 
     public static final BasicFuelRodItem HIGH_DENSITY_PLUTONIUM_2X_ROD = new BasicFuelRodItem(
-        "fuelRodHighDensityPlutonium",
+        "dualFuelRodHighDensityPlutonium",
         "reactorHighDensityPlutoniumDual",
         2.0,
         4.0,
@@ -223,7 +225,7 @@ public class ItemList {
         30_000);// needs texturing
 
     public static final BasicFuelRodItem HIGH_DENSITY_PLUTONIUM_4X_ROD = new BasicFuelRodItem(
-        "fuelRodHighDensityPlutonium",
+        "quadFuelRodHighDensityPlutonium",
         "reactorHighDensityPlutoniumQuad",
         2.0,
         4.0,
@@ -253,7 +255,7 @@ public class ItemList {
         20_000);// needs texturing
 
     public static final BasicFuelRodItem HIGH_DENSITY_URANIUM_2X_ROD = new BasicFuelRodItem(
-        "fuelRodHighDensityUranium",
+        "dualFuelRodHighDensityUranium",
         "reactorHighDensityUraniumDual",
         4.0,
         4.0,
@@ -262,7 +264,7 @@ public class ItemList {
         20_000);// needs texturing
 
     public static final BasicFuelRodItem HIGH_DENSITY_URANIUM_4X_ROD = new BasicFuelRodItem(
-        "fuelRodHighDensityUranium",
+        "quadFuelRodHighDensityUranium",
         "reactorHighDensityUraniumQuad",
         4.0,
         4.0,
@@ -305,7 +307,7 @@ public class ItemList {
         false,
         20_000);
     public static final BasicFuelRodItem THORIUM_2X_ROD = new BasicFuelRodItem(
-        "fuelRodThoriumDual",
+        "dualFuelRodThorium",
         "reactorThoriumDual",
         0.4,
         1.0,
@@ -314,7 +316,7 @@ public class ItemList {
         20_000);
 
     public static final BasicFuelRodItem THORIUM_4X_ROD = new BasicFuelRodItem(
-        "fuelRodThoriumQuad",
+        "quadFuelRodThorium",
         "reactorThoriumQuad",
         0.4,
         1.0,
@@ -382,7 +384,7 @@ public class ItemList {
         true,
         10_000);
 
-    public static final BasicFuelRodProductItem DEPLETED_MOX_ROD = new BasicFuelRodProductItem(
+    public static final BasicFuelRodProductItem DEPLETED_MOX_1X_ROD = new BasicFuelRodProductItem(
         "depletedFuelRodMOX",
         "reactorMOXSingleDepleted");
     public static final BasicFuelRodItem MOX_2X_ROD = new BasicFuelRodItem(
@@ -561,9 +563,57 @@ public class ItemList {
         0.0,
         2_000_000_000);
 
+    private static void registerFuelPair(BasicFuelRodItem rod, BasicFuelRodProductItem depletedRod) {
+        rod.register();
+        depletedRod.register();
+        rod.setProduct(new ItemStack(depletedRod, 1));
+    }
+
     public static final MetaCellItem CELLS = new MetaCellItem();
 
     public static void registerItems() {
+
+        registerFuelPair(ItemList.EXCITED_PLUTONIUM_1X_ROD, ItemList.DEPLETED_EXCITED_PLUTONIUM_1X_ROD);
+        registerFuelPair(ItemList.EXCITED_PLUTONIUM_2X_ROD, ItemList.DEPLETED_EXCITED_PLUTONIUM_2X_ROD);
+        registerFuelPair(ItemList.EXCITED_PLUTONIUM_4X_ROD, ItemList.DEPLETED_EXCITED_PLUTONIUM_4X_ROD);
+
+        registerFuelPair(ItemList.EXCITED_URANIUM_1X_ROD, ItemList.DEPLETED_EXCITED_URANIUM_1X_ROD);
+        registerFuelPair(ItemList.EXCITED_URANIUM_2X_ROD, ItemList.DEPLETED_EXCITED_URANIUM_2X_ROD);
+        registerFuelPair(ItemList.EXCITED_URANIUM_4X_ROD, ItemList.DEPLETED_EXCITED_URANIUM_4X_ROD);
+
+        registerFuelPair(ItemList.HIGH_DENSITY_PLUTONIUM_1X_ROD, ItemList.DEPLETED_HIGH_DENSITY_PLUTONIUM_1X_ROD);
+        registerFuelPair(ItemList.HIGH_DENSITY_PLUTONIUM_2X_ROD, ItemList.DEPLETED_HIGH_DENSITY_PLUTONIUM_2X_ROD);
+        registerFuelPair(ItemList.HIGH_DENSITY_PLUTONIUM_4X_ROD, ItemList.DEPLETED_HIGH_DENSITY_PLUTONIUM_4X_ROD);
+
+        registerFuelPair(ItemList.HIGH_DENSITY_URANIUM_1X_ROD, ItemList.DEPLETED_HIGH_DENSITY_URANIUM_1X_ROD);
+        registerFuelPair(ItemList.HIGH_DENSITY_URANIUM_2X_ROD, ItemList.DEPLETED_HIGH_DENSITY_URANIUM_2X_ROD);
+        registerFuelPair(ItemList.HIGH_DENSITY_URANIUM_4X_ROD, ItemList.DEPLETED_HIGH_DENSITY_URANIUM_4X_ROD);
+
+        registerFuelPair(ItemList.MOX_1X_ROD, ItemList.DEPLETED_MOX_1X_ROD);
+        registerFuelPair(ItemList.MOX_2X_ROD, ItemList.DEPLETED_MOX_2X_ROD);
+        registerFuelPair(ItemList.MOX_4X_ROD, ItemList.DEPLETED_MOX_4X_ROD);
+
+        registerFuelPair(ItemList.NAQUADAH_1X_ROD, ItemList.DEPLETED_NAQUADAH_1X_ROD);
+        registerFuelPair(ItemList.NAQUADAH_2X_ROD, ItemList.DEPLETED_NAQUADAH_2X_ROD);
+        registerFuelPair(ItemList.NAQUADAH_4X_ROD, ItemList.DEPLETED_NAQUADAH_4X_ROD);
+
+        registerFuelPair(ItemList.NAQUADRIA_1X_ROD, ItemList.DEPLETED_NAQUADRIA_1X_ROD);
+        registerFuelPair(ItemList.NAQUADRIA_2X_ROD, ItemList.DEPLETED_NAQUADRIA_2X_ROD);
+        registerFuelPair(ItemList.NAQUADRIA_4X_ROD, ItemList.DEPLETED_NAQUADRIA_4X_ROD);
+
+        registerFuelPair(ItemList.THE_CORE_ROD, ItemList.DEPLETED_THE_CORE_ROD);
+
+        registerFuelPair(ItemList.THORIUM_1X_ROD, ItemList.DEPLETED_THORIUM_1X_ROD);
+        registerFuelPair(ItemList.THORIUM_2X_ROD, ItemList.DEPLETED_THORIUM_2X_ROD);
+        registerFuelPair(ItemList.THORIUM_4X_ROD, ItemList.DEPLETED_THORIUM_4X_ROD);
+
+        registerFuelPair(ItemList.TIBERIUM_1X_ROD, ItemList.DEPLETED_TIBERIUM_1X_ROD);
+        registerFuelPair(ItemList.TIBERIUM_2X_ROD, ItemList.DEPLETED_TIBERIUM_2X_ROD);
+        registerFuelPair(ItemList.TIBERIUM_4X_ROD, ItemList.DEPLETED_TIBERIUM_4X_ROD);
+
+        registerFuelPair(ItemList.URANIUM_1X_ROD, ItemList.DEPLETED_URANIUM_1X_ROD);
+        registerFuelPair(ItemList.URANIUM_2X_ROD, ItemList.DEPLETED_URANIUM_2X_ROD);
+        registerFuelPair(ItemList.URANIUM_4X_ROD, ItemList.DEPLETED_URANIUM_4X_ROD);
 
         BASIC_HEAT_VENT.register();
         ADVANCED_HEAT_VENT.register();
@@ -649,4 +699,5 @@ public class ItemList {
             8,
             32);
     }
+
 }
