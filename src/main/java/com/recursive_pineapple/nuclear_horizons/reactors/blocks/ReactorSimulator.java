@@ -16,6 +16,7 @@ public class ReactorSimulator extends BlockContainer {
 
         setBlockName(BlockList.REACTOR_SIMULATOR_NAME);
         setStepSound(soundTypeMetal);
+        setBlockTextureName("Nuclear_Horizons:reactor_simulator");
     }
 
     @Override
