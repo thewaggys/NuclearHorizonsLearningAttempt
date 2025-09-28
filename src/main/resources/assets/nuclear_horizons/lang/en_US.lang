@@ -12,9 +12,6 @@ tile.distilled_water.name=Distilled Water
 tile.nh_coolant.name=Coolant
 tile.nh_hot_coolant.name=Hot Coolant
 
-tile.nh_coolant.name=Coolant
-tile.nh_hot_coolant.name=Hot Coolant
-
 gui.reactor.name=Nuclear Reactor
 
 item.fuelRodExcitedPlutonium.name=Fuel Rod (Excited Plutonium)
